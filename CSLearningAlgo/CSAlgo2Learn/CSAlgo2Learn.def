@@ -1,0 +1,7 @@
+; CSAlgo2Learn.def : Declares the module parameters for the DLL.
+
+LIBRARY      "CSAlgo2Learn"
+
+EXPORTS
+	CreateLearningAlgorithmInstance
+	GetLearningAlgorithmName

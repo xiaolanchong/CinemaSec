@@ -1,0 +1,14 @@
+;LIBRARY "CSAlgorithm2"
+
+EXPORTS
+	CreateBackgroundAccumulator
+	CreateCameraAnalyzer
+	CreateHallAnalyzer
+	ShowParameterDialog
+	SetDefaultParameters
+	ShowParameterDialogEx
+	SetDefaultParametersEx
+	GetParameters
+	LoadParameters
+	SaveParameters
+	

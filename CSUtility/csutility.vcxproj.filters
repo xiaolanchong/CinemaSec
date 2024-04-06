@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="ALib">
+      <UniqueIdentifier>{c2d7d0a7-c1f6-40bf-bb80-144d4a739eae}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{da0e13c8-1083-4af5-abd8-765e93d1a515}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="csutility.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\csutility.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="csutilityapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\alib_file.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\alib_filter1d.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\alib_timer.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\alib_util.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\avideo_reader.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\avideo_writer.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\ml_invert_small.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\ml_solv_penta_sys.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\parameter_ex.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\paramlib_dlg.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\vl_equate_grad_peaks.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\vl_gray_edge_detector.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\vl_horz_region.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="alib\vl_vert_region.cpp">
+      <Filter>ALib</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\byte_bitmap.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\byte_bitmap_ex.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\CorrectBrightness.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\float_bitmap.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\float_bitmap_ex.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\helper.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\io_background.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\LinearHistogramAdapter.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\live_snake.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\LogBimodalHistogramAdapter.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\long_timer.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\obsolete.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\ScheduleTestVideo.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\WrappedAVideoReader.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="csutility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csutilityapp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_algo.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_allocator.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_arr2d.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_file.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_filter1d.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_go_along_line.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_img_smooth.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_kdim_tree_mt.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_macros.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_rand_inc_iter.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_rect.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_statistics.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_stl.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_timer.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_types_const.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_util.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\alib_vec2d.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\avideo_header.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\k_harmonic_mean_clusterizer.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\matrixlib.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\ml_ldlt.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\ml_matrix.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\ml_solv_linear_sys.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\ml_solv_penta_sys.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\ml_util.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\ml_work_space.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\nl_grad_noise_meter.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\nl_polymask1_noise_meter.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\nl_polymask3_noise_meter.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\noiselib.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\parameter_ex.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\paramlib_dlg.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\video_interface.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\vl_curve2d_lib.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\vl_gray_edge_detector.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\vl_horz_region.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="alib\vl_vert_region.h">
+      <Filter>ALib</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\auto_interface_ptr.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\base_frame_grabber.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\constants.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\debug_interface.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\digits.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\inline_functions.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\layout.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\LinearHistogramAdapter.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\live_snake.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\LogBimodalHistogramAdapter.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\long_timer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\multi_histogram.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\MultiHistogramEx.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\ParameterFunctions.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\SampleDistance.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\serialization.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\text_constants.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\types.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="csutility.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>

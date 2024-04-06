@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectName>CSAlgo 2</ProjectName>
+    <ProjectGuid>{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}</ProjectGuid>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34322.80</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" ..\..\bin\debug\"$(TargetName)".dll
+</Command>
+      <Outputs>..\..\bin\debug"$(TargetName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <OutputFile>$(OutDir)CSAlgorithm2.dll</OutputFile>
+      <ModuleDefinitionFile>.\CSAlgo2.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)CSAlgorithm2.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" ..\..\bin\release\en\"$(TargetName)".dll
+</Command>
+      <Outputs>..\..\bin\release\en"$(TargetName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <OutputFile>$(OutDir)CSAlgorithm2.dll</OutputFile>
+      <ModuleDefinitionFile>.\CSAlgo2.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)CSAlgorithm2.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CSAlgo2.def" />
+    <None Include="res\CSAlgo2.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CSChair\Xml\xmllite.cpp" />
+    <ClCompile Include="..\..\CSUtility\alib\alib_file.cpp" />
+    <ClCompile Include="..\..\CSUtility\alib\alib_util.cpp" />
+    <ClCompile Include="..\..\CSUtility\alib\avideo_reader.cpp" />
+    <ClCompile Include="..\..\CSUtility\alib\parameter_ex.cpp" />
+    <ClCompile Include="..\..\CSUtility\alib\paramlib_dlg.cpp" />
+    <ClCompile Include="..\..\CSUtility\alib\vl_horz_region.cpp" />
+    <ClCompile Include="..\..\CSUtility\utility\CorrectBrightness.cpp" />
+    <ClCompile Include="..\..\CSUtility\utility\helper.cpp" />
+    <ClCompile Include="..\..\CSUtility\utility\LinearHistogramAdapter.cpp" />
+    <ClCompile Include="..\..\CSUtility\utility\LogBimodalHistogramAdapter.cpp" />
+    <ClCompile Include="..\..\CSUtility\utility\ScheduleTestVideo.cpp" />
+    <ClCompile Include="..\algorithm\day_night_file_parser.cpp" />
+    <ClCompile Include="..\algorithm\noise_meter.cpp" />
+    <ClCompile Include="algorithm\AlgoParameters.cpp" />
+    <ClCompile Include="algorithm\AlgoParamTabs.cpp" />
+    <ClCompile Include="algorithm\BackgroundAccum.cpp" />
+    <ClCompile Include="algorithm\CameraAnalyzer.cpp" />
+    <ClCompile Include="algorithm\ChairImageContainer.cpp" />
+    <ClCompile Include="algorithm\CorrelateChair.cpp" />
+    <ClCompile Include="algorithm\DrawChairs.cpp" />
+    <ClCompile Include="algorithm\DynamicAccumulator.cpp" />
+    <ClCompile Include="algorithm\FrameUpdator.cpp" />
+    <ClCompile Include="algorithm\HallAnalyzer.cpp" />
+    <ClCompile Include="algorithm\ImageAcquirer.cpp" />
+    <ClCompile Include="CSAlgo2Dll.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\CSChair\Xml\xmllite.h" />
+    <ClInclude Include="..\algorithm\algo_common.h" />
+    <ClInclude Include="..\algorithm\base_chair.h" />
+    <ClInclude Include="..\algorithm\day_night_file_parser.h" />
+    <ClInclude Include="..\algorithm\hresult_codes.h" />
+    <ClInclude Include="..\algorithm\image_property.h" />
+    <ClInclude Include="..\interfaces\background_accum_interface.h" />
+    <ClInclude Include="..\interfaces\camera_analyzer_interface.h" />
+    <ClInclude Include="..\interfaces\hall_analyzer_interface.h" />
+    <ClInclude Include="..\interfaces\parameter_dialog.h" />
+    <ClInclude Include="algorithm\AlgoParameters.h" />
+    <ClInclude Include="algorithm\AlgoParamTabs.h" />
+    <ClInclude Include="algorithm\AlgoTypes.h" />
+    <ClInclude Include="algorithm\ChairImageContainer.h" />
+    <ClInclude Include="algorithm\DayNightDecision.h" />
+    <ClInclude Include="algorithm\DynamicAccumulator.h" />
+    <ClInclude Include="algorithm\FrameUpdator.h" />
+    <ClInclude Include="algorithm\ImageAcquirer.h" />
+    <ClInclude Include="algorithm\SubImage.h" />
+    <ClInclude Include="CSAlgo2.h" />
+    <ClInclude Include="CSAlgo2Dll.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CSAlgo2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CSUtility\csutility.vcxproj">
+      <Project>{286ec124-bd34-4217-9496-ef9039323433}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

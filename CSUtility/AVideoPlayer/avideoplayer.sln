@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AVideoPlayer", "avideoplayer.vcproj", "{0E692B8D-B79E-459F-9F61-67A5AC6ABD8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AFDDB945-CEB9-4F69-B13E-AD55C2F79782} = {AFDDB945-CEB9-4F69-B13E-AD55C2F79782}
+		{E90709BA-15A2-451C-B358-9379E3EAE2FB} = {E90709BA-15A2-451C-B358-9379E3EAE2FB}
+		{5D771CF0-9D2D-43DD-9643-E911AE959EEC} = {5D771CF0-9D2D-43DD-9643-E911AE959EEC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "alib", "..\libs\alib\alib.vcproj", "{5D771CF0-9D2D-43DD-9643-E911AE959EEC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "visionlib", "..\libs\visionlib\visionlib.vcproj", "{E90709BA-15A2-451C-B358-9379E3EAE2FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5D771CF0-9D2D-43DD-9643-E911AE959EEC} = {5D771CF0-9D2D-43DD-9643-E911AE959EEC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "videolib", "..\libs\videolib\videolib.vcproj", "{AFDDB945-CEB9-4F69-B13E-AD55C2F79782}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5D771CF0-9D2D-43DD-9643-E911AE959EEC} = {5D771CF0-9D2D-43DD-9643-E911AE959EEC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0E692B8D-B79E-459F-9F61-67A5AC6ABD8A}.Debug.ActiveCfg = Debug|Win32
+		{0E692B8D-B79E-459F-9F61-67A5AC6ABD8A}.Debug.Build.0 = Debug|Win32
+		{0E692B8D-B79E-459F-9F61-67A5AC6ABD8A}.Release.ActiveCfg = Release|Win32
+		{0E692B8D-B79E-459F-9F61-67A5AC6ABD8A}.Release.Build.0 = Release|Win32
+		{5D771CF0-9D2D-43DD-9643-E911AE959EEC}.Debug.ActiveCfg = Debug|Win32
+		{5D771CF0-9D2D-43DD-9643-E911AE959EEC}.Debug.Build.0 = Debug|Win32
+		{5D771CF0-9D2D-43DD-9643-E911AE959EEC}.Release.ActiveCfg = Release|Win32
+		{5D771CF0-9D2D-43DD-9643-E911AE959EEC}.Release.Build.0 = Release|Win32
+		{E90709BA-15A2-451C-B358-9379E3EAE2FB}.Debug.ActiveCfg = Debug|Win32
+		{E90709BA-15A2-451C-B358-9379E3EAE2FB}.Debug.Build.0 = Debug|Win32
+		{E90709BA-15A2-451C-B358-9379E3EAE2FB}.Release.ActiveCfg = Release|Win32
+		{E90709BA-15A2-451C-B358-9379E3EAE2FB}.Release.Build.0 = Release|Win32
+		{AFDDB945-CEB9-4F69-B13E-AD55C2F79782}.Debug.ActiveCfg = Debug|Win32
+		{AFDDB945-CEB9-4F69-B13E-AD55C2F79782}.Debug.Build.0 = Debug|Win32
+		{AFDDB945-CEB9-4F69-B13E-AD55C2F79782}.Release.ActiveCfg = Release|Win32
+		{AFDDB945-CEB9-4F69-B13E-AD55C2F79782}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

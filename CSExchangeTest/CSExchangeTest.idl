@@ -1,0 +1,49 @@
+// CSExchangeTest.idl : IDL source for CSExchangeTest
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (CSExchangeTest.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+#include "../CSEngine/Exchange/dual.h"
+
+[
+	object,
+	uuid(A92C9094-EFF4-475e-A54D-4CA3540F2A3B),
+#ifdef DUAL_BOXOFFICE
+	dual,
+#endif
+	oleautomation,
+	nonextensible,
+	helpstring("IBoxOfficeRequest Interface"),
+	pointer_default(unique)
+]
+
+interface IBoxOfficeRequest : 
+#ifdef DUAL_BOXOFFICE
+	IDispatch
+#else
+	IUnknown
+#endif
+{
+	[id(1), helpstring("method Request")] HRESULT Request([in] BSTR strXML);
+};
+[
+	uuid(7D1C4E4F-2AC7-489E-A798-56D8BDEF08EB),
+	version(1.0),
+	helpstring("CSExchangeTest 1.0 Type Library")
+]
+library CSExchangeTestLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(C7D8C15C-F14F-4945-B532-B1BF1FF15A65),
+		helpstring("BoxOfficeRequest Class")
+	]
+	coclass BoxOfficeRequest
+	{
+		[default] interface IBoxOfficeRequest;
+	};
+};

@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chcsva", "chcsva.vcproj", "{4D1B1264-9D03-467A-8187-4B66CE08BF6D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F} = {BCBF187F-49BC-450A-A05D-6B81DC23BF6F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ElveesTools", "ElveesTools\ElveesTools.vcproj", "{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Debug.ActiveCfg = Debug|Win32
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Debug.Build.0 = Debug|Win32
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Release.ActiveCfg = Release|Win32
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Release.Build.0 = Release|Win32
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{4D1B1264-9D03-467A-8187-4B66CE08BF6D}.Unicode Release.Build.0 = Unicode Release|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Debug.ActiveCfg = Debug|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Debug.Build.0 = Debug|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Release.ActiveCfg = Release|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Release.Build.0 = Release|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{BCBF187F-49BC-450A-A05D-6B81DC23BF6F}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

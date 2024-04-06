@@ -1,0 +1,882 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "../resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDA_GEAR                AVI                     "..\\CommonRes\\gear.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECT_ROOM DIALOGEX 0, 0, 272, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select camera arrangement"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,215,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,24,50,14
+    CONTROL         "1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,7,7,119,14
+    CONTROL         "2x2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,24,119,14
+    CONTROL         "2x3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,43,119,14
+END
+
+IDD_VIDEO_CONTROL DIALOGEX 0, 0, 347, 35
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_SLIDER,61,7,283,8
+    LTEXT           "Static",IDC_STATIC_RANGE,61,20,283,11
+    LTEXT           "Static",IDC_STATIC_CONTROL,2,3,55,14
+    LTEXT           "Static",IDC_STATIC_VRANGE,2,20,55,15
+END
+
+IDD_ARCHIVE_STAT DIALOGEX 0, 0, 143, 268
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_STAT,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,2,114,140,154
+    LTEXT           "Cinema",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Room",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+    LTEXT           "From",IDC_STATIC_FROM,4,58,56,17,SS_CENTERIMAGE
+    CONTROL         "",IDC_TIME_BEGIN,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,2,75,63,15
+    CONTROL         "",IDC_TIME_END,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,72,75,70,15
+    LTEXT           "To",IDC_STATIC_TO,72,58,70,17,SS_CENTERIMAGE
+    PUSHBUTTON      "Get archive data",IDC_BUTTON_GET_ARCHIVE,2,94,141,16
+END
+
+IDD_BOXOFFICE DIALOGEX 0, 0, 184, 263
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Cinema",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Room",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+END
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About CSClient"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CSClient",IDC_STATIC,40,17,49,13,SS_NOPREFIX | 
+                    SS_CENTERIMAGE
+    LTEXT           "Copyright © ElVEES, 2004",IDC_STATIC,40,7,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "",IDC_STATIC_CSCLIENT_VERSION,107,17,63,13,
+                    SS_CENTERIMAGE
+END
+
+IDD_PARAMETER_PAGE DIALOG  0, 0, 320, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Parameter Page"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_OFFSET_CHAIR DIALOGEX 0, 0, 89, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Move chairs"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DOWN,46,25,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LEFT,46,7,36,14,ES_AUTOHSCROLL
+    LTEXT           "Right",IDC_STATIC,7,7,33,14
+    LTEXT           "Down",IDC_STATIC,7,25,35,14
+    PUSHBUTTON      "Move",IDC_MOVE,35,46,47,14
+END
+
+IDD_VIDEO_STAT DIALOGEX 0, 0, 135, 303
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Cinema",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Room",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+    CONTROL         "",IDC_LIST_STAT,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,0,107,132,193
+    LTEXT           "Current statistics",IDC_STATIC,2,92,132,15
+    LTEXT           "Current film",IDC_STATIC,2,60,129,13
+    EDITTEXT        IDC_EDIT_CURRENT_FILM,1,73,114,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Static",IDC_STATIC_TB,115,73,20,14
+END
+
+IDD_ALGO_SETTINGS DIALOGEX 0, 0, 379, 194
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_TIMEAFTER,10,79,42,15,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_TIMEAFTER,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,41,79,11,15
+    LTEXT           "minutes after film starts",IDC_STATIC,55,79,106,19
+    EDITTEXT        IDC_EDIT_TIMEBEFORE,10,99,42,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_TIMEBEFORE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,41,99,11,14
+    LTEXT           "minutes before film ends",IDC_STATIC,55,99,106,20
+    EDITTEXT        IDC_EDIT_PERIOD,10,119,42,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PERIOD,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,41,119,11,13
+    LTEXT           "statistics period",IDC_STATIC,55,119,106,21
+    GROUPBOX        "Server settings",IDC_STATIC,5,62,174,95
+    GROUPBOX        "Archive settings",IDC_STATIC,188,62,190,95
+    EDITTEXT        IDC_EDIT_BACKUP_START,194,79,50,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_BACKUP_START,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,231,79,11,15
+    EDITTEXT        IDC_EDIT_BACKUP_END,194,99,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_BACKUP_END,"msctls_updown32",UDS_ALIGNRIGHT | 
+                    UDS_ARROWKEYS,231,99,11,14
+    LTEXT           "Start archive erasing",IDC_STATIC,251,79,118,21
+    LTEXT           "End archive erasing",IDC_STATIC,251,99,118,20
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,334,162,44,14
+    LTEXT           "Archive stores days",IDC_STATIC,251,119,118,23
+    EDITTEXT        IDC_EDIT_BACKUP_DATE,194,119,50,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_BACKUP_DATE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,233,119,11,13
+    LTEXT           "Cinema",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Room",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+END
+
+IDD_ALGO_TIMETABLE DIALOGEX 0, 0, 314, 273
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_GRID_TIMETABLE,2,90,308,180,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATE_TIMETABLE,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,7,71,67,16
+    PUSHBUTTON      "Load",IDC_BUTTON_LOAD,186,71,52,16
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,242,71,52,16
+    LTEXT           "Day",IDC_STATIC,7,56,67,13
+    LTEXT           "Start of day",IDC_STATIC,83,56,59,13
+    CONTROL         "",IDC_TIME_START,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,81,71,57,16
+    EDITTEXT        IDC_EDIT_ROW_NUMBER,144,71,32,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_SPIN_ROW_NUMBER,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,171,71,11,
+                    16
+    LTEXT           "Cinema",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,138,13
+    LTEXT           "Room",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+    LTEXT           "Record count",IDC_STATIC,144,56,46,13
+END
+
+IDD_REPORT DIALOGEX 0, 0, 153, 377
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Beginning",IDC_STATIC,3,38,145,15
+    CONTROL         "",IDC_BEGIN_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,3,53,70,14
+    CONTROL         "",IDC_BEGIN_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,79,53,69,14
+    CONTROL         "",IDC_END_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,3,85,70,14
+    CONTROL         "",IDC_END_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,79,85,69,14
+    LTEXT           "Ending",IDC_STATIC,3,70,145,13
+    CONTROL         "Measured moments",IDC_RADIO_MEASURE_MOMENT,"Button",
+                    BS_AUTORADIOBUTTON,7,115,84,14
+    GROUPBOX        "Report type",IDC_STATIC_TYPE,3,102,145,63
+    CONTROL         "Film",IDC_RADIO_FILM,"Button",BS_AUTORADIOBUTTON,7,129,
+                    66,16
+    CONTROL         "Detailed",IDC_CHECK_DETAIL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,145,65,15
+    LTEXT           "Rooms",IDC_STATIC,7,165,141,15
+    CONTROL         "",IDC_TREE_ROOM,"SysTreeView32",TVS_DISABLEDRAGDROP | 
+                    TVS_CHECKBOXES | TVS_FULLROWSELECT | WS_BORDER | 
+                    WS_TABSTOP,3,180,145,106
+    PUSHBUTTON      "Create report",IDC_BUTTON_CREATE,3,292,69,15
+    PUSHBUTTON      "Export",IDC_BUTTON_EXPORT,3,312,69,15
+    LTEXT           "Cinema",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",NOT WS_VISIBLE,118,36,
+                    22,8
+    PUSHBUTTON      "Print preview",IDC_BUTTON_PRINTPREVIEW,3,332,69,15
+    PUSHBUTTON      "Print",IDC_BUTTON_PRINT,3,352,69,15
+END
+
+IDD_DIAGNOSTIC DIALOGEX 0, 0, 247, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_DIAGNOSTIC,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,2,59,241,154
+    LTEXT           "Cinema",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Room",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+END
+
+IDD_LAYOUT DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Edit layout"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,2,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,329,2,50,14
+    LTEXT           "Grid size",IDC_STATIC,2,3,43,12
+    EDITTEXT        IDC_EDIT_WIDTH,45,2,32,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,90,2,32,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN_HEIGHT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,119,2,10,
+                    14
+    LTEXT           "Static",IDC_LAYOUT,2,22,377,281,WS_BORDER
+    CONTROL         "",IDC_SPIN_WIDTH,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,70,0,10,14
+END
+
+IDD_ROOM_SELECT DIALOGEX 0, 0, 184, 44
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,2,2,177,13
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",0x0,2,15,177,13
+    CONTROL         "",IDC_TAB_CAMERA,"SysTabControl32",0x0,2,28,177,13
+END
+
+IDD_GRAB_CAMERA DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Grab camera image"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Start",IDOK,208,2,50,14
+    PUSHBUTTON      "Stop",IDC_STOP,269,2,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,329,2,50,14
+    LTEXT           "Elapsed time",IDC_STATIC_TIME,2,24,47,14
+    EDITTEXT        IDC_STATIC_TIMEVALUE,49,24,27,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Processed frames",IDC_STATIC_FRAME,90,24,59,14
+    EDITTEXT        IDC_STATIC_FRAMEVALUE,149,24,27,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Static",IDC_LAYOUT,2,43,377,260,NOT WS_VISIBLE | 
+                    WS_BORDER
+END
+
+IDD_GRAB_FILE DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Grab image from files"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Start",IDOK,208,2,50,14
+    PUSHBUTTON      "Stop",IDC_STOP,269,2,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,329,2,50,14
+    LTEXT           "Static",IDC_LAYOUT,2,38,377,265,NOT WS_VISIBLE | 
+                    WS_BORDER
+    CONTROL         "",IDC_PROGRESS_GRAB,"msctls_progress32",WS_BORDER,2,24,
+                    377,11
+END
+
+IDD_RENUMBER DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Renumber loaded chairs"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,2,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,329,2,50,14
+    LTEXT           "Static",IDC_LAYOUT,2,22,377,281,NOT WS_VISIBLE | 
+                    WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ALGO_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 378
+        VERTGUIDE, 10
+        VERTGUIDE, 52
+        VERTGUIDE, 188
+        VERTGUIDE, 194
+        VERTGUIDE, 244
+        VERTGUIDE, 251
+        VERTGUIDE, 369
+        HORZGUIDE, 15
+        HORZGUIDE, 28
+        HORZGUIDE, 42
+        HORZGUIDE, 54
+    END
+
+    IDD_ALGO_TIMETABLE, DIALOG
+    BEGIN
+        VERTGUIDE, 2
+        VERTGUIDE, 74
+        VERTGUIDE, 81
+        VERTGUIDE, 138
+        VERTGUIDE, 144
+        VERTGUIDE, 176
+        VERTGUIDE, 182
+        VERTGUIDE, 186
+        VERTGUIDE, 238
+        VERTGUIDE, 242
+        VERTGUIDE, 294
+        VERTGUIDE, 310
+        BOTTOMMARGIN, 270
+        HORZGUIDE, 14
+        HORZGUIDE, 27
+        HORZGUIDE, 40
+        HORZGUIDE, 56
+        HORZGUIDE, 69
+        HORZGUIDE, 71
+        HORZGUIDE, 87
+        HORZGUIDE, 90
+    END
+
+    IDD_REPORT, DIALOG
+    BEGIN
+        VERTGUIDE, 2
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DIAGNOSTIC          BITMAP                  "..\\CommonRes\\diagnostic.bmp"
+IDB_ARCHIVE_REFRESH     BITMAP                  "..\\CommonRes\\Get.bmp"
+IDB_CHAIR_CONTENT       BITMAP                  "..\\CommonRes\\Content.bmp"
+IDR_TOOLBAR1            BITMAP                  "..\\CommonRes\\ViewChooser.bmp"
+IDR_MAINFRAME           BITMAP                  "..\\CommonRes\\Toolbar.bmp"
+IDR_GaugeHall           BITMAP                  "..\\CommonRes\\gauge_hall.bmp"
+IDR_VideoToolbar        BITMAP                  "..\\CommonRes\\videotoolbar.bmp"
+IDR_PrepareData         BITMAP                  "..\\CommonRes\\bmp00002.bmp"
+IDR_SEEK_BAR            BITMAP                  "..\\CommonRes\\bmp00003.bmp"
+IDR_TOOLBAR2            BITMAP                  "..\\CommonRes\\bmp00004.bmp"
+IDR_VIDEO_RANGE         BITMAP                  "..\\CommonRes\\select_video_range.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "..\\CommonRes\\CSClient.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_VIEW_VIDEO
+    BUTTON      ID_VIEW_ARCHIVE
+    BUTTON      ID_VIEW_DIAGNOSTIC
+    BUTTON      ID_VIEW_TIMETABLE
+    BUTTON      ID_VIEW_REPORT
+    BUTTON      ID_VIEW_SETTINGS
+    BUTTON      ID_VIEW_ROOM
+    BUTTON      ID_VIEW_BOXOFFICE
+    BUTTON      ID_VIEW_TRAINDATA
+END
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+END
+
+IDR_GaugeHall TOOLBAR  32, 24
+BEGIN
+    BUTTON      ID_LAYOUT
+    BUTTON      ID_GRAB_CAMERA
+    BUTTON      ID_IMAGE_GRAB
+    BUTTON      ID_FILE_LOAD_IMAGE
+    BUTTON      ID_FILE_SAVE_IMAGE
+    BUTTON      ID_DB_IMAGE_LOAD
+    BUTTON      ID_DB_IMAGE_SAVE
+    SEPARATOR
+    BUTTON      ID_NEW_GRAPH
+    BUTTON      ID_FILE_LOAD_GRAPH
+    BUTTON      ID_FILE_SAVE_GRAPH
+    BUTTON      ID_DB_LOAD_GRAPH
+    BUTTON      ID_DB_SAVE_GRAPH
+    SEPARATOR
+    BUTTON      ID_SHOW_PARAM
+    BUTTON      ID_DELETE_ITEM
+END
+
+IDR_VideoToolbar TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_OPEN_GRAPH
+    BUTTON      ID_FILE_SAVE_GRAPH
+    BUTTON      ID_FILE_OPEN_TRAIN_DATA
+    BUTTON      ID_FILE_SAVE_TRAIN_DATA
+    SEPARATOR
+    BUTTON      IDM_Play_Play_Sequence
+    BUTTON      IDM_Play_Play_Sequence
+    BUTTON      IDM_Play_Stop_Sequence
+    SEPARATOR
+    BUTTON      IDM_Play_First_Frame
+    BUTTON      IDM_Play_NFrames_Backward
+    BUTTON      IDM_Play_Prev_Frame
+    BUTTON      IDM_Play_Next_Frame
+    BUTTON      IDM_Play_NFrames_Forward
+    BUTTON      IDM_Play_Last_Frame
+    SEPARATOR
+    BUTTON      IDM_Play_Speed_Up
+    BUTTON      IDM_Play_Speed_Down
+END
+
+IDR_PrepareData TOOLBAR  24, 24
+BEGIN
+    BUTTON      IDM_Edit_FrameSlider
+    BUTTON      ID_BUTTON_START_RANGE
+    BUTTON      ID_BUTTON_ADD_RANGE
+    BUTTON      ID_BUTTON_CANCEL_RANGE
+    BUTTON      ID_RANGE_HUMAN
+    BUTTON      ID_RANGE_EMPTY
+    BUTTON      ID_RANGE_CLOTHES
+    BUTTON      ID_RANGE_UNKNOWN
+    BUTTON      ID_MOVE_CHAIRS
+END
+
+IDR_SEEK_BAR TOOLBAR  20, 20
+BEGIN
+    BUTTON      ID_VIDEO_PLAY
+    BUTTON      ID_VIDEO_PAUSE
+    BUTTON      ID_VIDEO_STOP
+END
+
+IDR_VIDEO_RANGE TOOLBAR  20, 20
+BEGIN
+    BUTTON      ID_VIDEO_SAVE
+    BUTTON      ID_VIDEO_START
+    BUTTON      ID_VIDEO_END
+END
+
+IDR_TOOLBAR2 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON_PLAY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\CommonRes\\CSClient.ico"
+IDR_CSCLIETYPE          ICON                    "..\\CommonRes\\CSClientDoc.ico"
+IDR_GaugeHallTYPE       ICON                    "..\\CommonRes\\gauge_hall.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "../resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_GaugeHallTYPE MENU 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Object Selection",            IDM_Edit_ObjectSelection
+        MENUITEM "Delete",                      IDM_Edit_DeleteObject
+        MENUITEM SEPARATOR
+        MENUITEM "Object Contouring",           IDM_Edit_ObjectContouring
+        MENUITEM "Curve Adjusting",             IDM_Edit_CurveAdjusting
+        MENUITEM "Curve Smoothing",             IDM_Edit_CurveSmoothing
+        MENUITEM SEPARATOR
+        MENUITEM "adjusting radius = 1",        IDM_Edit_AdjustingRadius_1
+        MENUITEM "adjusting radius = 2",        IDM_Edit_AdjustingRadius_2
+        MENUITEM "adjusting radius = 3",        IDM_Edit_AdjustingRadius_3
+        MENUITEM "adjusting radius = 4",        IDM_Edit_AdjustingRadius_4
+        MENUITEM "adjusting radius = 5",        IDM_Edit_AdjustingRadius_5
+        MENUITEM "adjusting radius = 6",        IDM_Edit_AdjustingRadius_6
+        MENUITEM "adjusting radius = 7",        IDM_Edit_AdjustingRadius_7
+        MENUITEM "adjusting radius = 8",        IDM_Edit_AdjustingRadius_8
+        MENUITEM "adjusting radius = 9",        IDM_Edit_AdjustingRadius_9
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,4798
+ PRODUCTVERSION 1,0,0,4798
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "ElVEES"
+            VALUE "FileDescription", "Cinema Security Client Application"
+            VALUE "FileVersion", "1, 0, 0, 4798"
+            VALUE "InternalName", "CSClient"
+            VALUE "LegalCopyright", "Copyright (C) ElVEES, 2005"
+            VALUE "OriginalFilename", "CSClient.EXE"
+            VALUE "ProductName", "CSClient Application"
+            VALUE "ProductVersion", "1, 0, 0, 4798"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+ID_HTML_REPORT_CSS      HTML                    "..\\CommonRes\\www\\report.css"
+ID_HTML_REPORT1_XSL     HTML                    "res\\www\\report1.xsl"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "CSClient\n\nCSClie\n\n\nCSClient.Document\nCSClie Document"
+    IDS_NO_IMAGE            "No image"
+    IDS_EXC_INVALID_IMAGE_FILE "Invalid image file"
+    IDR_VIDEO_VIEW          "\n\n"
+    IDR_GaugeHallTYPE       "\n\n"
+    IDR_ArchiveMode         "\n\n"
+    IDR_TrainData           "\n\n"
+    IDR_DIAGNOSTIC_VIEW     "\n\n"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CSClient"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    INDICATOR_INDEX         " frame"
+    INDICATOR_FPS           " fps"
+    INDICATOR_SPEED         " speed"
+    INDICATOR_CURSOR        " cursor"
+    INDICATOR_DROPPED_FRAME " dropped"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEW_VIDEO          "Video"
+    IDS_VIEW_ARCHIVE        "Archive"
+    IDS_VIEW_DIAGNOSTIC     "Diagnostic"
+    IDS_VIEW_REPORT         "Report"
+    IDS_VIEW_ALGORITHM      "Algorithm"
+    IDS_VIEW_TRAINDATA      "Training"
+    IDS_VIEW_BOXOFFICE      "Exchange"
+    IDS_VIEW_TIMETABLE      "Timetable"
+    IDS_VIEW_SETTINGS       "Settings"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LONGOPERATION       "Operation is proceeding"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_VIDEO           "Show video\nShow video"
+    ID_VIEW_ARCHIVE         "Show archive\nShow archive"
+    ID_VIEW_DIAGNOSTIC      "Show current system state\nShow current system state"
+    ID_VIEW_TIMETABLE       "Show film timetable\nShow film timetable"
+    ID_VIEW_REPORT          "Get report\nGet report"
+    ID_VIEW_SETTINGS        "Edit system settings\nEdit system settings"
+    ID_VIEW_ROOM            "Edit algorithm settings\nEdit algorithm settings"
+    ID_VIEW_BOXOFFICE       "Show data exchange\nShow data exchange"
+    ID_VIEW_TRAINDATA       "Prepare training data\nPrepare training data"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_TAB_CINEMA          "Select current cinema\nSelect current cinema"
+    IDC_TAB_ROOM            "Select current room\nSelect current room"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEW_GRAPH            "Clear chairs\nClear chairs"
+    ID_SHOW_PARAM           "Edit algorithm options\nEdit algorithm options"
+    ID_VIDEO_PLAY           "Play video\nPlay video"
+    ID_VIDEO_PAUSE          "Pause video\nPause video"
+    ID_VIDEO_STOP           "Stop video\nStop video"
+    ID_BUTTON_PLAY          "Play video\nPlay video"
+    ID_LAYOUT               "Create layout for video cameras\nCreate layout"
+    ID_GRAB_CAMERA          "Grab image from video cameras\nGrab from cameras"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIDEO_SAVE           "Save selected video range\nSave"
+    ID_VIDEO_START          "Start video range selection\nStart selection"
+    ID_VIDEO_END            "End video range selection\nEnd selection"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DB_IMAGE_LOAD        "Load background image from database\nLoad background image from database"
+    ID_DB_LOAD_GRAPH        "Load chairs from database\nLoad chairs from database"
+    ID_DB_SAVE_GRAPH        "Save chairs to database\nSave chairs to database"
+    ID_DB_IMAGE_SAVE        "Save background image to database\nSave background image to database"
+    ID_IMAGE_GRAB           "Grab image from video files\nGrab from files"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE_GRAPH      "Save chairs to file\nSave chairs to file"
+    ID_FILE_LOAD_GRAPH      "Open chair file\nOpen chair file"
+    ID_FILE_SAVE_IMAGE      "Save background image\nSave background image"
+    ID_FILE_LOAD_IMAGE      "Open background image\nOpen background image"
+    ID_DELETE_ITEM          "Delete selected chair\nDelete selected chair"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_OPEN_GRAPH      "Open chair file\nOpen chair file"
+    ID_FILE_OPEN_TRAIN_DATA "Open trainning data file\nOpen trainning data file"
+    ID_FILE_SAVE_TRAIN_DATA "Save trainning data to file\nSave trainning data to file"
+    ID_BUTTON_START_RANGE   "Start range selection\nStart range selection"
+    ID_BUTTON_ADD_RANGE     "Add selected range\nAdd selected range"
+    ID_BUTTON_CANCEL_RANGE  "Delete selected range\nDelete selected range"
+    ID_RANGE_EMPTY          "Empty range\nEmpty"
+    ID_RANGE_HUMAN          "Human range\nHuman"
+    ID_RANGE_CLOTHES        "Clothe range\nClothe"
+    ID_RANGE_UNKNOWN        "Unknown range\nUnknown"
+    ID_MOVE_CHAIRS          "Move chairs\nMove chairs"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_OPEN            "Open video file\nOpen video file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_Play_Play_Sequence  "Play video\nPlay"
+    IDM_Play_Stop_Sequence  "Stop video\nStop"
+    IDM_Play_First_Frame    "First frame\nFirst frame"
+    IDM_Play_NFrames_Backward "Play N frames backward\nPlay backward"
+    IDM_Play_Prev_Frame     "Previous Frame\nPrevious Frame"
+    IDM_Play_Next_Frame     "Next Frame\nNext Frame"
+    IDM_Play_NFrames_Forward "Play N frames forward\nPlay forward"
+    IDM_Play_Last_Frame     "Last frame\nLast frame"
+    IDM_Play_Speed_Up       "Speed Up\nSpeed Up"
+    IDM_Play_Speed_Down     "Speed Down\nSpeed Down"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATE_OFFLINE       "Offline"
+    IDS_STATE_WAIT          "Waiting"
+    IDS_STATE_WORK          "Working"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_DESC_1        "Start time is greater then end.\r\nArchive will not be shown"
+    IDS_ERROR_DESC_2        "Start time is greater then current time.\r\nArchive will not be shown"
+    IDS_ERROR_DESC_3        "End time is greater then current time.\r\nArchive will be shown until now"
+    IDS_TAB_CAMERA          "Camera %d"
+    IDS_TAB_ROOM            "Whole room"
+    IDS_FILTER_TRAIN        "Trainning data(*.xml)|*.xml|All files(*.*)|*.*||"
+    IDS_FILTER_CHAIR        "Chair files(*.xml)|*.xml|All files(*.*)|*.*||"
+    IDS_FILTER_AVI          "Video Files (*.avi)|*.avi|All Files (*.*)|*.*||"
+    IDS_ERROR_FILE_LOADING  "Error occuired while loading file"
+    IDS_ERROR_FILE_SAVING   "Error occuired while saving file"
+    IDS_ERROR_IMAGESIZE     "Invalid image size"
+    IDS_ERROR_DB_LOADING    "Error occuired while loading from database"
+    IDS_ERROR_DB_SAVING     "Error occuired while saving to database"
+    IDS_ERROR_GRABBER       "Failed get images from camera %d"
+    IDS_TITLE_DELETE        "Are you really want to delete an object?"
+    IDS_ERROR_VIDEO         "Video is not available"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_CONNECTION    "Error occuried while connecting to the database"
+    IDS_TITLE_TIME          "Time"
+    IDS_TITLE_DATE          "Date"
+    IDS_TITLE_NUMBER        "#"
+    IDS_TITLE_NAME          "Name"
+    IDS_TITLE_STARTTIME     "Start Time"
+    IDS_TITLE_ENDTIME       "EndTime"
+    IDS_ERROR_INVALIDTIME   "Invalid Time"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_ITEM          "Not all items have been selected"
+    IDS_ERROR_VIDEOIMAGE    "Error occuried while getting an image from video"
+    IDS_ERROR_TABLEITEM     "Some table rows have not enough data"
+    IDS_ERROR_ROW           "Row #%d has invalid data"
+    IDS_ERROR_ROWTIME       "Row #%d  - the start time later or equal to the end time"
+    IDS_ERROR_ROWINTERSECT  "Row #%d  - the time period intersects with other"
+    IDS_TITLE_DEVICE        "Device"
+    IDS_TITLE_STATE         "State"
+    IDS_TITLE_PARAM_INVALID "Failed to load current parameters.Set to default?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

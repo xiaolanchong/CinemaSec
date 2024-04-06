@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Chair">
+      <UniqueIdentifier>{67522991-9181-48be-9644-305123196072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chair\TrainData">
+      <UniqueIdentifier>{cd10b2da-98b2-4fbb-a176-2e28a89a0df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chair\ChairData">
+      <UniqueIdentifier>{cbdc3273-845e-47d6-a0cd-fb262e2d6f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grabber">
+      <UniqueIdentifier>{92c07411-494c-4f8a-b7be-a70c5fab6b19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CSChair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dmpstuff\ExceptionHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public\NameParse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\xmllite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\ChairContentImpl.cpp">
+      <Filter>Chair\TrainData</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\ContentSerializer.cpp">
+      <Filter>Chair\TrainData</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\Range.cpp">
+      <Filter>Chair\TrainData</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\chair_int_impl.cpp">
+      <Filter>Chair\ChairData</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\ChairCommonClass.cpp">
+      <Filter>Chair\ChairData</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\ChairDisk.cpp">
+      <Filter>Chair\ChairData</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\ChairFunction.cpp">
+      <Filter>Chair\ChairData</Filter>
+    </ClCompile>
+    <ClCompile Include="Chair\ChairSerializerImpl.cpp">
+      <Filter>Chair\ChairData</Filter>
+    </ClCompile>
+    <ClCompile Include="Grabber\AVDGrabber.cpp">
+      <Filter>Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="Grabber\BaseFrameGrabberDS.cpp">
+      <Filter>Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="Grabber\BaseFrameGrabberVfW.cpp">
+      <Filter>Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="Grabber\FileGrabberFactory.cpp">
+      <Filter>Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="Grabber\FrameGrabber.cpp">
+      <Filter>Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="Grabber\GrabberFactoryImpl.cpp">
+      <Filter>Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="Grabber\StubCameraGrabber.cpp">
+      <Filter>Grabber</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSChair.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSChair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmpstuff\ExceptionHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public\NameParse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\En\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chair\ChairContentImpl.h">
+      <Filter>Chair\TrainData</Filter>
+    </ClInclude>
+    <ClInclude Include="Chair\ContentSerializer.h">
+      <Filter>Chair\TrainData</Filter>
+    </ClInclude>
+    <ClInclude Include="IChairContent.h">
+      <Filter>Chair\TrainData</Filter>
+    </ClInclude>
+    <ClInclude Include="IChairContentEx.h">
+      <Filter>Chair\TrainData</Filter>
+    </ClInclude>
+    <ClInclude Include="Chair\Range.h">
+      <Filter>Chair\TrainData</Filter>
+    </ClInclude>
+    <ClInclude Include="chair_int.h">
+      <Filter>Chair\ChairData</Filter>
+    </ClInclude>
+    <ClInclude Include="Chair\ChairCommonClass.h">
+      <Filter>Chair\ChairData</Filter>
+    </ClInclude>
+    <ClInclude Include="Chair\ChairDisk.h">
+      <Filter>Chair\ChairData</Filter>
+    </ClInclude>
+    <ClInclude Include="Chair\ChairLink.h">
+      <Filter>Chair\ChairData</Filter>
+    </ClInclude>
+    <ClInclude Include="Chair\ChairSerializerImpl.h">
+      <Filter>Chair\ChairData</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\AVDGrabber.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\BaseFrameGrabberDS.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\BaseFrameGrabberVfW.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\FileGrabberFactory.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameGrabber.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\GrabberFactoryImpl.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\IGrabberFactory.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\ImageDecompressor.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="Grabber\StubCameraGrabber.h">
+      <Filter>Grabber</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Res\En\CSChair.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="message\ChairError.mc" />
+  </ItemGroup>
+</Project>

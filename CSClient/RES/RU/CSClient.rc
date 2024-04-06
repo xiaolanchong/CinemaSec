@@ -1,0 +1,1091 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "../resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDA_GEAR                AVI                     "..\\CommonRes\\gear.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECT_ROOM DIALOGEX 0, 0, 272, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Редактировать расположение камер"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,215,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,215,24,50,14
+    CONTROL         "1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,7,7,119,14
+    CONTROL         "2x2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,24,119,14
+    CONTROL         "2x3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,43,119,14
+END
+
+IDD_VIDEO_CONTROL DIALOGEX 0, 0, 347, 35
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_SLIDER,61,7,283,8
+    LTEXT           "Static",IDC_STATIC_RANGE,61,20,283,11
+    LTEXT           "Static",IDC_STATIC_CONTROL,2,3,55,14
+    LTEXT           "Static",IDC_STATIC_VRANGE,2,20,55,15
+END
+
+IDD_ARCHIVE_STAT DIALOGEX 0, 0, 143, 268
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_STAT,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,2,114,140,154
+    LTEXT           "Кинотеатр",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Кинозал",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+    LTEXT           "От",IDC_STATIC_FROM,4,58,56,17,SS_CENTERIMAGE
+    CONTROL         "",IDC_TIME_BEGIN,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,2,75,63,15
+    CONTROL         "",IDC_TIME_END,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,72,75,70,15
+    LTEXT           "До",IDC_STATIC_TO,72,58,70,17,SS_CENTERIMAGE
+    PUSHBUTTON      "Получить данные",IDC_BUTTON_GET_ARCHIVE,2,94,141,16
+END
+
+IDD_BOXOFFICE DIALOGEX 0, 0, 358, 263
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Кинотеатр",IDC_STATIC,0,3,199,11
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",TCS_BUTTONS,0,21,183,
+                    15
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",NOT WS_VISIBLE,291,5,7,
+                    8
+    LTEXT           "Static",IDC_STATIC_HTML,8,67,343,189
+    LTEXT           "От",IDC_STATIC,8,46,18,14
+    CONTROL         "",IDC_DATETIME_FROM,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,34,46,67,14
+    CONTROL         "",IDC_DATETIME_TO,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,133,46,65,14
+    LTEXT           "До",IDC_STATIC,116,46,17,14
+    PUSHBUTTON      "Получить",IDC_BUTTON_GETDATA,222,46,58,14
+END
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About CSClient"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CSClient",IDC_STATIC,40,17,49,13,SS_NOPREFIX | 
+                    SS_CENTERIMAGE
+    LTEXT           "Copyright © ElVEES, 2004",IDC_STATIC,40,7,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "",IDC_STATIC_CSCLIENT_VERSION,107,17,63,13,
+                    SS_CENTERIMAGE
+END
+
+IDD_PARAMETER_PAGE DIALOG  0, 0, 320, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Parameter Page"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_OFFSET_CHAIR DIALOGEX 0, 0, 89, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Переместить кресла"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DOWN,46,25,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LEFT,46,7,36,14,ES_AUTOHSCROLL
+    LTEXT           "Вправо",IDC_STATIC,7,7,33,14
+    LTEXT           "Вниз",IDC_STATIC,7,25,35,14
+    PUSHBUTTON      "Переместить",IDC_MOVE,35,46,47,14
+END
+
+IDD_VIDEO_STAT DIALOGEX 0, 0, 135, 303
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Кинотеатр",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Кинозал",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+    CONTROL         "",IDC_LIST_STAT,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,0,107,132,193
+    LTEXT           "Текущая статистика",IDC_STATIC,2,92,132,15
+    LTEXT           "Текущий фильм",IDC_STATIC,2,60,129,13
+    EDITTEXT        IDC_EDIT_CURRENT_FILM,1,73,114,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Static",IDC_STATIC_TB,115,73,20,14
+END
+
+IDD_ALGO_SETTINGS DIALOGEX 0, 0, 364, 258
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SPIN_EXC_CONNECTNUMBER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,46,170,13,13
+    EDITTEXT        IDC_EDIT_EXC_CONNECTNUMBER,12,170,40,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_TIMEAFTER,12,79,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_TIMEAFTER,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,41,79,11,14
+    LTEXT           "Начало сбора статистики(мин)",IDC_STATIC,55,79,106,19
+    EDITTEXT        IDC_EDIT_TIMEBEFORE,12,99,40,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_TIMEBEFORE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,41,99,11,13
+    LTEXT           "Конец сбора статистики(мин)",IDC_STATIC,55,99,106,20
+    EDITTEXT        IDC_EDIT_PERIOD,12,119,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PERIOD,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,41,119,11,14
+    LTEXT           "Интервал между измерениями(мин)",IDC_STATIC,55,119,106,
+                    21
+    GROUPBOX        "Настройки сервера",IDC_STATIC,6,63,173,77
+    GROUPBOX        "Настройки архива",IDC_STATIC,188,63,169,77
+    EDITTEXT        IDC_EDIT_BACKUP_START,194,79,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_BACKUP_START,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,231,79,11,14
+    EDITTEXT        IDC_EDIT_BACKUP_END,194,99,50,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_BACKUP_END,"msctls_updown32",UDS_ALIGNRIGHT | 
+                    UDS_ARROWKEYS,231,99,11,13
+    LTEXT           "Свободное место в начале удаления",IDC_STATIC,251,79,95,
+                    21
+    LTEXT           "Свободное место в конце удаления",IDC_STATIC,251,99,97,
+                    20
+    PUSHBUTTON      "Применить",IDC_BUTTON_APPLY,313,154,44,14
+    LTEXT           "Хранение архива(дни)",IDC_STATIC,251,119,92,14
+    EDITTEXT        IDC_EDIT_BACKUP_DATE,194,119,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_BACKUP_DATE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,233,119,11,14
+    LTEXT           "Кинотеатр",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Кинозал",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+    GROUPBOX        "Настройки обмена",IDC_STATIC,5,154,173,98
+    EDITTEXT        IDC_EDIT_EXC_CONNECTTIME,12,190,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_EXC_WAITING,12,210,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_EXC_DELAY,12,231,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Кол-во таймаутов соедиения",IDC_STATIC,57,170,114,13
+    LTEXT           "Величина таймаута соединения (сек)",IDC_STATIC,55,188,
+                    116,22
+    LTEXT           "Время ожидание ответа (сек)",IDC_STATIC,55,210,116,14
+    LTEXT           "Задержка от конца сеанса (сек)",IDC_STATIC,55,231,116,
+                    14
+    CONTROL         "",IDC_SPIN_EXC_CONNECTTIME,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,45,191,
+                    11,13
+    CONTROL         "",IDC_SPIN_EXC_WAITING,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,45,210,
+                    13,14
+    CONTROL         "",IDC_SPIN_EXC_DELAY,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,43,231,12,14
+END
+
+IDD_ALGO_TIMETABLE DIALOGEX 0, 0, 354, 273
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_GRID_TIMETABLE,2,168,348,102,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATE_TIMETABLE,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,214,128,56,16
+    PUSHBUTTON      "Загрузить",IDC_BUTTON_LOAD,277,128,57,16
+    PUSHBUTTON      "Сохранить",IDC_BUTTON_SAVE,141,128,57,16
+    LTEXT           "Дата",IDC_STATIC,214,113,49,15
+    LTEXT           "Начало показа",IDC_STATIC,63,83,54,13
+    CONTROL         "",IDC_TIME_START,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,7,83,45,16
+    EDITTEXT        IDC_EDIT_ROW_NUMBER,7,60,45,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_SPIN_ROW_NUMBER,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,41,60,11,
+                    16
+    LTEXT           "Кинотеатр",IDC_STATIC,2,2,212,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,130,13
+    LTEXT           "Кинозал",IDC_STATIC,2,27,212,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+    LTEXT           "Кол-во строк",IDC_STATIC,64,60,46,16
+    LTEXT           "От",IDC_STATIC,12,113,13,13
+    LTEXT           "До",IDC_STATIC,74,113,14,11
+    CONTROL         "",IDC_DATE_SAVE_FROM,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,13,128,57,16
+    CONTROL         "",IDC_DATE_SAVE_TO,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,75,128,54,16
+    GROUPBOX        "Сохранение",IDC_STATIC,7,105,195,60,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Загрузка",IDC_STATIC,208,105,131,45,0,WS_EX_TRANSPARENT
+    CONTROL         "Сеансы после 00:00 только в птн-вск",
+                    IDC_CHECK_AFTER_MIDNIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,148,183,13
+END
+
+IDD_REPORT DIALOGEX 0, 0, 153, 377
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Начало",IDC_STATIC,3,38,145,15
+    CONTROL         "",IDC_BEGIN_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,3,53,70,14
+    CONTROL         "",IDC_BEGIN_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,79,53,69,14
+    CONTROL         "",IDC_END_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,3,85,70,14
+    CONTROL         "",IDC_END_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,79,85,69,14
+    LTEXT           "Окончание",IDC_STATIC,3,70,145,13
+    CONTROL         "По измерениям",IDC_RADIO_MEASURE_MOMENT,"Button",
+                    BS_AUTORADIOBUTTON,7,115,84,14
+    GROUPBOX        "Тип отчета",IDC_STATIC_TYPE,3,102,145,63
+    CONTROL         "Фильм",IDC_RADIO_FILM,"Button",BS_AUTORADIOBUTTON,7,129,
+                    66,16
+    CONTROL         "Детализация",IDC_CHECK_DETAIL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,145,65,15
+    LTEXT           "Кинозалы",IDC_STATIC,7,165,141,15
+    CONTROL         "",IDC_TREE_ROOM,"SysTreeView32",TVS_DISABLEDRAGDROP | 
+                    TVS_CHECKBOXES | TVS_FULLROWSELECT | WS_BORDER | 
+                    WS_TABSTOP,3,180,145,106
+    PUSHBUTTON      "Создать отчет",IDC_BUTTON_CREATE,3,292,69,15
+    PUSHBUTTON      "Экспорт",IDC_BUTTON_EXPORT,3,312,69,15
+    LTEXT           "Кинотеатр",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",NOT WS_VISIBLE,118,36,
+                    22,8
+    PUSHBUTTON      "Предварительный просмотр печати",
+                    IDC_BUTTON_PRINTPREVIEW,3,332,69,15
+    PUSHBUTTON      "Печать",IDC_BUTTON_PRINT,3,352,69,15
+END
+
+IDD_DIAGNOSTIC DIALOGEX 0, 0, 247, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_DIAGNOSTIC,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,2,59,241,154
+    LTEXT           "Кинотеатр",IDC_STATIC,2,2,140,12
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,0,14,140,13
+    LTEXT           "Кинозал",IDC_STATIC,2,27,140,12
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",TCS_TOOLTIPS,0,41,143,
+                    13
+END
+
+IDD_LAYOUT DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Редактирование расположения камер"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,2,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,329,2,50,14
+    LTEXT           "Размер сетки",IDC_STATIC,2,3,43,12
+    EDITTEXT        IDC_EDIT_WIDTH,45,2,32,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,90,2,32,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN_HEIGHT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,119,2,10,
+                    14
+    LTEXT           "Static",IDC_LAYOUT,2,22,377,281,WS_BORDER
+    CONTROL         "",IDC_SPIN_WIDTH,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,70,0,10,14
+END
+
+IDD_ROOM_SELECT DIALOGEX 0, 0, 184, 44
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_CINEMA,"SysTabControl32",0x0,2,2,177,13
+    CONTROL         "",IDC_TAB_ROOM,"SysTabControl32",0x0,2,15,177,13
+    CONTROL         "",IDC_TAB_CAMERA,"SysTabControl32",0x0,2,28,177,13
+END
+
+IDD_GRAB_CAMERA DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Накопить задний фон с камеры"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Начать",IDOK,208,2,50,14
+    PUSHBUTTON      "Закончить",IDC_STOP,269,2,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,329,2,50,14
+    LTEXT           "Продолжительность",IDC_STATIC_TIME,2,24,47,14
+    EDITTEXT        IDC_STATIC_TIMEVALUE,49,24,27,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Обработано кадров",IDC_STATIC_FRAME,90,24,59,14
+    EDITTEXT        IDC_STATIC_FRAMEVALUE,149,24,27,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Static",IDC_LAYOUT,2,43,377,260,NOT WS_VISIBLE | 
+                    WS_BORDER
+END
+
+IDD_GRAB_FILE DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Накопить задний фон из файла"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Начать",IDOK,208,2,50,14
+    PUSHBUTTON      "Закончить",IDC_STOP,269,2,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,329,2,50,14
+    LTEXT           "Static",IDC_LAYOUT,2,38,377,265,NOT WS_VISIBLE | 
+                    WS_BORDER
+    CONTROL         "",IDC_PROGRESS_GRAB,"msctls_progress32",WS_BORDER,2,24,
+                    377,11
+END
+
+IDD_RENUMBER DIALOGEX 0, 0, 382, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Перенумеровать области"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,2,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,329,2,50,14
+    LTEXT           "Static",IDC_LAYOUT,2,22,377,281,NOT WS_VISIBLE | 
+                    WS_BORDER
+END
+
+IDD_LOG DIALOGEX 0, 0, 272, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_LOGWINDOW,"SysTabControl32",0x0,2,25,265,13
+    EDITTEXT        IDC_EDIT_MESSAGE_NUMBER,3,4,45,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_MESSAGE_NUMBER,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,43,4,11,14
+    LTEXT           "Кол-во сообщений в окне",IDC_STATIC,57,4,210,14
+    CONTROL         "",IDC_LIST_LOG_MESSAGE,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,2,43,265,182
+END
+
+IDD_FILE_TRANSFER DIALOGEX 0, 0, 293, 162
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Передача архива"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Отмена",IDCANCEL,228,7,60,20
+    CONTROL         "",IDC_LIST_TRANSFER,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,30,284,126
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_BOXOFFICE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 351
+        VERTGUIDE, 8
+        VERTGUIDE, 26
+        VERTGUIDE, 34
+        VERTGUIDE, 101
+        VERTGUIDE, 116
+        VERTGUIDE, 133
+        VERTGUIDE, 198
+        VERTGUIDE, 222
+        VERTGUIDE, 280
+        VERTGUIDE, 351
+        HORZGUIDE, 21
+        HORZGUIDE, 36
+        HORZGUIDE, 46
+        HORZGUIDE, 60
+        HORZGUIDE, 67
+        HORZGUIDE, 256
+    END
+
+    IDD_ALGO_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        VERTGUIDE, 5
+        VERTGUIDE, 12
+        VERTGUIDE, 52
+        VERTGUIDE, 55
+        VERTGUIDE, 178
+        VERTGUIDE, 188
+        VERTGUIDE, 194
+        VERTGUIDE, 244
+        VERTGUIDE, 251
+        VERTGUIDE, 357
+        BOTTOMMARGIN, 194
+        HORZGUIDE, 15
+        HORZGUIDE, 28
+        HORZGUIDE, 42
+        HORZGUIDE, 54
+        HORZGUIDE, 63
+        HORZGUIDE, 79
+        HORZGUIDE, 93
+        HORZGUIDE, 99
+        HORZGUIDE, 112
+        HORZGUIDE, 119
+        HORZGUIDE, 133
+        HORZGUIDE, 140
+        HORZGUIDE, 154
+        HORZGUIDE, 170
+        HORZGUIDE, 183
+        HORZGUIDE, 190
+        HORZGUIDE, 204
+        HORZGUIDE, 210
+        HORZGUIDE, 224
+        HORZGUIDE, 231
+        HORZGUIDE, 245
+    END
+
+    IDD_ALGO_TIMETABLE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 314
+        VERTGUIDE, 2
+        VERTGUIDE, 7
+        VERTGUIDE, 12
+        VERTGUIDE, 25
+        VERTGUIDE, 52
+        VERTGUIDE, 64
+        VERTGUIDE, 74
+        VERTGUIDE, 105
+        VERTGUIDE, 130
+        VERTGUIDE, 140
+        VERTGUIDE, 196
+        VERTGUIDE, 214
+        VERTGUIDE, 270
+        VERTGUIDE, 277
+        VERTGUIDE, 334
+        VERTGUIDE, 350
+        BOTTOMMARGIN, 270
+        HORZGUIDE, 14
+        HORZGUIDE, 27
+        HORZGUIDE, 40
+        HORZGUIDE, 56
+        HORZGUIDE, 60
+        HORZGUIDE, 76
+        HORZGUIDE, 83
+        HORZGUIDE, 99
+        HORZGUIDE, 105
+        HORZGUIDE, 113
+        HORZGUIDE, 128
+        HORZGUIDE, 144
+        HORZGUIDE, 150
+        HORZGUIDE, 161
+        HORZGUIDE, 168
+    END
+
+    IDD_REPORT, DIALOG
+    BEGIN
+        VERTGUIDE, 2
+    END
+
+    IDD_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 267
+        VERTGUIDE, 48
+        VERTGUIDE, 57
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 225
+        HORZGUIDE, 17
+        HORZGUIDE, 24
+        HORZGUIDE, 38
+        HORZGUIDE, 43
+    END
+
+    IDD_FILE_TRANSFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 288
+        VERTGUIDE, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+        HORZGUIDE, 27
+        HORZGUIDE, 30
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DIAGNOSTIC          BITMAP                  "..\\CommonRes\\diagnostic.bmp"
+IDB_ARCHIVE_REFRESH     BITMAP                  "..\\CommonRes\\Get.bmp"
+IDB_CHAIR_CONTENT       BITMAP                  "..\\CommonRes\\Content.bmp"
+IDR_TOOLBAR1            BITMAP                  "..\\CommonRes\\ViewChooser.bmp"
+IDR_MAINFRAME           BITMAP                  "..\\CommonRes\\Toolbar.bmp"
+IDR_GaugeHall           BITMAP                  "..\\CommonRes\\gauge_hall.bmp"
+IDR_VideoToolbar        BITMAP                  "..\\CommonRes\\videotoolbar.bmp"
+IDR_PrepareData         BITMAP                  "..\\CommonRes\\bmp00002.bmp"
+IDR_SEEK_BAR            BITMAP                  "..\\CommonRes\\bmp00003.bmp"
+IDR_TOOLBAR2            BITMAP                  "..\\CommonRes\\bmp00004.bmp"
+IDR_VIDEO_RANGE         BITMAP                  "..\\CommonRes\\select_video_range.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "..\\CommonRes\\CSClient.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_VIEW_VIDEO
+    BUTTON      ID_VIEW_ARCHIVE
+    BUTTON      ID_VIEW_DIAGNOSTIC
+    BUTTON      ID_VIEW_TIMETABLE
+    BUTTON      ID_VIEW_REPORT
+    BUTTON      ID_VIEW_SETTINGS
+    BUTTON      ID_VIEW_ROOM
+    BUTTON      ID_VIEW_BOXOFFICE
+    BUTTON      ID_VIEW_TRAINDATA
+    BUTTON      ID_VIEW_LOG
+END
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+END
+
+IDR_GaugeHall TOOLBAR  32, 24
+BEGIN
+    BUTTON      ID_LAYOUT
+    BUTTON      ID_GRAB_CAMERA
+    BUTTON      ID_IMAGE_GRAB
+    BUTTON      ID_FILE_LOAD_IMAGE
+    BUTTON      ID_FILE_SAVE_IMAGE
+    SEPARATOR
+    BUTTON      ID_DB_IMAGE_LOAD
+    BUTTON      ID_DB_IMAGE_SAVE
+    SEPARATOR
+    BUTTON      ID_NEW_GRAPH
+    BUTTON      ID_FILE_LOAD_GRAPH
+    BUTTON      ID_FILE_SAVE_GRAPH
+    BUTTON      ID_DB_LOAD_GRAPH
+    BUTTON      ID_DB_SAVE_GRAPH
+    SEPARATOR
+    BUTTON      ID_SHOW_PARAM
+    BUTTON      ID_DELETE_ITEM
+    BUTTON      ID_DB_SAVE_MODEL
+    BUTTON      ID_MOVE_IMAGE
+    BUTTON      ID_MOVE_CHAIR
+END
+
+IDR_VideoToolbar TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_OPEN_GRAPH
+    BUTTON      ID_FILE_SAVE_GRAPH
+    BUTTON      ID_FILE_OPEN_TRAIN_DATA
+    BUTTON      ID_FILE_SAVE_TRAIN_DATA
+    SEPARATOR
+    BUTTON      IDM_Play_Play_Sequence
+    BUTTON      IDM_Play_Play_Sequence
+    BUTTON      IDM_Play_Stop_Sequence
+    SEPARATOR
+    BUTTON      IDM_Play_First_Frame
+    BUTTON      IDM_Play_NFrames_Backward
+    BUTTON      IDM_Play_Prev_Frame
+    BUTTON      IDM_Play_Next_Frame
+    BUTTON      IDM_Play_NFrames_Forward
+    BUTTON      IDM_Play_Last_Frame
+    SEPARATOR
+    BUTTON      IDM_Play_Speed_Up
+    BUTTON      IDM_Play_Speed_Down
+END
+
+IDR_PrepareData TOOLBAR  24, 24
+BEGIN
+    BUTTON      IDM_Edit_FrameSlider
+    BUTTON      ID_BUTTON_START_RANGE
+    BUTTON      ID_BUTTON_ADD_RANGE
+    BUTTON      ID_BUTTON_CANCEL_RANGE
+    BUTTON      ID_RANGE_HUMAN
+    BUTTON      ID_RANGE_EMPTY
+    BUTTON      ID_RANGE_CLOTHES
+    BUTTON      ID_RANGE_UNKNOWN
+    BUTTON      ID_MOVE_CHAIRS
+END
+
+IDR_SEEK_BAR TOOLBAR  20, 20
+BEGIN
+    BUTTON      ID_VIDEO_PLAY
+    BUTTON      ID_VIDEO_PAUSE
+    BUTTON      ID_VIDEO_STOP
+END
+
+IDR_VIDEO_RANGE TOOLBAR  20, 20
+BEGIN
+    BUTTON      ID_VIDEO_SAVE
+    BUTTON      ID_VIDEO_START
+    BUTTON      ID_VIDEO_END
+END
+
+IDR_TOOLBAR2 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON_PLAY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "..\\CommonRes\\CSClient.ico"
+IDR_CSCLIETYPE          ICON                    "..\\CommonRes\\CSClientDoc.ico"
+IDR_GaugeHallTYPE       ICON                    "..\\CommonRes\\gauge_hall.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "../resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_GaugeHallTYPE MENU 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Выделение объекта",           IDM_Edit_ObjectSelection
+        MENUITEM "Удалить",                     IDM_Edit_DeleteObject
+        MENUITEM SEPARATOR
+        MENUITEM "Обводка объекта",             IDM_Edit_ObjectContouring
+        MENUITEM "Подстройка кривой",           IDM_Edit_CurveAdjusting
+        MENUITEM "Сглаживание кривой",          IDM_Edit_CurveSmoothing
+        MENUITEM SEPARATOR
+        MENUITEM "Радиус подстройки = 1",       IDM_Edit_AdjustingRadius_1
+        MENUITEM "Радиус подстройки = 2",       IDM_Edit_AdjustingRadius_2
+        MENUITEM "Радиус подстройки = 3",       IDM_Edit_AdjustingRadius_3
+        MENUITEM "Радиус подстройки = 4",       IDM_Edit_AdjustingRadius_4
+        MENUITEM "Радиус подстройки = 5",       IDM_Edit_AdjustingRadius_5
+        MENUITEM "Радиус подстройки = 6",       IDM_Edit_AdjustingRadius_6
+        MENUITEM "Радиус подстройки = 7",       IDM_Edit_AdjustingRadius_7
+        MENUITEM "Радиус подстройки = 8",       IDM_Edit_AdjustingRadius_8
+        MENUITEM "Радиус подстройки = 9",       IDM_Edit_AdjustingRadius_9
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,13,0,5961
+ PRODUCTVERSION 1,13,0,5961
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "CompanyName", "ЭЛВИИС"
+            VALUE "FileDescription", "Клиентское приложение СКЗ"
+            VALUE "FileVersion", "1, 13, 0, 5961"
+            VALUE "InternalName", "CSClient"
+            VALUE "LegalCopyright", "Копирайт (C) ЭЛВИИС, 2005"
+            VALUE "OriginalFilename", "CSClient.EXE"
+            VALUE "ProductName", "CSClient"
+            VALUE "ProductVersion", "1, 13, 0, 5961"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+ID_HTML_REPORT_CSS      HTML                    "..\\CommonRes\\www\\report.css"
+ID_HTML_REPORT1_XSL     HTML                    "res\\www_diff\\report1.xsl"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "CSClient\n\nCSClie\n\n\nCSClient.Document\nCSClie Document"
+    IDS_NO_IMAGE            "Нет изображения"
+    IDS_EXC_INVALID_IMAGE_FILE "Неправильный файл изображения"
+    IDR_VIDEO_VIEW          "\n\n"
+    IDR_ArchiveMode         "\n\n"
+    IDR_TrainData           "\n\n"
+    IDR_DIAGNOSTIC_VIEW     "\n\n"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CSClient"
+    AFX_IDS_IDLEMESSAGE     "Готов"
+END
+
+STRINGTABLE 
+BEGIN
+    INDICATOR_INDEX         " кадр"
+    INDICATOR_FPS           " кадр/с"
+    INDICATOR_SPEED         " скорость"
+    INDICATOR_CURSOR        " cursor"
+    INDICATOR_DROPPED_FRAME " dropped"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEW_VIDEO          "Видео"
+    IDS_VIEW_ARCHIVE        "Архив"
+    IDS_VIEW_DIAGNOSTIC     "Диагностика"
+    IDS_VIEW_REPORT         "Отчет"
+    IDS_VIEW_ALGORITHM      "Алгоритм"
+    IDS_VIEW_TRAINDATA      "Обучение"
+    IDS_VIEW_BOXOFFICE      "Обмен"
+    IDS_VIEW_TIMETABLE      "Расписание"
+    IDS_VIEW_SETTINGS       "Настройки"
+    IDS_VIEW_LOG            "Лог"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LONGOPERATION       "Операция выполняется"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_VIDEO           "Показать видео\nПоказать видео"
+    ID_VIEW_ARCHIVE         "Показать архив\nПоказать архив"
+    ID_VIEW_DIAGNOSTIC      "Показать текущее состояние системы\nПоказать текущее состояние системы"
+    ID_VIEW_TIMETABLE       "Редактировать расписание\nРедактировать расписание"
+    ID_VIEW_REPORT          "Создать отчет\nСоздать отчет"
+    ID_VIEW_SETTINGS        "Редактировать системные настройки\nРедактировать системные настройки"
+    ID_VIEW_ROOM            "Редактировать настройки алгоритма\nРедактировать настройки алгоритма"
+    ID_VIEW_BOXOFFICE       "Показать обмен данных\nПоказать обмен данных"
+    ID_VIEW_TRAINDATA       "Подготовить данные для обучения\nПодготовить данные для обучения"
+    ID_VIEW_LOG             "Отладочные сообщения\nПросмотр отладочных сообщений"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_TAB_CINEMA          "Выбрать текущий кинотеатр\nВыбрать текущий кинотеатр"
+    IDC_TAB_ROOM            "Выбрать текущий зал\nВыбрать текущий зал"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEW_GRAPH            "Удалить все кресла\nУдалить все кресла"
+    ID_SHOW_PARAM           "Редактировать параметры алгоритма\nРедактировать параметры алгоритма"
+    ID_VIDEO_PLAY           "Воспроизвести видео\nВоспроизвести"
+    ID_VIDEO_PAUSE          "Приостановить видео\nПриостановить"
+    ID_VIDEO_STOP           "Остановить видео\nОстановить"
+    ID_BUTTON_PLAY          "Воспроизвести видео\nВоспроизвести"
+    ID_LAYOUT               "Редактировать расположение камер\nРасположение камер"
+    ID_GRAB_CAMERA          "Накопить задний фон с камеры\nНакопить задний фон с камеры"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIDEO_SAVE           "Сохранить выделенный отрезок\nСохранить"
+    ID_VIDEO_START          "Начать выделение отрезка\nНачать выделение"
+    ID_VIDEO_END            "Закончить выделение отрезка\nЗакончить выделение"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DB_IMAGE_LOAD        "Загрузить задний фон из БД\nЗагрузить задний фон из БД"
+    ID_DB_LOAD_GRAPH        "Загрузить кресла из БД\nЗагрузить кресла из БД"
+    ID_DB_SAVE_GRAPH        "Сохранить кресла в БД\nСохранить кресла в БД"
+    ID_DB_IMAGE_SAVE        "Сохранить задний фон в БД\nСохранить задний фон в БД"
+    ID_IMAGE_GRAB           "Накопить задний фон из файла\nНакопить задний фон из файла"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE_GRAPH      "Сохранить кресла в файл\nСохранить кресла в файл"
+    ID_FILE_LOAD_GRAPH      "Открыть файл кресел\nОткрыть файл кресел"
+    ID_FILE_SAVE_IMAGE      "Сохранить задний фон в файл\nСохранить задний фон в файл"
+    ID_FILE_LOAD_IMAGE      "Открыть файл заднего фона\nОткрыть файл заднего фона"
+    ID_DELETE_ITEM          "Удалить выбранное кресло\nУдалить выбранное кресло"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_OPEN_GRAPH      "Открыть файл кресел\nОткрыть файл кресел"
+    ID_FILE_OPEN_TRAIN_DATA "Открыть файл кресел\nОткрыть файл кресел"
+    ID_FILE_SAVE_TRAIN_DATA "Открыть файл разметки видео\nОткрыть файл разметки видео"
+    ID_BUTTON_START_RANGE   "Сохранить разметку видео\nСохранить разметку видео"
+    ID_BUTTON_ADD_RANGE     "Добавить выделенный интервал\nДобавить выделенный интервал"
+    ID_BUTTON_CANCEL_RANGE  "Отменить выделение интервала\nОтменить выделение интервала"
+    ID_RANGE_EMPTY          "Пусто\nПусто"
+    ID_RANGE_HUMAN          "Человек\nЧеловек"
+    ID_RANGE_CLOTHES        "Одежда\nОдежда"
+    ID_RANGE_UNKNOWN        "Неизвестно\nНеизвестно"
+    ID_MOVE_CHAIRS          "Переместить кресла\nПереместить кресла"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_OPEN            "Открыть видео файл\nОткрыть видео файл"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_Play_Play_Sequence  "Проиграть\nПроиграть"
+    IDM_Play_Stop_Sequence  "Остановить\nОстановить"
+    IDM_Play_First_Frame    "Первый кадр\nПервый кадр"
+    IDM_Play_NFrames_Backward 
+                            "Проиграть N кадров назад\nПроиграть N кадров назад"
+    IDM_Play_Prev_Frame     "Предыдуший кадр\nПредыдуший кадр"
+    IDM_Play_Next_Frame     "Следующий кадр\nСледующий кадр"
+    IDM_Play_NFrames_Forward 
+                            "Проиграть N кадров вперед\nПроиграть N кадров вперед"
+    IDM_Play_Last_Frame     "Последний кадр\nПоследний кадр"
+    IDM_Play_Speed_Up       "Ускорить\nУскорить"
+    IDM_Play_Speed_Down     "Замедлить\nЗамедлить"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATE_OFFLINE       "Недоступен"
+    IDS_STATE_WAIT          "Ожидание"
+    IDS_STATE_WORK          "Обработка"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_DESC_1        "Начальное время больше конечного.\r\nДанные не будут показаны"
+    IDS_ERROR_DESC_2        "Начальное время больше текущего.\r\nДанные не будут показаны"
+    IDS_ERROR_DESC_3        "Конечное время больше текущего.\r\nДанные будут показаны до текущего времени"
+    IDS_TAB_CAMERA          "Камера %d"
+    IDS_TAB_ROOM            "Весь зал"
+    IDS_FILTER_TRAIN        "Данные обучения(*.xml)|*.xml|Все файлы(*.*)|*.*||"
+    IDS_FILTER_CHAIR        "Файл кресел(*.xml)|*.xml|Все файлы(*.*)|*.*||"
+    IDS_FILTER_AVI          "Файл видео (*.avi)|*.avi|Все файлы(*.*)|*.*||"
+    IDS_ERROR_FILE_LOADING  "Ошибка при загрузке файла"
+    IDS_ERROR_FILE_SAVING   "Ошибка при сохранении файла"
+    IDS_ERROR_IMAGESIZE     "Неправильный размер изображения"
+    IDS_ERROR_DB_LOADING    "Ошибка при загрузке из БД"
+    IDS_ERROR_DB_SAVING     "Ошибка при сохранении в БД"
+    IDS_ERROR_GRABBER       "Невозможно получить изображение с камеры %d"
+    IDS_TITLE_DELETE        "Удалить объект?"
+    IDS_ERROR_VIDEO         "Видео недоступно"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_CONNECTION    "Ошибка при соединение с БД"
+    IDS_TITLE_TIME          "Время"
+    IDS_TITLE_DATE          "Дата"
+    IDS_TITLE_NUMBER        "№"
+    IDS_TITLE_NAME          "Название"
+    IDS_TITLE_STARTTIME     "Начало"
+    IDS_TITLE_ENDTIME       "Окончание"
+    IDS_ERROR_INVALIDTIME   "Неправильное время"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_ITEM          "Выбраны не все элементы"
+    IDS_ERROR_VIDEOIMAGE    "Невозможно получить изображение"
+    IDS_ERROR_TABLEITEM     "Заполнены не все поля"
+    IDS_ERROR_ROW           "Запись №%d имеет неправильные данные"
+    IDS_ERROR_ROWTIME       "Запись №%d  - начало сеанса позже окончания"
+    IDS_ERROR_ROWINTERSECT  "Запись №%d  - сеансы пересекаются"
+    IDS_TITLE_DEVICE        "Объект"
+    IDS_TITLE_STATE         "Состояние"
+    IDS_TITLE_PARAM_INVALID "Текущие параметры неправильные. Установить значения по умолчанию?"
+    IDS_SCREENSHOT          "Снимок экрана"
+    IDS_FILTER_IMAGE        "JPEG изображения(*.jpeg,*.jpg)|*.jpeg;*.jpg|Все файлы(*.*)|*.*||"
+    IDS_FILTER_MODEL        "Модель кинозала(*.cvm)|*.cvm|Все файлы(*.*)|*.*||"
+    IDS_ERROR_SCREENSHOT    "Невозможно создать снимок экрана"
+    IDS_ERROR_D3DDEVICE     "Недопустимая видеокарта. Вывод изображений в склейке невозможен"
+    IDS_ERROR_CVMCADCOMPONENT 
+                            "Ошибка при создании компонента отображения склейки"
+    IDS_RENDER_ARRAY        "Прямоугольный вывод изображений"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RENDER_MERGE        "Склеенный вывод изображения"
+    IDS_FMT_ARCHIVE_HEADER  "%s, зал №%d, %s, кол-во зрителей=%d"
+    IDS_FMT_VIDEO_HEADER    "%s, зал №%d, %s"
+    IDS_ERROR_DESC_4        " Начальное время больше конечного.\r\nДанные не будут сохранены"
+    IDS_ERROR_WRONG_DATE    "Неправильная дата"
+    IDS_FMT_LOCATION        "%s, зал №%d"
+    IDS_RENDER_ID           "Номер камеры"
+    IDS_TITLE_FT_CAMERA     "№ камеры"
+    IDS_TITLE_FT_FILESIZE   "Размер файла"
+    IDS_TITLE_FT_FILENAME   "Имя файла"
+    IDS_TITLE_FT_SERVER     "Сервер"
+    IDS_TITLE_FT_STATE      "Состояние"
+    IDS_PREPARE             "Подготовка"
+    IDS_ERROR_SERVERREQUEST "Сервер %s не отвечает "
+    IDS_FINISHED            "Завершено"
+    IDP_OLE_INIT_FAILED     "Ошибка при инициализации OLE"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHOW_TRANSFER_WINDOW "Показать окно передачи архива"
+    IDS_TITLE_DOWNLOAD      "Передача завершена"
+    IDS_TITLE_TRANSFER_ERROR "Ошибка при передаче"
+    IDS_ERROR_TRANSFER_EXISTS "Передача архива уже запущена"
+    IDS_FILTER_AVI_AVD      "Файл видео (*.avi,*.avd)|*.avi;*avd|Все файлы(*.*)|*.*||"
+    IDS_STATE_DISCONNECTED  "Нет соединения"
+    IDS_BO_EXCHANGE         "Обмен с BoxOffice"
+    IDS_CREATEREPORT        "Создать отчет"
+    IDS_RECONNECT           "Соединить"
+    IDS_MSG_BO_TIMETABLE    "Расписание[BoxOffice]"
+    IDS_MSG_BO_RESPONSE     "Результат[BoxOffice]"
+    IDS_MSG_CCS_STATISTICS  "Статистика[СКЗ]"
+    IDS_MSG_CCS_RESPONSE    "Результат[СКЗ]"
+    IDS_MSG_UNKNOWN         "Неизвестный[BoxOffice]"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

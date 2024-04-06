@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{406CBE9F-7347-4460-86EA-EB48D712D8A1}</ProjectGuid>
+    <RootNamespace>CSChair</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34322.80</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>_Unicode Debug\</OutDir>
+    <IntDir>_Unicode Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>_$(Configuration)\</OutDir>
+    <IntDir>_$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CHAIRDLL;_UNICODE;UNICODE;_WINNT_WIN32=0x500;WINVER=0x500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" "..\BIN\Debug\$(TargetName).dll"
+</Command>
+      <Outputs>..\BIN\Debug\$(TargetName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>strmiids.lib;dbghelp.lib;vfw32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CSChair.dll</OutputFile>
+      <ModuleDefinitionFile>.\CSChair.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)CSChair.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CHAIRDLL;UNICODE;_UNICODE;_WIN32_WINNT=0x500;WINVER=0x500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" "..\BIN\Release\EN\$(TargetName).dll"
+</Command>
+      <Outputs>..\BIN\Release\EN\$(TargetName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>strmiids.lib;dbghelp.lib;vfw32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CSChair.dll</OutputFile>
+      <ModuleDefinitionFile>.\CSChair.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)CSChair.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Chair\ChairCommonClass.cpp" />
+    <ClCompile Include="Chair\ChairContentImpl.cpp" />
+    <ClCompile Include="Chair\ChairDisk.cpp" />
+    <ClCompile Include="Chair\ChairFunction.cpp" />
+    <ClCompile Include="Chair\ChairSerializerImpl.cpp" />
+    <ClCompile Include="Chair\chair_int_impl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Chair\ContentSerializer.cpp" />
+    <ClCompile Include="Chair\Range.cpp" />
+    <ClCompile Include="CSChair.cpp" />
+    <ClCompile Include="dmpstuff\ExceptionHandler.cpp" />
+    <ClCompile Include="Grabber\AVDGrabber.cpp" />
+    <ClCompile Include="Grabber\BaseFrameGrabberDS.cpp" />
+    <ClCompile Include="Grabber\BaseFrameGrabberVfW.cpp" />
+    <ClCompile Include="Grabber\FileGrabberFactory.cpp" />
+    <ClCompile Include="Grabber\FrameGrabber.cpp" />
+    <ClCompile Include="Grabber\GrabberFactoryImpl.cpp" />
+    <ClCompile Include="Grabber\StubCameraGrabber.cpp" />
+    <ClCompile Include="public\interface.cpp" />
+    <ClCompile Include="public\NameParse.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xml\xmllite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSChair.def" />
+    <CustomBuild Include="message\ChairError.mc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Compile message file</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">mc "%(FullPath)" -u -U -o -r "$(ProjectDir)\res" -h "$(ProjectDir)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(ProjectDir)\%(Filename).h;$(ProjectDir)\res\%(Filename).rc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Compile message file</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">mc "%(FullPath)" -u -U -o -r "$(ProjectDir)\res" -h "$(ProjectDir)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(ProjectDir)\%(Filename).h;$(ProjectDir)\res\%(Filename).rc;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Chair\ChairCommonClass.h" />
+    <ClInclude Include="Chair\ChairContentImpl.h" />
+    <ClInclude Include="Chair\ChairDisk.h" />
+    <ClInclude Include="Chair\ChairLink.h" />
+    <ClInclude Include="Chair\ChairSerializerImpl.h" />
+    <ClInclude Include="Chair\ContentSerializer.h" />
+    <ClInclude Include="Chair\Range.h" />
+    <ClInclude Include="chair_int.h" />
+    <ClInclude Include="CSChair.h" />
+    <ClInclude Include="debug_int.h" />
+    <ClInclude Include="dmpstuff\ExceptionHandler.h" />
+    <ClInclude Include="FrameGrabber.h" />
+    <ClInclude Include="Grabber\AVDGrabber.h" />
+    <ClInclude Include="Grabber\BaseFrameGrabberDS.h" />
+    <ClInclude Include="Grabber\BaseFrameGrabberVfW.h" />
+    <ClInclude Include="Grabber\FileGrabberFactory.h" />
+    <ClInclude Include="Grabber\GrabberFactoryImpl.h" />
+    <ClInclude Include="Grabber\IGrabberFactory.h" />
+    <ClInclude Include="Grabber\ImageDecompressor.h" />
+    <ClInclude Include="Grabber\StubCameraGrabber.h" />
+    <ClInclude Include="IChairContent.h" />
+    <ClInclude Include="IChairContentEx.h" />
+    <ClInclude Include="interface.h" />
+    <ClInclude Include="public\NameParse.h" />
+    <ClInclude Include="res\En\resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Res\En\CSChair.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSUtility\csutility.vcxproj">
+      <Project>{286ec124-bd34-4217-9496-ef9039323433}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

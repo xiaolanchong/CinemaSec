@@ -1,0 +1,10 @@
+<VCTimetable>
+   <Camera id="2" path="d:\Cam2">
+      <Film begin="2005-04-28 14:51" end="2005-04-28 14:53"/>
+      <Film begin="2005-04-28 12:19" end="2005-04-28 12:21"/>
+   </Camera>
+   <Camera id="3" path="d:\">
+      <Film begin="2005-04-28 14:51" end="2005-04-28 14:52"/>
+      <Film begin="2005-04-28 12:20" end="2005-04-28 12:22"/>
+   </Camera>
+</VCTimetable>

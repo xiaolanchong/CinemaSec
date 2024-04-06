@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgoDebugger", "algo_debugger.vcproj", "{FF0080D8-90D3-4840-B8D2-AEF3EBFA581D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSAlgo 2", "..\CSAlgo2\CSAlgo2.vcproj", "{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSAlgo 1", "..\CSAlgo1\CSAlgo1.vcproj", "{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSOnlineWriter", "..\..\CSLearningAlgo\CSOnlineWriter\CSOnlineWriter.vcproj", "{126F8597-3E94-4F39-80F3-BC2B0CAE62D8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FF0080D8-90D3-4840-B8D2-AEF3EBFA581D}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{FF0080D8-90D3-4840-B8D2-AEF3EBFA581D}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{FF0080D8-90D3-4840-B8D2-AEF3EBFA581D}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{FF0080D8-90D3-4840-B8D2-AEF3EBFA581D}.Unicode Release.Build.0 = Unicode Release|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Release.Build.0 = Unicode Release|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Release.Build.0 = Unicode Release|Win32
+		{126F8597-3E94-4F39-80F3-BC2B0CAE62D8}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{126F8597-3E94-4F39-80F3-BC2B0CAE62D8}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{126F8597-3E94-4F39-80F3-BC2B0CAE62D8}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{126F8597-3E94-4F39-80F3-BC2B0CAE62D8}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

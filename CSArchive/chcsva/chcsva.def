@@ -1,0 +1,20 @@
+; chcs.def : Declares the module parameters.
+
+LIBRARY      "chcsva.dll"
+
+EXPORTS
+	DllRegisterServer      PRIVATE
+	DllUnregisterServer	   PRIVATE
+	Debug                  PRIVATE
+	Configure              PRIVATE
+	InitStreamManager
+	FreeStreamManager
+	GetStreamByID
+	GetStreamByUID
+	GetAvailableStreams
+	ShowStream
+	ShowStreamByNameA
+	ShowStreamByNameW
+	SetStreamDraw
+	KillStreamDraw
+	StartArchiveStream

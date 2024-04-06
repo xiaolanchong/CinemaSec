@@ -1,0 +1,16 @@
+	XmlLite::XMLDocument myDoc;
+	VARIANT_BOOL b;
+	myDoc.m_pDoc->load( CComVariant(L"Training_playlist.xml"), &b );
+	
+	CSPlayListParser myParser;
+	std::vector <CSParseStructure> parseAnswer;
+	myParser.ParseCSPlayList(myDoc, parseAnswer);
+
+	for (size_t i = 0; i < parseAnswer.size(); i++)
+	{
+		std::tstring totalString = parseAnswer[i].video       + _T("\n") + 
+								   parseAnswer[i].marking	  + _T("\n") +	
+								   parseAnswer[i].background + _T("\n") +
+								   parseAnswer[i].emptyHall;
+		AfxMessageBox( totalString.c_str() );
+	}

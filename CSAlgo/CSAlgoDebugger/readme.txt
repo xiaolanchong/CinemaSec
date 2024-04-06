@@ -1,0 +1,1 @@
+This is a standalone application used to test surveillance algorithm.

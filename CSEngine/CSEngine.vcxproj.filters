@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="DBFacet">
+      <UniqueIdentifier>{9fca7b17-5d29-4010-8a62-ddf54a9e18f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{e4b7a767-ef03-4f92-aff1-f9d1304804c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\RoomServer">
+      <UniqueIdentifier>{b3990f0e-1403-4d4c-a8fb-a983fb61e4d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\SuperServer">
+      <UniqueIdentifier>{c19ff9bc-af0a-4492-a1eb-4f66868b4bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Config">
+      <UniqueIdentifier>{6450dd4c-9a7a-4738-9944-a552dd3afa29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPC">
+      <UniqueIdentifier>{38778b00-51e4-4a9a-b4be-5074c2e575e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Diagnostic">
+      <UniqueIdentifier>{cd62da19-ce6d-4af3-ad70-7e339a345288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exchange">
+      <UniqueIdentifier>{4b469690-92c3-428a-b4a1-c4844239ebb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{af5d5281-0864-4031-bc38-34c729e368c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dmpstuff">
+      <UniqueIdentifier>{2449d346-09a8-4637-afe8-57e099682cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileTransfer">
+      <UniqueIdentifier>{f6a3d9b7-fec7-47a3-b95d-9f9c64c6868b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSEngine.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CSEngineApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExitGuard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\CinemaDB.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\CinemaOleDB.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\ExchangeParam.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\MemoryBackground.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\OleDBConnection.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\ProtocolTable.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\StatTable.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\TimeHelper.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBFacet\TimeTable.cpp">
+      <Filter>DBFacet</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\CStatisticsServerImpl.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\HallServer.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\NetProto.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\CameraDataBuffer.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\CameraImage.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\CameraServer.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\ImageEncoder.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\main_server_impl.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\ServerTimeAction.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\SessionServer.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\ThreadError.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\ThreadMessage.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\TimeSheduler.cpp">
+      <Filter>Server\RoomServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\BackupServer.cpp">
+      <Filter>Server\SuperServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\FileArchiveProvider.cpp">
+      <Filter>Server\SuperServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\FileTransferServer.cpp">
+      <Filter>Server\SuperServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\FileTransferState.cpp">
+      <Filter>Server\SuperServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\SuperServerImpl.cpp">
+      <Filter>Server\SuperServer</Filter>
+    </ClCompile>
+    <ClCompile Include="mainserver\SystemConfigImpl.cpp">
+      <Filter>Server\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Ipc\NetAddr.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Ipc\NetLink.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Ipc\NetLog.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Ipc\NetTcpLink.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Ipc\NetUtil.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="diagnostic\SystemDiagnosticImpl.cpp">
+      <Filter>Diagnostic</Filter>
+    </ClCompile>
+    <ClCompile Include="Exchange\ExchangeState.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="Exchange\InputMessage.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="Exchange\MessageProcessor.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="Exchange\RequestImpl.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="Exchange\TimeTableMessage.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSChair\Xml\xmllite.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSChair\public\NameParse.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionHandler.cpp">
+      <Filter>dmpstuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTransfer\FileArchiveWriter.cpp">
+      <Filter>FileTransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTransfer\FileTransferImpl.cpp">
+      <Filter>FileTransfer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSEngineApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\En\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timeouts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\CinemaDB.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\CinemaOleDB.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\DBHelper.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\DBRows.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\ExchangeParam.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\MemoryBackground.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\OleDBConnection.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\ProtocolTable.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\StatTable.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\TimeHelper.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBFacet\TimeTable.h">
+      <Filter>DBFacet</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\CStatisticsServerImpl.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\HallServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\IStatisticsServer.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\NetProto.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\CameraDataBuffer.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\CameraImage.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\CameraServer.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\ImageEncoder.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\main_server_impl.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\ServerTimeAction.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\SessionServer.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\ThreadError.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\ThreadMessage.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\TimeSheduler.h">
+      <Filter>Server\RoomServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\BackupServer.h">
+      <Filter>Server\SuperServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\FileArchiveProvider.h">
+      <Filter>Server\SuperServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\FileTransferServer.h">
+      <Filter>Server\SuperServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\FileTransferState.h">
+      <Filter>Server\SuperServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\NetPort.h">
+      <Filter>Server\SuperServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\NetworkLayer.h">
+      <Filter>Server\SuperServer</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\SuperServerImpl.h">
+      <Filter>Server\SuperServer</Filter>
+    </ClInclude>
+    <ClInclude Include="syscfg_int.h">
+      <Filter>Server\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="mainserver\SystemConfigImpl.h">
+      <Filter>Server\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Ipc\NetAddr.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Ipc\NetLink.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Ipc\NetLog.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Ipc\NetStruct.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Ipc\NetTcpLink.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Ipc\NetUtil.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="diagnostic\ISystemDiagnostic.h">
+      <Filter>Diagnostic</Filter>
+    </ClInclude>
+    <ClInclude Include="diagnostic\SystemDiagnosticImpl.h">
+      <Filter>Diagnostic</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\ExchangeState.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\InputMessage.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\IRequest.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\MessageProcessor.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\QueryException.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\RequestImpl.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\TimeTableMessage.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CSChair\public\NameParse.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CSChair\dmpstuff\ExceptionHandler.h">
+      <Filter>dmpstuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTransfer\FileArchiveWriter.h">
+      <Filter>FileTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTransfer\FileTransferImpl.h">
+      <Filter>FileTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTransfer\IFileTransfer.h">
+      <Filter>FileTransfer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\En\CSEngine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Exchange\BoxOffice.idl">
+      <Filter>Exchange</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="message\EngineError.mc" />
+  </ItemGroup>
+</Project>

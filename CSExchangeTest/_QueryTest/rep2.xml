@@ -1,0 +1,11 @@
+<component version="1.0" type="REPERTOIRES" id="99999">
+   <time>16.10.2004 09:00:00</time>
+   <theatre>Калужский</theatre>
+   <room number="1">
+      <repertoire id="99">
+         <time_begin>16.10.2004 09:00:00</time_begin>
+         <time_end>16.10.2004 10:00:00</time_end>
+         <name_film>Film!!!!!</name_film>
+      </repertoire>
+   </room>
+</component>

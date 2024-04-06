@@ -1,0 +1,46 @@
+;
+; Y800 Video codec
+;
+; Copyright (c) 2005 MoFo
+;
+
+[version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles=Y8.Files.Inf,Y8.Files.Dll
+AddReg=Y8.Reg
+UpdateInis=Y8.INIs
+
+[DefaultUnInstall]
+DelFiles=Y8.Files.Inf,Y8.Files.Dll
+DelReg=Y8.Reg
+UpdateInis=Y8.INIs
+
+[SourceDisksNames]
+1="Y800 Video Codec","",1
+
+[SourceDisksFiles]
+Y800ED.inf=1
+
+[DestinationDirs]
+Y8.Files.Dll=11
+Y8.Files.Inf=17
+
+[Y8.Files.Dll]
+Y800ED.dll
+
+[Y8.Files.Inf]
+Y800ED.inf
+
+[Y8.Reg]
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.Y800,Description,,"Y800 Video Codec"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.Y800,Driver,,"Y800ED.dll"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.Y800,FriendlyName,,"Y800 Video Codec"
+
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\Y800ED
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\Y800ED,DisplayName,,"Y800 Video Codec (Remove Only)"
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\Y800ED,UninstallString,,"rundll.exe setupx.dll,InstallHinfSection DefaultUninstall 132 %17%\Y800ED.inf"
+
+[Y8.INIs]
+system.ini, drivers32,, "VIDC.Y800=Y800ED.dll"

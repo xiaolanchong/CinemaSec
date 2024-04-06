@@ -1,0 +1,6 @@
+LIBRARY "CSOnlineWriter"
+
+EXPORTS
+	CreateLearningAlgorithmInstance
+	GetLearningAlgorithmName
+	

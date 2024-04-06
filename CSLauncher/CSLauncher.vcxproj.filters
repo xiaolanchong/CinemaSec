@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Dump">
+      <UniqueIdentifier>{2135b842-5fb5-4174-967e-57b335f24820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dump\UT">
+      <UniqueIdentifier>{fc30dc35-ae99-44dd-ad11-4b9b7a633264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HtmlLog">
+      <UniqueIdentifier>{034a9af8-e233-4b50-abf0-0cadb4eb05f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TabViews">
+      <UniqueIdentifier>{dc971fcc-629b-418f-b125-66cbc028512b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exchange">
+      <UniqueIdentifier>{00af9f14-8e16-4253-aaf5-5f1717dedbf9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CSLauncher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LauncherDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utf16\UTF16File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionAttacher.cpp">
+      <Filter>Dump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionHandler.cpp">
+      <Filter>Dump</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXCalendar.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXCalendarPopup.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXColorPickerCtrl.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXHookWnd.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXItemTip.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXItemTipWnd.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXLayoutManager.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXPopupBarCtrl.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXToolTipCtrl.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXTreeCal.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXTreeCombo.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXTreeCtrl.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXTreeEdit.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXTreeHeader.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="Ut\OXTreeItem.cpp">
+      <Filter>Dump\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlLog\CyclicLog.cpp">
+      <Filter>HtmlLog</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlLog\HtmlLog.cpp">
+      <Filter>HtmlLog</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\AnalyzerView.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\DebugOuputList.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\ExchangeLogView.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\LauncherView.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\RoomView.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\SettingsView.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\SimpleLog.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\TabSelection.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="TabViews\VideoLogView.cpp">
+      <Filter>TabViews</Filter>
+    </ClCompile>
+    <ClCompile Include="Exchange\Exchange.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="Exchange\Request.cpp">
+      <Filter>Exchange</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSLauncher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LauncherDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="res\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utf16\UTF16File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CSChair\dmpstuff\ExceptionHandler.h">
+      <Filter>Dump</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlLog\CyclicLog.h">
+      <Filter>HtmlLog</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlLog\HtmlLog.h">
+      <Filter>HtmlLog</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\AnalyzerView.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\DebugOuputList.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\ExchangeLogView.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\LauncherView.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\RoomView.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\SettingsView.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\SimpleLog.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\TabSelection.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="TabViews\VideoLogView.h">
+      <Filter>TabViews</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CSEngine\Exchange\dual.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\Exchange.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="Exchange\Request.h">
+      <Filter>Exchange</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\En\res\CSLauncher.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\En\res\CSLauncherDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\En\res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\En\CSLauncher.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\En\CSLauncher.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\En\res\CSLauncher.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\En\res\Request.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="CSLauncher.idl">
+      <Filter>Exchange</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\CSLauncher.manifest" />
+  </ItemGroup>
+</Project>

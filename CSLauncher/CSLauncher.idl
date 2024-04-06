@@ -1,0 +1,50 @@
+// CSLauncher.idl : IDL source for CSLauncher
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (CSLauncher.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+#include "../CSEngine/Exchange/dual.h"
+
+[
+	object,
+	uuid(1FEB0795-7BF8-451e-9082-089411EA051F),
+#ifdef DUAL_CCS
+	dual,
+#endif
+	oleautomation,
+	nonextensible,
+	helpstring("ICCSRequest Interface"),
+	pointer_default(unique)
+]
+interface ICCSRequest : 
+#ifdef DUAL_CCS
+	IDispatch
+#else
+	IUnknown
+#endif
+{
+	[id(1), helpstring("Send the query to the server")] HRESULT Request([in] BSTR strXML);
+};
+
+[
+	uuid(A89C7A56-59AD-493C-9389-5685EF04FB5B),
+	version(1.0),
+	helpstring("CSLauncher 1.0 Type Library")
+]
+library CSLauncherLib
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(0A7AC8F6-97F6-48b0-B88F-0472BA142D00),
+		helpstring("CCSRequest Class")
+	]
+	coclass CCSRequest
+	{
+		[default] interface ICCSRequest;
+	};
+};

@@ -1,0 +1,5 @@
+LIBRARY  "CSEigenLearn"
+
+EXPORTS
+	CreateLearningAlgorithmInstance
+	GetLearningAlgorithmName

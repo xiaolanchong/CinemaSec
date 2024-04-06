@@ -1,0 +1,24 @@
+HKCR
+{
+	CSExchange.BoxOfficeRequest.1 = s 'BoxOfficeRequest Class'
+	{
+		CLSID = s '{C7D8C15C-F14F-4945-B532-B1BF1FF15A65}'
+	}
+	CSExchange.BoxOfficeRequest = s 'BoxOfficeRequest Class'
+	{
+		CLSID = s '{C7D8C15C-F14F-4945-B532-B1BF1FF15A65}'
+		CurVer = s 'CSExchange.BoxOfficeRequest.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C7D8C15C-F14F-4945-B532-B1BF1FF15A65} = s 'BoxOfficeRequest Class'
+		{
+			ProgID = s 'CSExchange.BoxOfficeRequest.1'
+			VersionIndependentProgID = s 'CSExchange.BoxOfficeRequest'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{7A3D7D3B-F274-4D2B-9EB7-CD7ED538B1FE}'
+		}
+	}
+}

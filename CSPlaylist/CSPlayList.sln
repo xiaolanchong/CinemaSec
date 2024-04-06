@@ -1,0 +1,85 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSPlayList", "CSPlayList.vcproj", "{F095957C-7666-4630-B07C-7C2117830A5B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A} = {BD1C8C48-9F35-4442-BE9C-0DC3B958917A}
+		{406CBE9F-7347-4460-86EA-EB48D712D8A1} = {406CBE9F-7347-4460-86EA-EB48D712D8A1}
+		{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970} = {6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46} = {17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSChair", "..\CSChair\CSChair.vcproj", "{406CBE9F-7347-4460-86EA-EB48D712D8A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{286EC124-BD34-4217-9496-EF9039323433} = {286EC124-BD34-4217-9496-EF9039323433}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSAlgo", "..\CSAlgo\csalgo.vcproj", "{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{286EC124-BD34-4217-9496-EF9039323433} = {286EC124-BD34-4217-9496-EF9039323433}
+		{406CBE9F-7347-4460-86EA-EB48D712D8A1} = {406CBE9F-7347-4460-86EA-EB48D712D8A1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSUtility", "..\CSUtility\csutility.vcproj", "{286EC124-BD34-4217-9496-EF9039323433}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CS Algo2Learn dll", "..\CSLearningAlgo\CSAlgo2Learn\CSAlgo2Learn.vcproj", "{6173926E-9279-482D-A934-4C61EB2F29AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A} = {BD1C8C48-9F35-4442-BE9C-0DC3B958917A}
+		{F095957C-7666-4630-B07C-7C2117830A5B} = {F095957C-7666-4630-B07C-7C2117830A5B}
+		{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970} = {6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46} = {17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSAlgoCommon", "..\CSAlgo\CSAlgoCommon\CSAlgoCommon.vcproj", "{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}"
+	ProjectSection(ProjectDependencies) = postProject
+		{286EC124-BD34-4217-9496-EF9039323433} = {286EC124-BD34-4217-9496-EF9039323433}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSAlgo 2", "..\CSAlgo\CSAlgo2\CSAlgo2.vcproj", "{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}"
+	ProjectSection(ProjectDependencies) = postProject
+		{286EC124-BD34-4217-9496-EF9039323433} = {286EC124-BD34-4217-9496-EF9039323433}
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A} = {BD1C8C48-9F35-4442-BE9C-0DC3B958917A}
+		{406CBE9F-7347-4460-86EA-EB48D712D8A1} = {406CBE9F-7347-4460-86EA-EB48D712D8A1}
+		{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970} = {6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F095957C-7666-4630-B07C-7C2117830A5B}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{F095957C-7666-4630-B07C-7C2117830A5B}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{F095957C-7666-4630-B07C-7C2117830A5B}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{F095957C-7666-4630-B07C-7C2117830A5B}.Unicode Release.Build.0 = Unicode Release|Win32
+		{406CBE9F-7347-4460-86EA-EB48D712D8A1}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{406CBE9F-7347-4460-86EA-EB48D712D8A1}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{406CBE9F-7347-4460-86EA-EB48D712D8A1}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{406CBE9F-7347-4460-86EA-EB48D712D8A1}.Unicode Release.Build.0 = Unicode Release|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{BD1C8C48-9F35-4442-BE9C-0DC3B958917A}.Unicode Release.Build.0 = Unicode Release|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Release.Build.0 = Unicode Release|Win32
+		{6173926E-9279-482D-A934-4C61EB2F29AE}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{6173926E-9279-482D-A934-4C61EB2F29AE}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{6173926E-9279-482D-A934-4C61EB2F29AE}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{6173926E-9279-482D-A934-4C61EB2F29AE}.Unicode Release.Build.0 = Unicode Release|Win32
+		{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{6B599CF7-1C72-4A38-A27B-5FD8E5D5C970}.Unicode Release.Build.0 = Unicode Release|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

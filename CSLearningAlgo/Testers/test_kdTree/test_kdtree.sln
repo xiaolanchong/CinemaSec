@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_kdTree", "test_kdTree.vcproj", "{786BE670-E59B-4B51-A38D-F2E86A31203B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{286EC124-BD34-4217-9496-EF9039323433} = {286EC124-BD34-4217-9496-EF9039323433}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSUtility", "..\..\..\CSUtility\csutility.vcproj", "{286EC124-BD34-4217-9496-EF9039323433}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{786BE670-E59B-4B51-A38D-F2E86A31203B}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{786BE670-E59B-4B51-A38D-F2E86A31203B}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{786BE670-E59B-4B51-A38D-F2E86A31203B}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{786BE670-E59B-4B51-A38D-F2E86A31203B}.Unicode Release.Build.0 = Unicode Release|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{286EC124-BD34-4217-9496-EF9039323433}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

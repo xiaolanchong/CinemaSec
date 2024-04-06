@@ -1,0 +1,38 @@
+CSChair.dll
+
+[*] Fixes
+[+] Features
+[-] Known bugs
+
+2005-06-22	1.0.0
+[+]	Release
+
+2005-06-23	1.0.1
+[*]	fix in GrabberFactoryImpl.cpp, intefrace with chsva.dll - IStream::GetNextFrame returns true when pFrame=NULL
+
+2005-06-29	1.1.0
+[*]	исправлен баг с повторяющимися идентификаторами (ошибка в CSClient), переназначение уникальных id.
+
+2005-07-01	1.1.1
+[*]	предыдущий баг для БД
+
+2005-07-05	1.3.0
+[+]	Добавлена заглушка для IGrabberFactory & ICameraGrabber
+
+2005-07-08	1.4.0
+[+]	Добавлена серверная заглушка для IGrabberFactory
+
+2005-07-08	1.5.0
+	Up-to-date
+	
+2005-07-18	1.7.0
+[+]	Новый формат сохранения обводки - разбиение по камерам
+
+2005-07-28	1.8.2
+[*]	Возвращал в качестве BITMAPINFO* BITMAPINFOHEADER*, краш в csclient.exe
+
+2005-08-15	1.9.2
+[+]	AVD foramt support
+
+2005-09-22	1.11.0
+[+]	Граббер архива выдает время кадра сам

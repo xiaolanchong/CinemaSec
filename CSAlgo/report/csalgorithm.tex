@@ -1,0 +1,113 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[]{graphicx}
+\usepackage{color}
+\usepackage{indentfirst}
+\usepackage{amsmath,amssymb,latexsym}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Magick cyrillic inclusion. %%%%%
+%\usepackage[T2A]{fontenc}        %%%%%
+%\usepackage[cp1251]{inputenc}    %%%%%
+%\usepackage[russian]{babel}      %%%%%
+\usepackage{russlh}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\sloppy
+\nonfrenchspacing
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\oddsidemargin  -0.25in
+\evensidemargin -0.25in
+\textwidth      6.75in
+\headheight     0.0in
+\topmargin      0.0in
+\textheight     9.0in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\renewcommand{\contentsname}{Содержание}
+\def\mymonth{
+\ifcase\month \or января\or февраля\or марта\or апреля\or мая\or
+ июня\or июля\or августа\or сентября\or октября\or ноября\or декабря
+\fi\ 
+}
+
+\begin{document}
+\title{Обнаружение и подсчёт числа людей сидящих в креслах во время киносеанса}
+\author{Альберт Ахриев \and Александр Болтнев}
+\date{\the\day \mymonth \the\year}
+\maketitle
+\tableofcontents
+%
+\baselineskip = 1.5\baselineskip
+%
+\newcounter{remark_counter}%
+\setcounter{remark_counter}{1}%
+\newtheorem{remark}{Замечание}[remark_counter]%
+%
+\newcounter{definition_counter}%
+\setcounter{definition_counter}{1}%
+\newtheorem{definition}{Определение}[definition_counter]%
+%
+\newcounter{lemma_counter}%
+\setcounter{lemma_counter}{1}%
+\newtheorem{lemma}{Лемма}[lemma_counter]%
+%
+\newcounter{corollary_counter}%
+\setcounter{corollary_counter}{1}%
+\newtheorem{corollary}{Следствие}[corollary_counter]%
+%
+\newcount\figureState\figureState=1
+%
+\def\figurename{\small\sf Рис.}
+\def\myfigure[#1]#2#3#4
+{
+\begin{figure}[h]
+\begin{center}
+\ifnum\figureState=1
+\includegraphics[width=#1\hsize]{#2}
+\else
+\fbox{\tt\color[rgb]{1,0,0} This is the figure ``#2''.}
+\fi
+\caption{\small\sf #3}
+\label{fig:#4}
+\end{center}
+\end{figure}
+}
+%
+\def\myfrac#1/#2{\text{${}^{#1}\!/{}_{#2}$}}
+%
+\newcount\myenumcount
+\long\def\myenumerate#1
+{{
+\myenumcount=0
+\def\item{\advance\myenumcount by 1\par\indent\hbox{\the\myenumcount. }}%
+#1
+}}
+%
+\def\orwell2{\textit{Orwe$\ell\ell$2k}}
+%
+\pagebreak
+\input{introduction.tex}
+\input{algorithm1.tex}
+\input{frame_updating.tex}
+\input{frame_acquisition.tex}
+\input{correlation.tex}
+\input{algorithm2.tex}
+\input{problems.tex}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% References %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%
+\begin{thebibliography}{99}
+%
+\bibitem{Welch95} G. Welch and G. Bishop, ``An Introduction to the Kalman Filter,'' University of North Carolina, Department of Computer Science, Technical Report 95-041, 1995.
+
+\bibitem{Welch01} G. Welch and G. Bishop, ``An Introduction to the Kalman Filter,'' SIGGRAPH 2001, Course 8, 2001.
+
+\bibitem{Akhriev04} A. Akhriev, A. Bonch-Osmolovsky, ``Estimation of image noise using polynomial masks,'' Proceedings of the SPIE, vol. 5298, pp. 555-566, 2004.
+
+\end{thebibliography}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\end{document}

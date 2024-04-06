@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CVMCad", "CVMCad.vcproj", "{55497969-D777-4509-9292-6CB22FBB691C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B69DC586-C038-4B48-8365-B41AFB90F9AF} = {B69DC586-C038-4B48-8365-B41AFB90F9AF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CVMCadComponent", "CVMCadComponent\CVMCadComponent.vcproj", "{7FEE10EF-E130-4AB0-B8B8-B5429577D341}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PropTree", "PropTree\Src\PropTree.vcproj", "{B69DC586-C038-4B48-8365-B41AFB90F9AF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+		VTune = VTune
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{55497969-D777-4509-9292-6CB22FBB691C}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{55497969-D777-4509-9292-6CB22FBB691C}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{55497969-D777-4509-9292-6CB22FBB691C}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{55497969-D777-4509-9292-6CB22FBB691C}.Unicode Release.Build.0 = Unicode Release|Win32
+		{55497969-D777-4509-9292-6CB22FBB691C}.VTune.ActiveCfg = VTune|Win32
+		{55497969-D777-4509-9292-6CB22FBB691C}.VTune.Build.0 = VTune|Win32
+		{7FEE10EF-E130-4AB0-B8B8-B5429577D341}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{7FEE10EF-E130-4AB0-B8B8-B5429577D341}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{7FEE10EF-E130-4AB0-B8B8-B5429577D341}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{7FEE10EF-E130-4AB0-B8B8-B5429577D341}.Unicode Release.Build.0 = Unicode Release|Win32
+		{7FEE10EF-E130-4AB0-B8B8-B5429577D341}.VTune.ActiveCfg = Unicode Debug|Win32
+		{7FEE10EF-E130-4AB0-B8B8-B5429577D341}.VTune.Build.0 = Unicode Debug|Win32
+		{B69DC586-C038-4B48-8365-B41AFB90F9AF}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{B69DC586-C038-4B48-8365-B41AFB90F9AF}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{B69DC586-C038-4B48-8365-B41AFB90F9AF}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{B69DC586-C038-4B48-8365-B41AFB90F9AF}.Unicode Release.Build.0 = Unicode Release|Win32
+		{B69DC586-C038-4B48-8365-B41AFB90F9AF}.VTune.ActiveCfg = Unicode Debug|Win32
+		{B69DC586-C038-4B48-8365-B41AFB90F9AF}.VTune.Build.0 = Unicode Debug|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

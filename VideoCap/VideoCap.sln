@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoCap", "VideoCap.vcproj", "{66CBF6D0-BD07-49AB-98C1-B52D0614CC85}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{66CBF6D0-BD07-49AB-98C1-B52D0614CC85}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{66CBF6D0-BD07-49AB-98C1-B52D0614CC85}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{66CBF6D0-BD07-49AB-98C1-B52D0614CC85}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{66CBF6D0-BD07-49AB-98C1-B52D0614CC85}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

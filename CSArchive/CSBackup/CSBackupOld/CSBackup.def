@@ -1,0 +1,6 @@
+; CSBackup.def : Declares the module parameters.
+
+;LIBRARY      "CSBackup.DLL"
+
+EXPORTS
+	CreateCSBackUp

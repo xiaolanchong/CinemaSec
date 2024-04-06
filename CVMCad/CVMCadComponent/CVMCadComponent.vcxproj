@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{7FEE10EF-E130-4AB0-B8B8-B5429577D341}</ProjectGuid>
+    <RootNamespace>CVMCadComponent</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34322.80</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>Binaries\</OutDir>
+    <IntDir>Temporary\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>Binaries\</OutDir>
+    <IntDir>Temporary\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)/Sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CVMCADCOMPONENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy /Y "$(TargetPath)"  "..\..\Bin\Debug\$(TargetFileName)"
+
+</Command>
+      <Outputs>..\..\Bin\Debug\$(TargetFileName);%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxerr9.lib;strmiids.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CVMCadComponent.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)CVMCadComponent.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)CVMCadComponentDebug.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)/Sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CVMCADCOMPONENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy /Y "$(TargetPath)"  "..\..\Bin\Release\$(TargetFileName)"
+</Command>
+      <Outputs>..\..\Bin\Release\$(TargetFileName);%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxerr9.lib;strmiids.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CVMCadComponent.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)CVMCadComponent.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Common.cpp" />
+    <ClCompile Include="Sources\CVMCadComponent.cpp" />
+    <ClCompile Include="Sources\CVMCadComponentImp.cpp" />
+    <ClCompile Include="Sources\Exceptions\BaseException.cpp" />
+    <ClCompile Include="Sources\Graphics\GraphicsDevice.cpp" />
+    <ClCompile Include="Sources\Graphics\Mesh.cpp" />
+    <ClCompile Include="Sources\Graphics\Primitives.cpp" />
+    <ClCompile Include="Sources\Graphics\Texture.cpp" />
+    <ClCompile Include="Sources\Model\Camera.cpp" />
+    <ClCompile Include="Sources\Model\CameraToolSet.cpp" />
+    <ClCompile Include="Sources\Model\Element.cpp" />
+    <ClCompile Include="Sources\Model\ElementToolSet.cpp" />
+    <ClCompile Include="Sources\Model\HelperElement.cpp" />
+    <ClCompile Include="Sources\Model\Node.cpp" />
+    <ClCompile Include="Sources\Model\NodeToolSet.cpp" />
+    <ClCompile Include="Sources\Model\Primitives.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\Scene.cpp" />
+    <ClCompile Include="Sources\Model\SceneToolSet.cpp" />
+    <ClCompile Include="Sources\Model\Types.cpp" />
+    <ClCompile Include="Sources\Model\VertexToolSet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sources\Common.hpp" />
+    <ClInclude Include="Sources\CommonTypes.hpp" />
+    <ClInclude Include="Sources\CVMCadComponent.hpp" />
+    <ClInclude Include="Sources\CVMCadComponentImp.hpp" />
+    <ClInclude Include="Sources\Exceptions\BaseException.hpp" />
+    <ClInclude Include="Sources\Graphics\GraphicsDevice.hpp" />
+    <ClInclude Include="Sources\Graphics\Mesh.hpp" />
+    <ClInclude Include="Sources\Graphics\Primitives.hpp" />
+    <ClInclude Include="Sources\Graphics\Texture.hpp" />
+    <ClInclude Include="Sources\Model\Camera.hpp" />
+    <ClInclude Include="Sources\Model\CameraToolSet.hpp" />
+    <ClInclude Include="Sources\Model\Element.hpp" />
+    <ClInclude Include="Sources\Model\ElementToolSet.hpp" />
+    <ClInclude Include="Sources\Model\HelperElement.hpp" />
+    <ClInclude Include="Sources\Model\Node.hpp" />
+    <ClInclude Include="Sources\Model\NodeToolSet.hpp" />
+    <ClInclude Include="Sources\Model\Primitives.hpp" />
+    <ClInclude Include="Sources\Model\Scene.hpp" />
+    <ClInclude Include="Sources\Model\SceneToolSet.hpp" />
+    <ClInclude Include="Sources\Model\Types.hpp" />
+    <ClInclude Include="Sources\Model\VertexToolSet.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CVMCadComponent.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

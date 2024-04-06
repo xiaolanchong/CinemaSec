@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectName>CSUtility</ProjectName>
+    <ProjectGuid>{286EC124-BD34-4217-9496-EF9039323433}</ProjectGuid>
+    <RootNamespace>csutility</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34322.80</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" ..\bin\debug\"$(TargetName)".dll
+</Command>
+      <Outputs>..\bin\debug"$(TargetName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)CSUtility.dll</OutputFile>
+      <ModuleDefinitionFile>.\csutility.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)CSUtility.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" ..\bin\release\en\"$(TargetName)".dll
+</Command>
+      <Outputs>..\bin\release\en"$(TargetName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CSUtility.dll</OutputFile>
+      <ModuleDefinitionFile>.\csutility.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)CSUtility.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="csutility.def" />
+    <None Include="res\csutility.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="alib\alib_file.cpp" />
+    <ClCompile Include="alib\alib_filter1d.cpp" />
+    <ClCompile Include="alib\alib_timer.cpp" />
+    <ClCompile Include="alib\alib_util.cpp" />
+    <ClCompile Include="alib\avideo_reader.cpp" />
+    <ClCompile Include="alib\avideo_writer.cpp" />
+    <ClCompile Include="alib\ml_invert_small.cpp" />
+    <ClCompile Include="alib\ml_solv_penta_sys.cpp" />
+    <ClCompile Include="alib\parameter_ex.cpp" />
+    <ClCompile Include="alib\paramlib_dlg.cpp" />
+    <ClCompile Include="alib\vl_equate_grad_peaks.cpp" />
+    <ClCompile Include="alib\vl_gray_edge_detector.cpp" />
+    <ClCompile Include="alib\vl_horz_region.cpp" />
+    <ClCompile Include="alib\vl_vert_region.cpp" />
+    <ClCompile Include="csutilityapp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="utility\byte_bitmap.cpp" />
+    <ClCompile Include="utility\byte_bitmap_ex.cpp" />
+    <ClCompile Include="utility\CorrectBrightness.cpp" />
+    <ClCompile Include="utility\float_bitmap.cpp" />
+    <ClCompile Include="utility\float_bitmap_ex.cpp" />
+    <ClCompile Include="utility\helper.cpp" />
+    <ClCompile Include="utility\io_background.cpp" />
+    <ClCompile Include="utility\LinearHistogramAdapter.cpp" />
+    <ClCompile Include="utility\live_snake.cpp" />
+    <ClCompile Include="utility\LogBimodalHistogramAdapter.cpp" />
+    <ClCompile Include="utility\long_timer.cpp" />
+    <ClCompile Include="utility\obsolete.cpp" />
+    <ClCompile Include="utility\ScheduleTestVideo.cpp" />
+    <ClCompile Include="utility\WrappedAVideoReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alib\alib.h" />
+    <ClInclude Include="alib\alib_algo.h" />
+    <ClInclude Include="alib\alib_allocator.h" />
+    <ClInclude Include="alib\alib_arr2d.h" />
+    <ClInclude Include="alib\alib_file.h" />
+    <ClInclude Include="alib\alib_filter1d.h" />
+    <ClInclude Include="alib\alib_go_along_line.h" />
+    <ClInclude Include="alib\alib_img_smooth.h" />
+    <ClInclude Include="alib\alib_kdim_tree_mt.h" />
+    <ClInclude Include="alib\alib_macros.h" />
+    <ClInclude Include="alib\alib_rand_inc_iter.h" />
+    <ClInclude Include="alib\alib_rect.h" />
+    <ClInclude Include="alib\alib_statistics.h" />
+    <ClInclude Include="alib\alib_stl.h" />
+    <ClInclude Include="alib\alib_timer.h" />
+    <ClInclude Include="alib\alib_types_const.h" />
+    <ClInclude Include="alib\alib_util.h" />
+    <ClInclude Include="alib\alib_vec2d.h" />
+    <ClInclude Include="alib\avideo_header.h" />
+    <ClInclude Include="alib\k_harmonic_mean_clusterizer.h" />
+    <ClInclude Include="alib\matrixlib.h" />
+    <ClInclude Include="alib\ml_ldlt.h" />
+    <ClInclude Include="alib\ml_matrix.h" />
+    <ClInclude Include="alib\ml_solv_linear_sys.h" />
+    <ClInclude Include="alib\ml_solv_penta_sys.h" />
+    <ClInclude Include="alib\ml_util.h" />
+    <ClInclude Include="alib\ml_work_space.h" />
+    <ClInclude Include="alib\nl_grad_noise_meter.h" />
+    <ClInclude Include="alib\nl_polymask1_noise_meter.h" />
+    <ClInclude Include="alib\nl_polymask3_noise_meter.h" />
+    <ClInclude Include="alib\noiselib.h" />
+    <ClInclude Include="alib\parameter_ex.h" />
+    <ClInclude Include="alib\paramlib_dlg.h" />
+    <ClInclude Include="alib\video_interface.h" />
+    <ClInclude Include="alib\vl_curve2d_lib.h" />
+    <ClInclude Include="alib\vl_gray_edge_detector.h" />
+    <ClInclude Include="alib\vl_horz_region.h" />
+    <ClInclude Include="alib\vl_vert_region.h" />
+    <ClInclude Include="csutility.h" />
+    <ClInclude Include="csutilityapp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="utility\auto_interface_ptr.h" />
+    <ClInclude Include="utility\base_frame_grabber.h" />
+    <ClInclude Include="utility\constants.h" />
+    <ClInclude Include="utility\debug_interface.h" />
+    <ClInclude Include="utility\digits.h" />
+    <ClInclude Include="utility\inline_functions.h" />
+    <ClInclude Include="utility\layout.h" />
+    <ClInclude Include="utility\LinearHistogramAdapter.h" />
+    <ClInclude Include="utility\live_snake.h" />
+    <ClInclude Include="utility\LogBimodalHistogramAdapter.h" />
+    <ClInclude Include="utility\long_timer.h" />
+    <ClInclude Include="utility\MultiHistogramEx.h" />
+    <ClInclude Include="utility\multi_histogram.h" />
+    <ClInclude Include="utility\ParameterFunctions.h" />
+    <ClInclude Include="utility\SampleDistance.h" />
+    <ClInclude Include="utility\serialization.h" />
+    <ClInclude Include="utility\text_constants.h" />
+    <ClInclude Include="utility\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="csutility.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="csutility.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

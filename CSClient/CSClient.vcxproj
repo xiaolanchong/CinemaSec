@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{64F4EA03-B87D-4DDC-814A-136EEFE9BBBE}</ProjectGuid>
+    <RootNamespace>CSClient</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34322.80</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;../../boost_1_84_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINNT_WIN32=0x501;WINVER=0x501;_INS_EXT_CLASS=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Message>copy to ../BIN/Release</Message>
+      <Command>copy "$(TargetPath)" ..\BIN\Release\EN\"$(TargetFileName)"
+</Command>
+      <Outputs>..\BIN\Release\EN"$(TargetFileName);%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>version.lib;dbghelp.lib;gdiplus.lib;strmiids.lib;vfw32.lib;winmm.lib;shlwapi.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;../../boost_1_84_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;_INS_EXT_CLASS=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Message>copy  ..\BIN\Debug\</Message>
+      <Command>copy "$(TargetPath)""..\BIN\Debug\$(TargetFileName)"
+</Command>
+      <Outputs>..\BIN\Debug\$(TargetName).exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>vfw32.lib;version.lib;dbghelp.lib;gdiplus.lib;strmiids.lib;winmm.lib;shlwapi.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CSChair\dmpstuff\ExceptionHandler.h" />
+    <ClInclude Include="..\CSChair\public\NameParse.h" />
+    <ClInclude Include="..\CSChair\xml\xmllite.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\CinemaDB.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\CinemaOleDB.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\DBHelper.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\DBRows.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\ExchangeParam.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\MemoryBackground.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\OleDBConnection.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\ProtocolTable.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\StatTable.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\TimeHelper.h" />
+    <ClInclude Include="..\CSEngine\DBFacet\TimeTable.h" />
+    <ClInclude Include="..\CSLauncher\HtmlLog\HtmlLog.h" />
+    <ClInclude Include="Archive_mode\ArchiveContainer.h" />
+    <ClInclude Include="Archive_mode\ArchiveDecompressor.h" />
+    <ClInclude Include="Archive_mode\ArchiveStatView.h" />
+    <ClInclude Include="Archive_mode\archive_mode_doc.h" />
+    <ClInclude Include="Archive_mode\archive_mode_frm.h" />
+    <ClInclude Include="Archive_mode\archive_mode_view.h" />
+    <ClInclude Include="Archive_mode\FileTransferDialog.h" />
+    <ClInclude Include="Archive_mode\VideoControlView.h" />
+    <ClInclude Include="Background\Background.h" />
+    <ClInclude Include="Background\EmptyBackground.h" />
+    <ClInclude Include="Background\FrameBackground.h" />
+    <ClInclude Include="Background\ImageBackground.h" />
+    <ClInclude Include="Background\PicBackground.h" />
+    <ClInclude Include="Background\Sync.h" />
+    <ClInclude Include="Background\VideoBackground.h" />
+    <ClInclude Include="Boxoffice_mode\boxoffice_mode_doc.h" />
+    <ClInclude Include="Boxoffice_mode\boxoffice_mode_frm.h" />
+    <ClInclude Include="Boxoffice_mode\boxoffice_mode_view.h" />
+    <ClInclude Include="Boxoffice_mode\ExchangeReport.h" />
+    <ClInclude Include="CacheDC.h" />
+    <ClInclude Include="Chair\ChairLink.h" />
+    <ClInclude Include="Chair\ChairSerializer.h" />
+    <ClInclude Include="Chair\UtilityChair.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CommonView\ArrangeDocument.h" />
+    <ClInclude Include="CommonView\ArrangeStatView.h" />
+    <ClInclude Include="CommonView\ArrangeView.h" />
+    <ClInclude Include="CommonView\base_idle_view.h" />
+    <ClInclude Include="CommonView\ControlHelper.h" />
+    <ClInclude Include="CommonView\VideoImage.h" />
+    <ClInclude Include="Commonview\VideoRender\ArrayRender.h" />
+    <ClInclude Include="Commonview\VideoRender\IVideoRender.h" />
+    <ClInclude Include="Commonview\VideoRender\MergeRender.h" />
+    <ClInclude Include="Commonview\VideoRender\MixedRender.h" />
+    <ClInclude Include="CommonView\wv_message.h" />
+    <ClInclude Include="CSClient.h" />
+    <ClInclude Include="CSClientDoc.h" />
+    <ClInclude Include="CSClientView.h" />
+    <ClInclude Include="DBFacet\CfgDB.h" />
+    <ClInclude Include="DBFacet\DBRoomChooser.h" />
+    <ClInclude Include="DBFacet\DBSerializer.h" />
+    <ClInclude Include="DBFacet\StatisticDB.h" />
+    <ClInclude Include="Diagnostic_MODE\Diagnostic_mode_doc.h" />
+    <ClInclude Include="Diagnostic_MODE\Diagnostic_mode_frm.h" />
+    <ClInclude Include="Diagnostic_MODE\Diagnostic_mode_view.h" />
+    <ClInclude Include="FastTimer.h" />
+    <ClInclude Include="FileDialogEx.h" />
+    <ClInclude Include="Gauge_hall\gauge_hall.h" />
+    <ClInclude Include="Gauge_hall\gauge_hall_doc.h" />
+    <ClInclude Include="Gauge_hall\gauge_hall_frm.h" />
+    <ClInclude Include="Gauge_hall\gauge_hall_view.h" />
+    <ClInclude Include="Gui\AlphaToolbar\AlphaImageList.h" />
+    <ClInclude Include="Gui\AlphaToolbar\AlphaToolBar.h" />
+    <ClInclude Include="Gui\AlphaToolbar\MenuBar.h" />
+    <ClInclude Include="Gui\Balloon\BalloonHelp.h" />
+    <ClInclude Include="Gui\Dhtml\DHTMLUIIncludes.h" />
+    <ClInclude Include="Gui\Dhtml\Globals.h" />
+    <ClInclude Include="Gui\Dhtml\HtmlDialog.h" />
+    <ClInclude Include="Gui\Dhtml\HtmlResourceHelper.h" />
+    <ClInclude Include="Gui\Dhtml\HtmlViewEx.h" />
+    <ClInclude Include="Gui\Dhtml\HtmlViewExSite.h" />
+    <ClInclude Include="Gui\Grid\CellRange.h" />
+    <ClInclude Include="Gui\Grid\GridCell.h" />
+    <ClInclude Include="Gui\Grid\GridCellBase.h" />
+    <ClInclude Include="Gui\Grid\GridCellDateTime.h" />
+    <ClInclude Include="Gui\Grid\GridCtrl.h" />
+    <ClInclude Include="Gui\Grid\GridDropTarget.h" />
+    <ClInclude Include="Gui\Grid\InPlaceEdit.h" />
+    <ClInclude Include="Gui\Grid\MemDC.h" />
+    <ClInclude Include="Gui\Grid\TitleTip.h" />
+    <ClInclude Include="Gui\HoverBitmapButton\BtnST.h" />
+    <ClInclude Include="Gui\HoverBitmapButton\ThemeHelperST.h" />
+    <ClInclude Include="Gui\HoverBitmapButton\XPStyleButtonST.h" />
+    <ClInclude Include="Gui\HtmlCtrl\HtmlCtrl.h" />
+    <ClInclude Include="Gui\PropertyList\Callback.h" />
+    <ClInclude Include="Gui\PropertyList\CJFlatComboBox.h" />
+    <ClInclude Include="Gui\PropertyList\NumEdit.h" />
+    <ClInclude Include="Gui\PropertyList\PropertyListBox.h" />
+    <ClInclude Include="Gui\RangeCtrl\MemDC.h" />
+    <ClInclude Include="Gui\RangeCtrl\RangeSlider.h" />
+    <ClInclude Include="Gui\ReadOnlyEdit\ReadOnlyEdit.h" />
+    <ClInclude Include="Gui\Slider\NewSliderCtrl.h" />
+    <ClInclude Include="Gui\Slider\SeekToolBar.h" />
+    <ClInclude Include="Gui\Splitter\FlatSplitterWnd.h" />
+    <ClInclude Include="Gui\Subclass.h" />
+    <ClInclude Include="Layout\CameraGrabDialog.h" />
+    <ClInclude Include="Layout\FileGrabDialog.h" />
+    <ClInclude Include="Layout\LayerHelperDialog.h" />
+    <ClInclude Include="Layout\LayerHelperSpinDialog.h" />
+    <ClInclude Include="Layout\LayoutDialog.h" />
+    <ClInclude Include="Layout\LayoutIDDialog.h" />
+    <ClInclude Include="Layout\LayoutValidate.h" />
+    <ClInclude Include="Layout\LayoutWnd.h" />
+    <ClInclude Include="Layout\RenumberDialog.h" />
+    <ClInclude Include="Layout\SelectArrangementDlg.h" />
+    <ClInclude Include="LineCache.h" />
+    <ClInclude Include="Log_mode\ClientLogManager.h" />
+    <ClInclude Include="Log_mode\log_mode_doc.h" />
+    <ClInclude Include="Log_mode\log_mode_frm.h" />
+    <ClInclude Include="Log_mode\log_mode_view.h" />
+    <ClInclude Include="LongOperation.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ModuleVersion.h" />
+    <ClInclude Include="MultiImageLayout.h" />
+    <ClInclude Include="RangeSelect.h" />
+    <ClInclude Include="Report_MODE\ReportDocument.h" />
+    <ClInclude Include="Report_MODE\ReportFrame.h" />
+    <ClInclude Include="Report_MODE\ReportParamView.h" />
+    <ClInclude Include="Report_MODE\ReportView.h" />
+    <ClInclude Include="Res\resource.h" />
+    <ClInclude Include="RoomChooser.h" />
+    <ClInclude Include="RoomChooserTab.h" />
+    <ClInclude Include="Settings_mode\settings_mode_doc.h" />
+    <ClInclude Include="Settings_mode\settings_mode_frm.h" />
+    <ClInclude Include="Settings_mode\settings_mode_view.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Timetable_mode\timetable_mode_doc.h" />
+    <ClInclude Include="Timetable_mode\timetable_mode_frm.h" />
+    <ClInclude Include="Timetable_mode\timetable_mode_view.h" />
+    <ClInclude Include="TrainData_MODE\ContentSerializer.h" />
+    <ClInclude Include="TrainData_MODE\OffsetChairDialog.h" />
+    <ClInclude Include="TrainData_MODE\RangeCtrl.h" />
+    <ClInclude Include="TrainData_MODE\train_data_doc.h" />
+    <ClInclude Include="TrainData_MODE\train_data_frm.h" />
+    <ClInclude Include="TrainData_MODE\train_data_view.h" />
+    <ClInclude Include="TrainData_MODE\video_tool_bar.h" />
+    <ClInclude Include="Video\AviIOGrabber.h" />
+    <ClInclude Include="Video\AviIOShow.h" />
+    <ClInclude Include="Video\avi_io.h" />
+    <ClInclude Include="Video\CameraManager.h" />
+    <ClInclude Include="Video_mode\VideoDocument.h" />
+    <ClInclude Include="Video_mode\VideoFrame.h" />
+    <ClInclude Include="Video_mode\VideoStatView.h" />
+    <ClInclude Include="Video_mode\VideoView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionAttacher.cpp" />
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionHandler.cpp" />
+    <ClCompile Include="..\CSChair\public\NameParse.cpp" />
+    <ClCompile Include="..\CSChair\xml\xmllite.cpp" />
+    <ClCompile Include="..\CSEngine\DBFacet\CinemaDB.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\CSEngine\DBFacet\CinemaOleDB.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\CSEngine\DBFacet\ExchangeParam.cpp" />
+    <ClCompile Include="..\CSEngine\DBFacet\MemoryBackground.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\CSEngine\DBFacet\OleDBConnection.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\CSEngine\DBFacet\ProtocolTable.cpp" />
+    <ClCompile Include="..\CSEngine\DBFacet\StatTable.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\CSEngine\DBFacet\TimeHelper.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\CSEngine\DBFacet\TimeTable.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\CSLauncher\HtmlLog\HtmlLog.cpp" />
+    <ClCompile Include="Archive_mode\ArchiveContainer.cpp" />
+    <ClCompile Include="Archive_mode\ArchiveDecompressor.cpp" />
+    <ClCompile Include="Archive_mode\ArchiveStatView.cpp" />
+    <ClCompile Include="Archive_mode\archive_mode_doc.cpp" />
+    <ClCompile Include="Archive_mode\archive_mode_frm.cpp" />
+    <ClCompile Include="Archive_mode\archive_mode_view.cpp" />
+    <ClCompile Include="Archive_mode\FileTransferDialog.cpp" />
+    <ClCompile Include="Archive_mode\VideoControlView.cpp" />
+    <ClCompile Include="Background\Background.cpp" />
+    <ClCompile Include="Background\EmptyBackground.cpp" />
+    <ClCompile Include="Background\FrameBackground.cpp" />
+    <ClCompile Include="Background\ImageBackground.cpp" />
+    <ClCompile Include="Background\PicBackground.cpp" />
+    <ClCompile Include="Background\VideoBackground.cpp" />
+    <ClCompile Include="Boxoffice_mode\boxoffice_mode_doc.cpp" />
+    <ClCompile Include="Boxoffice_mode\boxoffice_mode_frm.cpp" />
+    <ClCompile Include="Boxoffice_mode\boxoffice_mode_view.cpp" />
+    <ClCompile Include="Boxoffice_mode\ExchangeReport.cpp" />
+    <ClCompile Include="Chair\ChairLink.cpp" />
+    <ClCompile Include="Chair\ChairSerializer.cpp" />
+    <ClCompile Include="Chair\UtilityChair.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CommonView\ArrangeDocument.cpp" />
+    <ClCompile Include="CommonView\ArrangeStatView.cpp" />
+    <ClCompile Include="CommonView\ArrangeView.cpp" />
+    <ClCompile Include="CommonView\base_idle_view.cpp" />
+    <ClCompile Include="CommonView\ControlHelper.cpp" />
+    <ClCompile Include="CommonView\VideoImage.cpp" />
+    <ClCompile Include="Commonview\VideoRender\ArrayRender.cpp" />
+    <ClCompile Include="Commonview\VideoRender\MergeRender.cpp" />
+    <ClCompile Include="Commonview\VideoRender\MixedRender.cpp" />
+    <ClCompile Include="Common\commandline.cpp" />
+    <ClCompile Include="CSClient.cpp" />
+    <ClCompile Include="CSClientDoc.cpp" />
+    <ClCompile Include="CSClientView.cpp" />
+    <ClCompile Include="DBFacet\CfgDB.cpp" />
+    <ClCompile Include="DBFacet\DBSerializer.cpp" />
+    <ClCompile Include="DBFacet\StatisticDB.cpp" />
+    <ClCompile Include="Diagnostic_MODE\Diagnostic_mode_doc.cpp" />
+    <ClCompile Include="Diagnostic_MODE\Diagnostic_mode_frm.cpp" />
+    <ClCompile Include="Diagnostic_MODE\Diagnostic_mode_view.cpp" />
+    <ClCompile Include="FastTimer.cpp" />
+    <ClCompile Include="FileDialogEx.cpp" />
+    <ClCompile Include="Gauge_hall\gauge_hall_doc.cpp" />
+    <ClCompile Include="Gauge_hall\gauge_hall_frm.cpp" />
+    <ClCompile Include="Gauge_hall\gauge_hall_view.cpp" />
+    <ClCompile Include="Gui\AlphaToolbar\AlphaImageList.cpp" />
+    <ClCompile Include="Gui\AlphaToolbar\AlphaToolBar.cpp" />
+    <ClCompile Include="Gui\AlphaToolbar\MenuBar.cpp" />
+    <ClCompile Include="Gui\Balloon\BalloonHelp.cpp" />
+    <ClCompile Include="Gui\Dhtml\Globals.cpp" />
+    <ClCompile Include="Gui\Dhtml\HtmlDialog.cpp" />
+    <ClCompile Include="Gui\Dhtml\HtmlResourceHelper.cpp" />
+    <ClCompile Include="Gui\Dhtml\HtmlViewEx.cpp" />
+    <ClCompile Include="Gui\Dhtml\HtmlViewExSite.cpp" />
+    <ClCompile Include="Gui\Grid\GridCell.cpp" />
+    <ClCompile Include="Gui\Grid\GridCellBase.cpp" />
+    <ClCompile Include="Gui\Grid\GridCellDateTime.cpp" />
+    <ClCompile Include="Gui\Grid\GridCtrl.cpp" />
+    <ClCompile Include="Gui\Grid\GridDropTarget.cpp" />
+    <ClCompile Include="Gui\Grid\InPlaceEdit.cpp" />
+    <ClCompile Include="Gui\Grid\TitleTip.cpp" />
+    <ClCompile Include="Gui\HoverBitmapButton\BtnST.cpp" />
+    <ClCompile Include="Gui\HoverBitmapButton\ThemeHelperST.cpp" />
+    <ClCompile Include="Gui\HoverBitmapButton\XPStyleButtonST.cpp" />
+    <ClCompile Include="Gui\HtmlCtrl\HtmlCtrl.cpp" />
+    <ClCompile Include="Gui\PropertyList\CJFlatComboBox.cpp" />
+    <ClCompile Include="Gui\PropertyList\NumEdit.cpp" />
+    <ClCompile Include="Gui\PropertyList\PropertyListBox.cpp" />
+    <ClCompile Include="Gui\RangeCtrl\RangeSlider.cpp" />
+    <ClCompile Include="Gui\ReadOnlyEdit\ReadOnlyEdit.cpp" />
+    <ClCompile Include="Gui\Slider\NewSliderCtrl.cpp" />
+    <ClCompile Include="Gui\Slider\SeekToolBar.cpp" />
+    <ClCompile Include="Gui\Splitter\FlatSplitterWnd.cpp" />
+    <ClCompile Include="Gui\Subclass.cpp" />
+    <ClCompile Include="Layout\CameraGrabDialog.cpp" />
+    <ClCompile Include="Layout\FileGrabDialog.cpp" />
+    <ClCompile Include="Layout\LayerHelperDialog.cpp" />
+    <ClCompile Include="Layout\LayerHelperSpinDialog.cpp" />
+    <ClCompile Include="Layout\LayoutDialog.cpp" />
+    <ClCompile Include="Layout\LayoutIDDialog.cpp" />
+    <ClCompile Include="Layout\LayoutValidate.cpp" />
+    <ClCompile Include="Layout\LayoutWnd.cpp" />
+    <ClCompile Include="Layout\RenumberDialog.cpp" />
+    <ClCompile Include="Layout\SelectArrangementDlg.cpp" />
+    <ClCompile Include="Log_mode\ClientLogManager.cpp" />
+    <ClCompile Include="Log_mode\log_mode_doc.cpp" />
+    <ClCompile Include="Log_mode\log_mode_frm.cpp" />
+    <ClCompile Include="Log_mode\log_mode_view.cpp" />
+    <ClCompile Include="LongOperation.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MultiImageLayout.cpp" />
+    <ClCompile Include="RangeSelect.cpp" />
+    <ClCompile Include="Report_MODE\ReportDocument.cpp" />
+    <ClCompile Include="Report_MODE\ReportFrame.cpp" />
+    <ClCompile Include="Report_MODE\ReportParamView.cpp" />
+    <ClCompile Include="Report_MODE\ReportView.cpp" />
+    <ClCompile Include="RoomChooser.cpp" />
+    <ClCompile Include="RoomChooserTab.cpp" />
+    <ClCompile Include="Settings_mode\settings_mode_doc.cpp" />
+    <ClCompile Include="Settings_mode\settings_mode_frm.cpp" />
+    <ClCompile Include="Settings_mode\settings_mode_view.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="Timetable_mode\timetable_mode_doc.cpp" />
+    <ClCompile Include="Timetable_mode\timetable_mode_frm.cpp" />
+    <ClCompile Include="Timetable_mode\timetable_mode_view.cpp" />
+    <ClCompile Include="TrainData_MODE\ContentSerializer.cpp" />
+    <ClCompile Include="TrainData_MODE\OffsetChairDialog.cpp" />
+    <ClCompile Include="TrainData_MODE\RangeCtrl.cpp" />
+    <ClCompile Include="TrainData_MODE\train_data_doc.cpp" />
+    <ClCompile Include="TrainData_MODE\train_data_frm.cpp" />
+    <ClCompile Include="TrainData_MODE\train_data_view.cpp" />
+    <ClCompile Include="TrainData_MODE\video_tool_bar.cpp" />
+    <ClCompile Include="Ut\OXBitmapButton.cpp" />
+    <ClCompile Include="Ut\OXCalendar.cpp" />
+    <ClCompile Include="Ut\OXCalendarPopup.cpp" />
+    <ClCompile Include="Ut\OXColorPickerCtrl.cpp" />
+    <ClCompile Include="Ut\OXEdit.cpp" />
+    <ClCompile Include="Ut\OXHookWnd.cpp" />
+    <ClCompile Include="Ut\OXItemTip.cpp" />
+    <ClCompile Include="Ut\OXItemTipWnd.cpp" />
+    <ClCompile Include="Ut\OXLayoutManager.cpp" />
+    <ClCompile Include="Ut\OXPopupBarCtrl.cpp" />
+    <ClCompile Include="Ut\OXToolTipCtrl.cpp" />
+    <ClCompile Include="Ut\OXTreeCal.cpp" />
+    <ClCompile Include="Ut\OXTreeCombo.cpp" />
+    <ClCompile Include="Ut\OXTreeCtrl.cpp" />
+    <ClCompile Include="Ut\OXTreeEdit.cpp" />
+    <ClCompile Include="Ut\OXTreeHeader.cpp" />
+    <ClCompile Include="Ut\OXTreeItem.cpp" />
+    <ClCompile Include="Video\AviIOGrabber.cpp" />
+    <ClCompile Include="Video\AviIOShow.cpp" />
+    <ClCompile Include="Video\avi_io.cpp" />
+    <ClCompile Include="Video\CameraManager.cpp" />
+    <ClCompile Include="Video_mode\VideoDocument.cpp" />
+    <ClCompile Include="Video_mode\VideoFrame.cpp" />
+    <ClCompile Include="Video_mode\VideoStatView.cpp" />
+    <ClCompile Include="Video_mode\VideoView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Res\Ru\CSClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\CommonRes\bmp00002.bmp" />
+    <Image Include="Res\CommonRes\bmp00003.bmp" />
+    <Image Include="Res\CommonRes\bmp00004.bmp" />
+    <Image Include="Res\CommonRes\Content.bmp" />
+    <Image Include="Res\CommonRes\CSClient.ico" />
+    <Image Include="Res\CommonRes\CSClientDoc.ico" />
+    <Image Include="Res\CommonRes\diagnostic.bmp" />
+    <Image Include="Res\CommonRes\gauge_hall.bmp" />
+    <Image Include="Res\CommonRes\gauge_hall.ico" />
+    <Image Include="Res\CommonRes\Get.bmp" />
+    <Image Include="Res\CommonRes\select_video_range.bmp" />
+    <Image Include="Res\CommonRes\Toolbar.bmp" />
+    <Image Include="Res\CommonRes\videotoolbar.bmp" />
+    <Image Include="Res\CommonRes\ViewChooser.bmp" />
+    <Image Include="Res\En\res\algodebug.bmp" />
+    <Image Include="Res\En\res\bmp00001.bmp" />
+    <Image Include="Res\En\res\bmp00002.bmp" />
+    <Image Include="Res\En\res\bmp00003.bmp" />
+    <Image Include="Res\En\res\bmp00004.bmp" />
+    <Image Include="Res\En\res\Content.bmp" />
+    <Image Include="Res\En\res\CSClient.ico" />
+    <Image Include="Res\En\res\CSClientDoc.ico" />
+    <Image Include="Res\En\res\diagnostic.bmp" />
+    <Image Include="Res\En\res\gauge_hall.bmp" />
+    <Image Include="Res\En\res\gauge_hall.ico" />
+    <Image Include="Res\En\res\Get.bmp" />
+    <Image Include="Res\En\res\select_video_range.bmp" />
+    <Image Include="Res\En\res\Toolbar.bmp" />
+    <Image Include="Res\En\res\toolbar2.bmp" />
+    <Image Include="Res\En\res\videotoolbar.bmp" />
+    <Image Include="Res\En\res\ViewChooser.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Res\CommonRes\CSClient.exe.manifest" />
+    <Manifest Include="Res\CSClient.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gui\Dhtml\HtmlViewEx.inl" />
+    <None Include="Res\CommonRes\gear.avi" />
+    <None Include="Res\CommonRes\www\report.css" />
+    <None Include="Res\gear.avi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Res\Ru\res\www_diff\report1.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSAlgo\CSAlgo2\CSAlgo2.vcxproj">
+      <Project>{17989ffb-eca8-46e1-8a5d-2cd8de362e46}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CSChair\CSChair.vcxproj">
+      <Project>{406cbe9f-7347-4460-86ea-eb48d712d8a1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CSEngine\CSEngine.vcxproj">
+      <Project>{2f0df4ce-d74c-43a2-975d-53205166c678}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CSUtility\csutility.vcxproj">
+      <Project>{286ec124-bd34-4217-9496-ef9039323433}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CVMCad\CVMCadComponent\CVMCadComponent.vcxproj">
+      <Project>{7fee10ef-e130-4ab0-b8b8-b5429577d341}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Res\En\CSClient.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,23 @@
+HKCR
+{
+	CCS.Exchange.1 = s 'CCS data exchange class'
+	{
+		CLSID = s '{0A7AC8F6-97F6-48b0-B88F-0472BA142D00}'
+	}
+	CCS.Exchange = s 'CCS data exchange class'
+	{
+		CLSID = s '{0A7AC8F6-97F6-48b0-B88F-0472BA142D00}'
+		CurVer = s 'CCS.Exchange.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0A7AC8F6-97F6-48b0-B88F-0472BA142D00} = s 'CCS data exchange class'
+		{
+			ProgID = s 'CCS.Exchange.1'
+			VersionIndependentProgID = s 'CCS.Exchange'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			'TypeLib' = s '{A89C7A56-59AD-493C-9389-5685EF04FB5B}'
+		}
+	}
+}

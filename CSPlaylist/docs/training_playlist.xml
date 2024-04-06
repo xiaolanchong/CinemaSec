@@ -1,0 +1,11 @@
+<training_playlist version="1" parameter_file="parameter1">
+   <city name="Moscow">
+      <cinema address="Cinema1">
+         <hall number="hall1">
+            <camera id="camera1" chair_file="chairfile" background_file="backgrnd">
+               <videofile name="test" date="1apr05" time="1" marking_file="markfile"/>
+            </camera>
+         </hall>
+      </cinema>
+   </city>
+</training_playlist>

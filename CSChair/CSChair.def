@@ -1,0 +1,13 @@
+;LIBRARY	CSChair
+EXPORTS		
+			LoadGaugeHallFromFile
+			LoadGaugeHallFromString
+			SaveGaugeHallToFile
+			SaveGaugeHallToString
+			
+			CreateVideoFileGrabber
+			DeleteVideoFileGrabber
+			
+			LoadGaugeHallFromFileEx
+			
+			CreateInterface

@@ -1,0 +1,433 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON                    "res/chcsva.ico"
+IDI_MAIN_ICON_CLIENT    ICON                    "res/chcsva_cnt.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,2,3,141
+ PRODUCTVERSION 0,2,3,141
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x3L
+#else
+ FILEFLAGS 0x2L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Elvees"
+            VALUE "FileDescription", "CinemaSec video module"
+            VALUE "FileVersion", "0, 2, 3, 141"
+            VALUE "InternalName", "CHCSVA"
+            VALUE "LegalCopyright", "© Elvees. All rights reserved."
+            VALUE "OriginalFilename", "chcsva.dll"
+            VALUE "ProductName", "CinemaSec"
+            VALUE "ProductVersion", "0, 2, 3, 141"
+        END
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "CompanyName", "ЗАО Элвиис"
+            VALUE "FileDescription", "Видео модуль для Системы Контроля зрительных Залов"
+            VALUE "FileVersion", "0, 2, 3, 141"
+            VALUE "InternalName", "CHCSVA"
+            VALUE "LegalCopyright", "© Элвис."
+            VALUE "OriginalFilename", "chcsva.dll"
+            VALUE "ProductName", "Система Контроля зрительных Залов"
+            VALUE "ProductVersion", "0, 2, 3, 141"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200, 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SHOWSTREAM DIALOGEX 0, 0, 200, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "ShowStream"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_MANAGER DIALOGEX 0, 0, 264, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Registered streams list"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STREAMS_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,35,20,139,65
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SHOWSTREAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CHCS_REGISTRY_KEY   "SOFTWARE\\Elvees\\CinemaSec"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIDEOPROC_AMP DIALOGEX 0, 0, 225, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Video Processing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,5,2,215,137
+    RTEXT           "&Brightness",IDC_BRIGHTNESS_STATIC,11,11,47,12,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_BRIGHTNESS_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,13,100,10
+    EDITTEXT        IDC_BRIGHTNESS_EDIT,167,11,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_BRIGHTNESS_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,11,11,
+                    12
+    CONTROL         "",IDC_BRIGHTNESS_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,206,11,10,12
+    RTEXT           "&Contrast",IDC_CONTRAST_STATIC,11,25,47,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_CONTRAST_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,27,100,10
+    EDITTEXT        IDC_CONTRAST_EDIT,167,25,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_CONTRAST_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,25,11,
+                    12
+    CONTROL         "",IDC_CONTRAST_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,206,25,10,12
+    RTEXT           "&Hue",IDC_HUE_STATIC,11,39,47,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_HUE_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,41,100,10
+    EDITTEXT        IDC_HUE_EDIT,167,39,35,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_HUE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,39,11,
+                    12
+    CONTROL         "",IDC_HUE_AUTO,"Button",BS_AUTOCHECKBOX | BS_VCENTER | 
+                    WS_TABSTOP,206,39,10,12
+    RTEXT           "&Saturation",IDC_SATURATION_STATIC,11,53,47,12,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_SATURATION_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,55,100,10
+    EDITTEXT        IDC_SATURATION_EDIT,167,53,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_SATURATION_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,53,11,
+                    12
+    CONTROL         "",IDC_SATURATION_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,206,53,10,12
+    RTEXT           "Shar&pness",IDC_SHARPNESS_STATIC,11,67,47,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_SHARPNESS_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,69,100,10
+    EDITTEXT        IDC_SHARPNESS_EDIT,167,67,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_SHARPNESS_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,67,11,
+                    12
+    CONTROL         "",IDC_SHARPNESS_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,206,67,10,12
+    RTEXT           "&Gamma",IDC_GAMMA_STATIC,11,81,47,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_GAMMA_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,83,100,10
+    EDITTEXT        IDC_GAMMA_EDIT,167,81,35,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_GAMMA_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,81,11,
+                    12
+    CONTROL         "",IDC_GAMMA_AUTO,"Button",BS_AUTOCHECKBOX | BS_VCENTER | 
+                    WS_TABSTOP,206,81,10,12
+    RTEXT           "&White Balance",IDC_WHITEBLNC_STATIC,11,95,47,12,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "",IDC_WHITEBLNC_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,97,100,10
+    EDITTEXT        IDC_WHITEBLNC_EDIT,167,95,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_WHITEBLNC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,95,11,
+                    12
+    CONTROL         "",IDC_WHITEBLNC_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,206,95,10,12
+    RTEXT           "Back&light",IDC_BACKLIGHT_STATIC,11,109,47,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_BACKLIGHT_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,63,111,100,10
+    EDITTEXT        IDC_BACKLIGHT_EDIT,167,109,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_BACKLIGHT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,191,109,
+                    11,12
+    CONTROL         "",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | BS_VCENTER | 
+                    WS_TABSTOP,206,109,10,12
+    CONTROL         "Color &enable",IDC_COLOR_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,125,60,10,WS_EX_RIGHT
+    RTEXT           "Auto",IDC_STATIC,201,123,16,8
+    DEFPUSHBUTTON   "OK",IDOK,114,145,50,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,170,145,50,14,0,WS_EX_STATICEDGE
+END
+
+IDD_CONFIGURE DIALOGEX 0, 0, 225, 159
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Configure"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Database",IDC_STATIC,3,0,220,60
+    PUSHBUTTON      "Brows&e...",IDC_BROWSE_DATABASE,178,43,40,13,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_DATABASE,8,9,210,30,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Video archive",IDC_STATIC,3,61,220,75
+    RTEXT           "&Rate:",IDC_STATIC,12,70,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_VIDEO_FPM,44,70,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,78,70,9,
+                    12
+    LTEXT           "frame/minute",IDC_STATIC,93,70,59,12,SS_CENTERIMAGE
+    RTEXT           "Part &size:",IDC_STATIC,12,86,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_VIDEO_MAXRATE,44,86,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,78,86,9,
+                    12
+    LTEXT           "seconds",IDC_STATIC,93,86,29,12,SS_CENTERIMAGE
+    RTEXT           "Basepath:",IDC_STATIC,9,102,33,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BASEPATH,44,102,130,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_BASEPATH,178,101,40,13,0,
+                    WS_EX_STATICEDGE
+    RTEXT           "Codec:",IDC_STATIC,12,118,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DRIVER_NAME,44,118,130,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "Sele&ct...",IDC_SELECT_CODEC,178,118,40,13,0,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,139,141,40,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,183,141,40,14,0,WS_EX_STATICEDGE
+END
+
+IDD_COMPRESSOR DIALOGEX 0, 0, 322, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select compression"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_COMP_LIST,5,5,110,127,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    GROUPBOX        "Settings",IDC_STATIC,121,52,196,60
+    LTEXT           "&Quality",IDC_STATIC,128,63,22,10
+    CONTROL         "",IDC_QUALITY_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,154,63,120,11
+    EDITTEXT        IDC_EDIT_QUALITY,276,62,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Use target &data rate of",IDC_USE_DATARATE,"Button",
+                    BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,128,78,87,12
+    EDITTEXT        IDC_DATARATE,219,78,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "kilobytes/second",IDC_STATIC_DATARATE,258,78,55,12,
+                    SS_CENTERIMAGE
+    CONTROL         "Force &keyframes every",IDC_USE_KEYFRAMES,"Button",
+                    BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,128,94,87,12
+    EDITTEXT        IDC_KEYRATE,219,94,35,12,ES_AUTOHSCROLL
+    LTEXT           "frames",IDC_STATIC_KEYRATE,258,94,22,12,SS_CENTERIMAGE
+    PUSHBUTTON      "&Configure",IDC_CONFIGURE,121,118,45,14,0,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Information",IDC_STATIC_INFO,121,1,196,50
+    RTEXT           "Delta frames:",IDC_STATIC,128,11,44,10,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_DELTA,174,11,100,10,SS_CENTERIMAGE
+    RTEXT           "FOURCC:",IDC_STATIC,128,24,44,10,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_FOURCC,174,24,100,10,SS_CENTERIMAGE
+    RTEXT           "Driver name:",IDC_STATIC,128,35,44,10,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_DRIVER,174,35,137,10,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,232,118,40,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,277,118,40,14,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VIDEOPROC_AMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 220
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_CONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 220
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_COMPRESSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 317
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 132
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SYSTRAY_MENU MENU 
+BEGIN
+    POPUP "TRAY"
+    BEGIN
+        MENUITEM "Show",                        ID_TRAY_SHOW
+        MENUITEM "Update",                      ID_TRAY_UPDATE
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

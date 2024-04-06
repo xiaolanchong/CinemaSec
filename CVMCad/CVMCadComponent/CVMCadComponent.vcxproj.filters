@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{8b351b7d-81aa-44ae-ba6c-e3a80d6b41cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{1efdebcc-7741-4fbf-8d53-d89b220d415f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{f4b1ca11-73db-42e6-b006-3ad391b7c4a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Common.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\CVMCadComponent.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\CVMCadComponentImp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Graphics\GraphicsDevice.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Graphics\Mesh.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Graphics\Primitives.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Graphics\Texture.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Exceptions\BaseException.cpp">
+      <Filter>Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\Camera.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\CameraToolSet.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\Element.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\ElementToolSet.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\HelperElement.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\Node.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\NodeToolSet.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\Primitives.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\Scene.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\SceneToolSet.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\Types.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Model\VertexToolSet.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\Common.hpp">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\CommonTypes.hpp">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\CVMCadComponent.hpp">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\CVMCadComponentImp.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Graphics\GraphicsDevice.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Graphics\Mesh.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Graphics\Primitives.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Graphics\Texture.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Exceptions\BaseException.hpp">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\Camera.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\CameraToolSet.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\Element.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\ElementToolSet.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\HelperElement.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\Node.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\NodeToolSet.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\Primitives.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\Scene.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\SceneToolSet.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\Types.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Model\VertexToolSet.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CVMCadComponent.rc" />
+  </ItemGroup>
+</Project>

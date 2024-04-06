@@ -1,0 +1,11 @@
+; LIBRARY "csalgo"
+
+EXPORTS
+	CreateBackgroundAccumulator
+	CreateCameraAnalyzer
+	CreateHallAnalyzer
+	ShowParameterDialog
+	SetDefaultParameters
+	DrawChairResult
+	LoadParameters
+

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{2F0DF4CE-D74C-43A2-975D-53205166C678}</ProjectGuid>
+    <RootNamespace>CSEngine</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34322.80</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Message>copy to ../BIN/Debug</Message>
+      <Command>copy "$(TargetPath)" "..\BIN\Debug\$(TargetFileName)"
+</Command>
+      <Outputs>..\BIN\Debug\$(TargetFileName);%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>winmm.lib;dbghelp.lib;Ws2_32.lib;gdiplus.lib;vfw32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CSEngine.dll</OutputFile>
+      <ModuleDefinitionFile>.\CSEngine.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)CSEngine.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Message>copy to ../BIN/Release/EN</Message>
+      <Command>copy "$(TargetPath)" "..\BIN\Release\EN\$(TargetFileName)"
+</Command>
+      <Outputs>..\BIN\Release\EN\$(TargetFileName);%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>winmm.lib;dbghelp.lib;Ws2_32.lib;gdiplus.lib;vfw32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CSEngine.dll</OutputFile>
+      <ModuleDefinitionFile>.\CSEngine.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)CSEngine.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CSEngine.def" />
+    <CustomBuild Include="message\EngineError.mc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Compile error descriptions</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">mc "%(FullPath)" -u -U -o -r "$(ProjectDir)\res" -h "$(ProjectDir)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(ProjectDir)\%(Filename).h;$(ProjectDir)\res\%(Filename).rc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Compile error descriptions</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">mc "%(FullPath)" -u -U -o -r "$(ProjectDir)\res" -h "$(ProjectDir)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(ProjectDir)\%(Filename).h;$(ProjectDir)\res\%(Filename).rc;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionHandler.cpp" />
+    <ClCompile Include="..\CSChair\public\NameParse.cpp" />
+    <ClCompile Include="..\CSChair\Xml\xmllite.cpp" />
+    <ClCompile Include="CSEngineApp.cpp" />
+    <ClCompile Include="DBFacet\CinemaDB.cpp" />
+    <ClCompile Include="DBFacet\CinemaOleDB.cpp" />
+    <ClCompile Include="DBFacet\ExchangeParam.cpp" />
+    <ClCompile Include="DBFacet\MemoryBackground.cpp" />
+    <ClCompile Include="DBFacet\OleDBConnection.cpp" />
+    <ClCompile Include="DBFacet\ProtocolTable.cpp" />
+    <ClCompile Include="DBFacet\StatTable.cpp" />
+    <ClCompile Include="DBFacet\TimeHelper.cpp" />
+    <ClCompile Include="DBFacet\TimeTable.cpp" />
+    <ClCompile Include="diagnostic\SystemDiagnosticImpl.cpp" />
+    <ClCompile Include="Exchange\ExchangeState.cpp" />
+    <ClCompile Include="Exchange\InputMessage.cpp" />
+    <ClCompile Include="Exchange\MessageProcessor.cpp" />
+    <ClCompile Include="Exchange\RequestImpl.cpp" />
+    <ClCompile Include="Exchange\TimeTableMessage.cpp" />
+    <ClCompile Include="ExitGuard.cpp" />
+    <ClCompile Include="FileTransfer\FileArchiveWriter.cpp" />
+    <ClCompile Include="FileTransfer\FileTransferImpl.cpp" />
+    <ClCompile Include="Ipc\NetAddr.cpp" />
+    <ClCompile Include="Ipc\NetLink.cpp" />
+    <ClCompile Include="Ipc\NetLog.cpp" />
+    <ClCompile Include="Ipc\NetTcpLink.cpp" />
+    <ClCompile Include="Ipc\NetUtil.cpp" />
+    <ClCompile Include="mainserver\BackupServer.cpp" />
+    <ClCompile Include="mainserver\CameraDataBuffer.cpp" />
+    <ClCompile Include="mainserver\CameraImage.cpp" />
+    <ClCompile Include="mainserver\CameraServer.cpp" />
+    <ClCompile Include="mainserver\CStatisticsServerImpl.cpp" />
+    <ClCompile Include="mainserver\FileArchiveProvider.cpp" />
+    <ClCompile Include="mainserver\FileTransferServer.cpp" />
+    <ClCompile Include="mainserver\FileTransferState.cpp" />
+    <ClCompile Include="mainserver\HallServer.cpp" />
+    <ClCompile Include="mainserver\ImageEncoder.cpp" />
+    <ClCompile Include="mainserver\main_server_impl.cpp" />
+    <ClCompile Include="mainserver\NetProto.cpp" />
+    <ClCompile Include="mainserver\ServerTimeAction.cpp" />
+    <ClCompile Include="mainserver\SessionServer.cpp" />
+    <ClCompile Include="mainserver\SuperServerImpl.cpp" />
+    <ClCompile Include="mainserver\SystemConfigImpl.cpp" />
+    <ClCompile Include="mainserver\ThreadError.cpp" />
+    <ClCompile Include="mainserver\ThreadMessage.cpp" />
+    <ClCompile Include="mainserver\TimeSheduler.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CSChair\dmpstuff\ExceptionHandler.h" />
+    <ClInclude Include="..\CSChair\public\NameParse.h" />
+    <ClInclude Include="CSEngine.h" />
+    <ClInclude Include="CSEngineApp.h" />
+    <ClInclude Include="DBFacet\CinemaDB.h" />
+    <ClInclude Include="DBFacet\CinemaOleDB.h" />
+    <ClInclude Include="DBFacet\DBHelper.h" />
+    <ClInclude Include="DBFacet\DBRows.h" />
+    <ClInclude Include="DBFacet\ExchangeParam.h" />
+    <ClInclude Include="DBFacet\MemoryBackground.h" />
+    <ClInclude Include="DBFacet\OleDBConnection.h" />
+    <ClInclude Include="DBFacet\ProtocolTable.h" />
+    <ClInclude Include="DBFacet\StatTable.h" />
+    <ClInclude Include="DBFacet\TimeHelper.h" />
+    <ClInclude Include="DBFacet\TimeTable.h" />
+    <ClInclude Include="diagnostic\ISystemDiagnostic.h" />
+    <ClInclude Include="diagnostic\SystemDiagnosticImpl.h" />
+    <ClInclude Include="Exchange\ExchangeState.h" />
+    <ClInclude Include="Exchange\InputMessage.h" />
+    <ClInclude Include="Exchange\IRequest.h" />
+    <ClInclude Include="Exchange\MessageProcessor.h" />
+    <ClInclude Include="Exchange\QueryException.h" />
+    <ClInclude Include="Exchange\RequestImpl.h" />
+    <ClInclude Include="Exchange\TimeTableMessage.h" />
+    <ClInclude Include="FileTransfer\FileArchiveWriter.h" />
+    <ClInclude Include="FileTransfer\FileTransferImpl.h" />
+    <ClInclude Include="FileTransfer\IFileTransfer.h" />
+    <ClInclude Include="Ipc\NetAddr.h" />
+    <ClInclude Include="Ipc\NetLink.h" />
+    <ClInclude Include="Ipc\NetLog.h" />
+    <ClInclude Include="Ipc\NetStruct.h" />
+    <ClInclude Include="Ipc\NetTcpLink.h" />
+    <ClInclude Include="Ipc\NetUtil.h" />
+    <ClInclude Include="mainserver\BackupServer.h" />
+    <ClInclude Include="mainserver\CameraDataBuffer.h" />
+    <ClInclude Include="mainserver\CameraImage.h" />
+    <ClInclude Include="mainserver\CameraServer.h" />
+    <ClInclude Include="mainserver\CStatisticsServerImpl.h" />
+    <ClInclude Include="mainserver\FileArchiveProvider.h" />
+    <ClInclude Include="mainserver\FileTransferServer.h" />
+    <ClInclude Include="mainserver\FileTransferState.h" />
+    <ClInclude Include="mainserver\HallServer.h" />
+    <ClInclude Include="mainserver\ImageEncoder.h" />
+    <ClInclude Include="mainserver\IStatisticsServer.h" />
+    <ClInclude Include="mainserver\main_server_impl.h" />
+    <ClInclude Include="mainserver\NetPort.h" />
+    <ClInclude Include="mainserver\NetProto.h" />
+    <ClInclude Include="mainserver\NetworkLayer.h" />
+    <ClInclude Include="mainserver\ServerTimeAction.h" />
+    <ClInclude Include="mainserver\SessionServer.h" />
+    <ClInclude Include="mainserver\SuperServerImpl.h" />
+    <ClInclude Include="mainserver\SystemConfigImpl.h" />
+    <ClInclude Include="mainserver\ThreadError.h" />
+    <ClInclude Include="mainserver\ThreadMessage.h" />
+    <ClInclude Include="mainserver\TimeSheduler.h" />
+    <ClInclude Include="res\En\resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="syscfg_int.h" />
+    <ClInclude Include="Timeouts.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\En\CSEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Exchange\BoxOffice.idl">
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">false</GenerateTypeLibrary>
+      <OutputDirectory Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+      </OutputDirectory>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">%(RootDir)%(Directory)%(Filename)_h.h</HeaderFileName>
+      <DllDataFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">%(RootDir)%(Directory)dlldata.c</DllDataFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">%(RootDir)%(Directory)%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">%(RootDir)%(Directory)%(Filename)_p.c</ProxyFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">false</GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">%(RootDir)%(Directory)%(Filename)_h.h</HeaderFileName>
+      <DllDataFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">%(RootDir)%(Directory)dlldata.c</DllDataFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">%(RootDir)%(Directory)%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">%(RootDir)%(Directory)%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSAlgo\CSAlgo2\CSAlgo2.vcxproj">
+      <Project>{17989ffb-eca8-46e1-8a5d-2cd8de362e46}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CSArchive\chcsva\chcsva.vcxproj">
+      <Project>{4d1b1264-9d03-467a-8187-4b66ce08bf6d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CSArchive\CSBackup\CSBackup.vcxproj">
+      <Project>{d48ff8b1-14d1-4a0a-bd8c-e5b2e57b0798}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CSChair\CSChair.vcxproj">
+      <Project>{406cbe9f-7347-4460-86ea-eb48d712d8a1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CSUtility\csutility.vcxproj">
+      <Project>{286ec124-bd34-4217-9496-ef9039323433}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

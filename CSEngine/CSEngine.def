@@ -1,0 +1,6 @@
+; CSEngine.def : Declares the module parameters for the DLL.
+
+EXPORTS
+    
+    CreateEngineInterface
+    ExitGuard

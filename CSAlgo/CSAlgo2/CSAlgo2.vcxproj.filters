@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{2f7d7563-28e3-4624-884e-2a48035a1e70}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+    <Filter Include="CSUtility">
+      <UniqueIdentifier>{03194c1a-4ffc-4269-97b4-f22d39e1e62f}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3a6cf056-63a3-45cc-9b1a-d1f554bac8c0}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{f3b9fb2b-99e2-4596-9bed-823687209d89}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSAlgo2.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\CSAlgo2.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CSAlgo2Dll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSChair\Xml\xmllite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\AlgoParameters.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\AlgoParamTabs.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\BackgroundAccum.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\CameraAnalyzer.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\ChairImageContainer.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\CorrelateChair.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\DrawChairs.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\DynamicAccumulator.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\FrameUpdator.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\HallAnalyzer.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\ImageAcquirer.cpp">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\alib\alib_file.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\alib\alib_util.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\alib\avideo_reader.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\utility\CorrectBrightness.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\utility\helper.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\utility\LinearHistogramAdapter.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\utility\LogBimodalHistogramAdapter.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\alib\parameter_ex.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\alib\paramlib_dlg.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\utility\ScheduleTestVideo.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CSUtility\alib\vl_horz_region.cpp">
+      <Filter>CSUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\algorithm\day_night_file_parser.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\algorithm\noise_meter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSAlgo2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSAlgo2Dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CSChair\Xml\xmllite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\AlgoParameters.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\AlgoParamTabs.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\AlgoTypes.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\ChairImageContainer.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\DayNightDecision.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\DynamicAccumulator.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\FrameUpdator.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\ImageAcquirer.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\SubImage.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm\algo_common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm\base_chair.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm\day_night_file_parser.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm\hresult_codes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\algorithm\image_property.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\background_accum_interface.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\camera_analyzer_interface.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\hall_analyzer_interface.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\parameter_dialog.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CSAlgo2.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>

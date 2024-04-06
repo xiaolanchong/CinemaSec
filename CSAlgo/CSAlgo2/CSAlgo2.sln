@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSAlgo 2", "CSAlgo2.vcproj", "{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

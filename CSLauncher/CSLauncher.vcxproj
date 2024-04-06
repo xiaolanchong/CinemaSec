@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{8CB3C9D4-1A36-4A0D-833D-6569A58C80E4}</ProjectGuid>
+    <RootNamespace>CSLauncher</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34322.80</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>__$(Configuration)\</OutDir>
+    <IntDir>__$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../CSChair;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" "../BIN/Debug/$(TargetName).exe"
+</Command>
+      <Outputs>../BIN/Debug/$(TargetName).exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>version.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(ProjectName)_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Performing registration</Message>
+      <Command>"../BIN/Debug/$(TargetFileName)" /RegServer</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../CSChair;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" "../BIN/Release/EN/$(TargetName).exe"
+</Command>
+      <Outputs>../BIN/Release/EN/$(TargetName).exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Link>
+      <AdditionalDependencies>version.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>CSLauncher_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>CSLauncher_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Performing registration</Message>
+      <Command>"../BIN/Release/EN/$(TargetFileName)" /RegServer</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionAttacher.cpp" />
+    <ClCompile Include="..\CSChair\dmpstuff\ExceptionHandler.cpp" />
+    <ClCompile Include="CSLauncher.cpp" />
+    <ClCompile Include="Exchange\Exchange.cpp" />
+    <ClCompile Include="Exchange\Request.cpp" />
+    <ClCompile Include="HtmlLog\CyclicLog.cpp" />
+    <ClCompile Include="HtmlLog\HtmlLog.cpp" />
+    <ClCompile Include="LauncherDoc.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabViews\AnalyzerView.cpp" />
+    <ClCompile Include="TabViews\DebugOuputList.cpp" />
+    <ClCompile Include="TabViews\ExchangeLogView.cpp" />
+    <ClCompile Include="TabViews\LauncherView.cpp" />
+    <ClCompile Include="TabViews\RoomView.cpp" />
+    <ClCompile Include="TabViews\SettingsView.cpp" />
+    <ClCompile Include="TabViews\SimpleLog.cpp" />
+    <ClCompile Include="TabViews\TabSelection.cpp" />
+    <ClCompile Include="TabViews\VideoLogView.cpp" />
+    <ClCompile Include="utf16\UTF16File.cpp" />
+    <ClCompile Include="Ut\OXCalendar.cpp" />
+    <ClCompile Include="Ut\OXCalendarPopup.cpp" />
+    <ClCompile Include="Ut\OXColorPickerCtrl.cpp" />
+    <ClCompile Include="Ut\OXHookWnd.cpp" />
+    <ClCompile Include="Ut\OXItemTip.cpp" />
+    <ClCompile Include="Ut\OXItemTipWnd.cpp" />
+    <ClCompile Include="Ut\OXLayoutManager.cpp" />
+    <ClCompile Include="Ut\OXPopupBarCtrl.cpp" />
+    <ClCompile Include="Ut\OXToolTipCtrl.cpp" />
+    <ClCompile Include="Ut\OXTreeCal.cpp" />
+    <ClCompile Include="Ut\OXTreeCombo.cpp" />
+    <ClCompile Include="Ut\OXTreeCtrl.cpp" />
+    <ClCompile Include="Ut\OXTreeEdit.cpp" />
+    <ClCompile Include="Ut\OXTreeHeader.cpp" />
+    <ClCompile Include="Ut\OXTreeItem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CSChair\dmpstuff\ExceptionHandler.h" />
+    <ClInclude Include="..\CSEngine\Exchange\dual.h" />
+    <ClInclude Include="CSLauncher.h" />
+    <ClInclude Include="Exchange\Exchange.h" />
+    <ClInclude Include="Exchange\Request.h" />
+    <ClInclude Include="HtmlLog\CyclicLog.h" />
+    <ClInclude Include="HtmlLog\HtmlLog.h" />
+    <ClInclude Include="LauncherDoc.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="res\resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabViews\AnalyzerView.h" />
+    <ClInclude Include="TabViews\DebugOuputList.h" />
+    <ClInclude Include="TabViews\ExchangeLogView.h" />
+    <ClInclude Include="TabViews\LauncherView.h" />
+    <ClInclude Include="TabViews\RoomView.h" />
+    <ClInclude Include="TabViews\SettingsView.h" />
+    <ClInclude Include="TabViews\SimpleLog.h" />
+    <ClInclude Include="TabViews\TabSelection.h" />
+    <ClInclude Include="TabViews\VideoLogView.h" />
+    <ClInclude Include="utf16\UTF16File.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\En\res\CSLauncher.ico" />
+    <Image Include="res\En\res\CSLauncherDoc.ico" />
+    <Image Include="res\En\res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\En\CSLauncher.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\En\CSLauncher.rc2" />
+    <None Include="res\En\res\CSLauncher.rgs" />
+    <None Include="res\En\res\Request.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="CSLauncher.idl">
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">true</GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(ProjectName)_i.h</HeaderFileName>
+      <DllDataFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">dlldata.c</DllDataFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(ProjectName)_i.c</InterfaceIdentifierFileName>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\CSLauncher.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSEngine\CSEngine.vcxproj">
+      <Project>{2f0df4ce-d74c-43a2-975d-53205166c678}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="res\En\CSLauncher.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

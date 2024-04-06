@@ -1,0 +1,279 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Sources\Resource.hpp"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,388
+ PRODUCTVERSION 1,0,1,388
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "FileDescription", "CVMCad Application"
+            VALUE "FileVersion", "1, 0, 1, 388"
+            VALUE "InternalName", "CVMCad"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "CVMCad.exe"
+            VALUE "ProductName", " CVMCad Application"
+            VALUE "ProductVersion", "1, 0, 1, 388"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CAMWIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CAMWIZARD DIALOGEX 0, 0, 230, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,160,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,160,50,14
+    EDITTEXT        IDC_CAMX_NUM,82,36,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "CamX Num",IDC_STATIC,42,38,38,10
+    EDITTEXT        IDC_CAMY_NUM,162,37,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "CamY Num",IDC_STATIC,122,38,38,10
+    EDITTEXT        IDC_CAM_IMG_WIDTH,61,93,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CAM_IMG_HEIGHT,145,93,36,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Width",IDC_STATIC,39,94,20,10
+    LTEXT           "Height",IDC_STATIC,121,94,20,10
+    GROUPBOX        "Camera array",IDC_STATIC,18,16,191,49
+    GROUPBOX        "Primary element dimesions",IDC_STATIC,19,76,191,44
+    LTEXT           "px",IDC_STATIC,99,94,9,10
+    LTEXT           "px",IDC_STATIC,183,94,9,10
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Sources\\Resource.hpp\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_MENU_FILE_NEW
+        MENUITEM "&Open...",                    ID_MENU_FILE_OPEN
+        MENUITEM "&Close",                      ID_MENU_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save...",                    ID_MENU_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_MENU_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo",                       ID_MENU_EDIT_UNDO, INACTIVE
+        MENUITEM "&Redo",                       ID_MENU_EDIT_REDO, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t",                        ID_MENU_EDIT_CUT, INACTIVE
+        MENUITEM "&Copy",                       ID_MENU_EDIT_COPY, INACTIVE
+        MENUITEM "&Paste",                      ID_MENU_EDIT_PASTE, INACTIVE
+        MENUITEM "&Delete",                     ID_MENU_EDIT_DELETE
+        , INACTIVE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Select",                     ID_TOOL_SELECT
+        MENUITEM "&Zoom",                       ID_TOOL_ZOOM
+        MENUITEM "&Pan",                        ID_TOOL_PAN
+        MENUITEM SEPARATOR
+        MENUITEM "Zoo&m In",                    ID_MENU_VIEW_ZOOM_IN
+        MENUITEM "Zoom &Out",                   ID_MENU_VIEW_ZOOM_OUT
+        MENUITEM "Fit in &Window",              ID_MENU_VIEW_FIT_IN_WINDOW
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Mirror...",                  ID_TOOL_MIRROR
+        MENUITEM "&Clone...",                   ID_TOOL_CLONE
+        MENUITEM "&Align && Distribute...",     ID_TOOL_ALIGNDISTRIBUTE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Refresh views",              ID_WINDOW_REFRESHVIEWS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+IDR_PROPERTIES_VIEW_CONTEXT_MENU MENU 
+BEGIN
+    POPUP "Context Menu"
+    BEGIN
+        MENUITEM "Add Camera",                  ID_CMENU_ADD_CAMERA
+        MENUITEM "Select Camera Source...",     ID_CMENU_SELECT_CAMERA_SOURCE
+
+        MENUITEM "Active Camera",               ID_CMENU_MAKE_ACTIVE_CAMERA
+        MENUITEM SEPARATOR
+        MENUITEM "Remove Camera",               ID_CMENU_REMOVE_CAMERA
+        MENUITEM SEPARATOR
+        MENUITEM "Add Element",                 ID_CMENU_ADD_ELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "Remove Element",              ID_CMENU_REMOVE_ELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "Active Element",              ID_CMENU_MAKE_ACTIVE_ELEMENT
+        MENUITEM "Apply Normal Mapping",        ID_CMENU_APPLY_NORMAL_MAPPING
+
+        MENUITEM "Triangulate Element's Points", 
+                                                ID_CMENU_TRIANGULATE_ELEMENTS_POINTS
+
+    END
+END
+
+IDR_GEOMETRY_VIEW_CONTEXT_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Add Point",                   ID_CMENU_ADD_POINT
+        MENUITEM "Remove Points",               ID_CMENU_REMOVE_POINTS
+        MENUITEM SEPARATOR
+        POPUP "Align"
+        BEGIN
+            MENUITEM "Horizontal",                  ID_TOOL_HORIZONTAL_ALIGN
+            MENUITEM "Vertical",                    ID_TOOL_VERTICAL_ALIGN
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MAIN_TOOLBAR_ENABLED BITMAP                  "Resources\\MainToolBarEnabled.bmp"
+IDB_MAIN_TOOLBAR_DISABLED BITMAP                  "Resources\\MainToolBarDisabled.bmp"
+IDB_PROPERTIES_IMAGELIST BITMAP                  "Resources\\tv_imagelist.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_NAME            "CVMCad"
+    IDS_APP_VER             "1.0"
+    IDS_DEF_FILE_NAME       "Untitled"
+    IDS_DEF_FILE_EXT        "md"
+    IDR_MAINWINDOW          "TestProj\n\nTestProj\n\n\nTestProj.Document\nTestProj.Document"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSDayNight", "CSDayNight.vcproj", "{433DC294-03C0-438E-AD00-C04B243CAC76}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{433DC294-03C0-438E-AD00-C04B243CAC76}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{433DC294-03C0-438E-AD00-C04B243CAC76}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{433DC294-03C0-438E-AD00-C04B243CAC76}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{433DC294-03C0-438E-AD00-C04B243CAC76}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

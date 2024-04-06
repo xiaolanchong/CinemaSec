@@ -1,0 +1,6 @@
+LIBRARY "CSAlgoCommon"
+
+EXPORTS
+	ProcessOnePolymaskNoiseHistogram
+
+

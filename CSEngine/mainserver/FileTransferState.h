@@ -32,6 +32,8 @@ protected:
 		m_nCameraID(nCameraID)
 		{};
 public:
+
+	virtual ~IFileTransferState() = default;
 /**
 	\brief	Выполнение операции состояния автомата
 	\return \li NULL - операция не завершена (переход в себя)	

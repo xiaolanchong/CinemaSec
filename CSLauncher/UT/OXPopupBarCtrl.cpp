@@ -1051,7 +1051,8 @@ BOOL COXPopupBarCtrl::PopulateToolTip()
 
 	CString sToolTipText;
     // Add a tool for each Color Button
-	for(nIndex=0; nIndex<(int)m_nButtons; nIndex++)
+	int nIndex = 0;
+	for(; nIndex<(int)m_nButtons; nIndex++)
 	{
 		if(m_arrToolTipText.Lookup(m_arrData[nIndex],sToolTipText))
 		{

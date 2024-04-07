@@ -101,7 +101,7 @@ COXTreeItem& COXTreeItem::operator=( const COXTreeItem& xti )
 	}
 	m_Items.RemoveAll();
 
-	for(nIndex=0; nIndex<xti.m_Items.GetSize(); nIndex++)
+	for(int nIndex=0; nIndex<xti.m_Items.GetSize(); nIndex++)
 	{
 		COXTreeSubItem* pSubItem=xti.m_Items.GetAt(nIndex);
 		ASSERT(pSubItem!=NULL);

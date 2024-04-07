@@ -102,7 +102,11 @@ void	MixedRender::Resize( int x, int y )
 
 bool	MixedRender::CanTakeScreenShot()
 {
+#if 0
 	return m_pActiveRender->TakeScreenShot();
+#else
+	return m_pActiveRender->CanTakeScreenShot();
+#endif
 }
 
 boost::shared_ptr<Gdiplus::Image>	MixedRender::TakeScreenShot( ) 

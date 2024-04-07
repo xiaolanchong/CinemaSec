@@ -54,6 +54,9 @@
     <ClCompile Include="BrowseForFolder\XSBrowseFolder.cpp">
       <Filter>BrowseForFolder</Filter>
     </ClCompile>
+    <ClCompile Include="..\CSClient\GUI\HtmlCtrl\FindWinList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="CSExchangeTest.idl">
@@ -93,6 +96,9 @@
     </ClInclude>
     <ClInclude Include="BrowseForFolder\XSBrowseFolder.h">
       <Filter>BrowseForFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CSClient\GUI\HtmlCtrl\FindWinList.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

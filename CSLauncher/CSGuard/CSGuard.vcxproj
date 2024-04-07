@@ -45,6 +45,7 @@
     <OutDir>__$(Configuration)\</OutDir>
     <IntDir>__$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
     <OutDir>__$(Configuration)\</OutDir>
@@ -63,6 +64,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../boost_1_84_0</AdditionalIncludeDirectories>
     </ClCompile>
     <CustomBuildStep>
       <Command>copy "$(TargetPath)" "../../BIN/Debug/$(TargetFileName)"
@@ -95,6 +97,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../boost_1_84_0</AdditionalIncludeDirectories>
     </ClCompile>
     <CustomBuildStep>
       <Command>copy "$(TargetPath)" "../../BIN/Release/EN/$(TargetFileName)"

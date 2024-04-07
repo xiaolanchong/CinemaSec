@@ -47,7 +47,7 @@ typedef vector<MeshIndex>::iterator MeshIndexArrayIt;
 
 class CGraphicsDevice
 {
-	friend class CSingletonDestroyer;
+	template<typename T> friend class CSingletonDestroyer;
 public:
 	static CGraphicsDevice* GetInstance();
 

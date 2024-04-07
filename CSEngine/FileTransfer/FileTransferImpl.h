@@ -71,17 +71,17 @@ private:
 	/*! the working thread function */
 	unsigned ThreadProc();
 
-	virtual void OnRequestData( netadr_t NetAddr, const std::vector<int>& CameraIDs ){};
-	virtual void OnResponseData( netadr_t NetAddr, const std::vector< ResponseDataStruct >& Data ){};
-	virtual void OnStartWork( netadr_t NetAddr, const GUID& SessionID, __int64 nStartSec, __int64 nEndSec ) {};
-	virtual void OnStopWork( netadr_t NetAddr )	{};
-	virtual void OnCurrentState(netadr_t NetAddr, int nRoomID,  const GUID& SessionID, 
-								__int64 nBeginSec, __int64 nEndSec,
-								const std::vector< CurrentStateType >& Devices) {};
+	virtual void OnRequestData( netadr_t /*NetAddr*/, const std::vector<int>& /*CameraIDs*/ ){};
+	virtual void OnResponseData( netadr_t /*NetAddr*/, const std::vector< ResponseDataStruct >& /*Data*/ ){};
+	virtual void OnStartWork( netadr_t /*NetAddr*/, const GUID& /*SessionID*/, __int64 /*nStartSec*/, __int64 /*nEndSec*/ ) {};
+	virtual void OnStopWork( netadr_t /*NetAddr*/ )	{};
+	virtual void OnCurrentState(netadr_t /*NetAddr*/, int /*nRoomID*/,  const GUID& /*SessionID*/, 
+								__int64 /*nBeginSec*/, __int64 /*nEndSec*/,
+								const std::vector< CurrentStateType >& /*Devices*/) {};
 	// for UDP datagrams ( ping, start, state )
-	virtual void SendMessage( netadr_t NetAddr, const void* Msg, size_t nSize ) {};
+	virtual void SendMessage( netadr_t /*NetAddr*/, const void* /*Msg*/, size_t /*nSize*/ ) {};
 	// for TCP packets ( data, requests )
-	virtual void SendReliableMessage( netadr_t NetAddr, const void* Msg, size_t nSize ) {};
+	virtual void SendReliableMessage( netadr_t /*NetAddr*/, const void* /*Msg*/, size_t /*nSize*/ ) {};
 
 	virtual void OnHallData( netadr_t NetAddr, const std::vector<BYTE>& Data  ){}
 

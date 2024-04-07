@@ -28,7 +28,7 @@ public:
 	struct SceneSegment
 	{
 		CCamera* pCamera;
-		vector< pair<CElement*, shared_ptr<CMesh> > > geometry;
+		vector< pair<CElement*, boost::shared_ptr<CMesh> > > geometry;
 	};
 
 public:

@@ -11,7 +11,7 @@
 #include "common_interface_settings.h"
 #include "data_transfer_interface.h"
 
-namespace csinterface
+namespace csalgo
 {
 
 //=================================================================================================

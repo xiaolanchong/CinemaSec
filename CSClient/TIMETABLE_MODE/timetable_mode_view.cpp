@@ -561,7 +561,7 @@ CTime	CTimeTableView::GetTrueTimeForSave( int nHours, int nMinutes)
 	return GetTrueTimeInternal( timeStart, nHours, nMinutes ) ;
 }
 
-int CALLBACK	CTimeTableView::CompareItem( LPARAM _1st, LPARAM _2nd, LPARAM _3rd )
+int CALLBACK	CTimeTableView::CompareItem( LPARAM _1st, LPARAM _2nd, LPARAM /*_3rd*/ )
 {
 //	BOOL bAsc = !(BOOL)_3rd;
 	CGridCellBase	*pFirst		= (CGridCellBase*)_1st,
@@ -631,10 +631,11 @@ bool	CTimeTableView::CheckUserDate()
 
 CTime SameTimeAfterNDays( CTime SomeTime, int nDays ) 
 { 
-	struct tm *ptm = SomeTime.GetLocalTm(); 
-	ptm->tm_mday += nDays; 
-	ptm->tm_isdst = -1; 
-	return CTime( _mktime64( ptm ) ); 
+	struct tm tm {};
+	SomeTime.GetLocalTm(&tm);
+	tm.tm_mday += nDays; 
+	tm.tm_isdst = -1;
+	return CTime( _mktime64( &tm ) ); 
 } 
 
 void	CTimeTableView::PropagateDay(	CTime timeBegin, CTime timeEnd, 

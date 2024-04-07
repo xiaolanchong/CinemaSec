@@ -12,7 +12,7 @@
 #include "info_query_interface.h"
 #include "debug_interface.h"
 
-namespace csinterface
+namespace csalgo
 {
 
 //=================================================================================================

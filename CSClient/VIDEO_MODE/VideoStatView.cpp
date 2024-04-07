@@ -48,7 +48,7 @@ CVideoDocument* CVideoStatView::GetDocument()
 
 void CVideoStatView::OnInitialUpdate()
 {
-	static bNotInit = true;
+	static bool bNotInit = true;
 	CArrangeStatView::OnInitialUpdate();
 
 	CSize sizeTotal;

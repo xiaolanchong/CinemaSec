@@ -253,14 +253,14 @@ bool CIOBuffer::IsOperationCompleted()
 	return (m_used == m_wsabuf.len) ? true : false;
 }
 
-void *CIOBuffer::operator new(unsigned objectSize, unsigned bufferSize)
+void *CIOBuffer::operator new(size_t totalSize/*size_t objectSize, size_t bufferSize*/)
 {
-	void *pMem = new char[objectSize + bufferSize];
+	void *pMem = new char[/*objectSize + bufferSize*/totalSize];
 
 	return pMem;
 }
 
-void CIOBuffer::operator delete(void *pObject, unsigned /* bufferSize*/)
+void CIOBuffer::operator delete(void *pObject, size_t  bufferSize)
 {
 	delete [] pObject;
 }
@@ -303,7 +303,7 @@ CIOBuffer *CIOBuffer::Allocator::Allocate()
 	}
 	else
 	{
-		pBuffer = new(m_bufferSize)CIOBuffer(*this, m_bufferSize);
+		pBuffer = new CIOBuffer(*this, sizeof(CIOBuffer) + m_bufferSize);
 		
 		if(!pBuffer)
 		{

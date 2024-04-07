@@ -24,7 +24,7 @@ private:
 	char szMessage[MAX_MSG_SIZE];
 	char szDT[128];
 	struct tm *newtime;
-	long ltime;
+	time_t ltime;
 	CRITICAL_SECTION cs;
 };
 

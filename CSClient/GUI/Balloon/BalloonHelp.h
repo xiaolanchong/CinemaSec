@@ -246,7 +246,7 @@ protected:
 	afx_msg void OnNcCalcSize(BOOL bCalcValidRects, NCCALCSIZE_PARAMS FAR* lpncsp);
 	afx_msg void OnTimer(UINT nIDEvent);
    afx_msg void OnMouseMove(UINT, CPoint point);
-   afx_msg UINT OnNcHitTest(CPoint point);
+   afx_msg LRESULT OnNcHitTest(CPoint point);
    afx_msg void OnClose();
    afx_msg void OnDestroy();
    virtual void PostNcDestroy();

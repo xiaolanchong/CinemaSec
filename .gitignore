@@ -5,3 +5,26 @@
 /CSClient/.vs/
 /CSEngine/__Unicode Debug
 /CSUtility/__Unicode Debug
+/Bin/Debug
+/Bin/DebugA
+/CSArchive/chcsva/_bin/
+/CSArchive/CSBackup/Debug/
+/CVMCad/CVMCadComponent/Temporary/Debug
+/CVMCad/CVMCadComponent/Binaries/
+/CSLauncher/__Unicode Debug
+/CSExchangeTest/Debug
+/CSArchive/chcsva/_lib/
+/CSLauncher/CSGuard/__Unicode Debug
+/CSEngine/Exchange/BoxOffice_h.h
+/CSEngine/Exchange/BoxOffice_i.c
+/CSEngine/Exchange/BoxOffice_p.c
+/CSEngine/Exchange/dlldata.c
+/CSLauncher/CSLauncher_i.c
+/CSLauncher/CSLauncher_i.h
+/CSLauncher/CSLauncher_p.c
+/CSLauncher/dlldata.c
+/CSExchangeTest/BoxOffice_p.c
+/CSExchangeTest/CSExchangeTest_i.c
+/CSExchangeTest/CSExchangeTest_i.h
+/CSExchangeTest/CSExchangeTest_p.c
+/CSExchangeTest/dlldata.c

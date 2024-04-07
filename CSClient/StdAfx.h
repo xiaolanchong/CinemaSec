@@ -10,7 +10,25 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
+#include <winsdkver.h>
+
 #define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
+
+#ifndef WINVER				// Allow use of features specific to Windows 95 and Windows NT 4 or later.
+#define WINVER _WIN32_MAXVER		// Change this to the appropriate value to target Windows 98 and Windows 2000 or later.
+#endif
+
+#ifndef _WIN32_WINNT		// Allow use of features specific to Windows NT 4 or later.
+#define _WIN32_WINNT _WIN32_WINNT_MAXVER	// Change this to the appropriate value to target Windows 2000 or later.
+#endif						
+
+#ifndef _WIN32_WINDOWS		// Allow use of features specific to Windows 98 or later.
+#define _WIN32_WINDOWS _WIN32_WINDOWS_MAXVER // Change this to the appropriate value to target Windows Me or later.
+#endif
+
+#ifndef _WIN32_IE			// Allow use of features specific to IE 4.0 or later.
+#define _WIN32_IE _WIN32_IE_MAXVER	// Change this to the appropriate value to target IE 5.0 or later.
+#endif
 
 #pragma warning( disable : 4786 )
 #include <afxwin.h>         // MFC core and standard components

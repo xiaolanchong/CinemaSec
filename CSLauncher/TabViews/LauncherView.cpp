@@ -51,7 +51,7 @@ void CLauncherView::OnInitialUpdate()
 
 		ModifyStyle( WS_BORDER, 0 );
 		CLauncherDoc* pDoc = GetDocument();
-		static bCreated = false;
+		static bool bCreated = false;
 		if( !bCreated )
 		{
 			bCreated = true;

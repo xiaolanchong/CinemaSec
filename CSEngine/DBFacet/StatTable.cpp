@@ -384,7 +384,7 @@ void	StatTable::GetStatInfo( int nStatID, int& nRoomID, CTime& timeStat, int& nS
 //	return true;
 }
 
-void	StatTable::GetStatForExchange( int nRoomID, CTime timeBegin, CTime timeEnd, std::vector< FilmStat_t >& StatArr,int &nStatID )
+void	StatTable::GetStatForExchange( int /*nRoomID*/, CTime timeBegin, CTime timeEnd, std::vector< FilmStat_t >& StatArr,int &nStatID )
 {
 	StatArr.clear();
 	HRESULT hr;

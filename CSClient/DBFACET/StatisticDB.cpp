@@ -39,7 +39,7 @@ long StatisticDB::GetStatistics( int nRoomID) const
 
 void StatisticDB::FireEvent(int nRoomID)
 {
-	std::for_each( m_Observers.begin(), m_Observers.end(), std::mem_fun( IStatisticObserver::OnStatisticsUpdate  ) );
+	std::for_each( m_Observers.begin(), m_Observers.end(), std::mem_fun( &IStatisticObserver::OnStatisticsUpdate  ) );
 }
 
 StatisticDB& GetStatisticsDB()

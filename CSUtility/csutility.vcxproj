@@ -69,9 +69,9 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)" ..\bin\debug\"$(TargetName)".dll
+      <Command>copy "$(TargetPath)" "..\bin\debug\$(TargetName)".dll
 </Command>
-      <Outputs>..\bin\debug"$(TargetName).dll;%(Outputs)</Outputs>
+      <Outputs>..\bin\debug\$(TargetName).dll;%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>

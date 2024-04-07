@@ -49,7 +49,7 @@ CArchiveDoc* CArchiveStatView::GetDocument()
 
 void CArchiveStatView::OnInitialUpdate()
 {
-	static bNotInit = true;
+	static bool bNotInit = true;
 	CArrangeStatView::OnInitialUpdate();
 
 	CSize sizeTotal;

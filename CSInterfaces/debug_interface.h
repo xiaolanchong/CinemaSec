@@ -10,7 +10,7 @@
 
 #include "common_interface_settings.h"
 
-namespace csinterface
+namespace csalgo
 {
 
 //=================================================================================================

@@ -65,6 +65,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../boost_1_84_0</AdditionalIncludeDirectories>
     </ClCompile>
     <CustomBuildStep>
       <Command>copy $(TargetPath) "..\BIN\Debug\$(TargetFileName)"
@@ -104,6 +105,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../boost_1_84_0</AdditionalIncludeDirectories>
     </ClCompile>
     <CustomBuildStep>
       <Message>copy to ..\BIN\Release</Message>
@@ -139,6 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\CSChair\Xml\xmllite.cpp" />
+    <ClCompile Include="..\CSClient\GUI\HtmlCtrl\FindWinList.cpp" />
     <ClCompile Include="..\CSClient\Gui\HtmlCtrl\HtmlCtrl.cpp" />
     <ClCompile Include="BoxOfficeRequest.cpp" />
     <ClCompile Include="BrowseForFolder\XSBrowseFolder.cpp" />
@@ -157,6 +160,7 @@
     <Midl Include="CSExchangeTest.idl" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\CSClient\GUI\HtmlCtrl\FindWinList.h" />
     <ClInclude Include="..\CSClient\Gui\HtmlCtrl\HtmlCtrl.h" />
     <ClInclude Include="BoxOfficeRequest.h" />
     <ClInclude Include="BrowseForFolder\XSBrowseFolder.h" />

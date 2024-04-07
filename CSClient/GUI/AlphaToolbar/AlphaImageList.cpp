@@ -187,7 +187,7 @@ BOOL CAlphaImageList::AddBitmap(UINT nID)
 			}
 
 			// create saturated image
-			for (i=0; i<nSize; i+=4)
+			for (int i=0; i<nSize; i+=4)
 			{
 				const double dGamma = 1.4;	// darken image
 				pDest[i+0] = (BYTE)(pow(pData[i+0] / 255.0, dGamma) * 255.0);
@@ -239,7 +239,7 @@ BOOL CAlphaImageList::AddBitmap(UINT nID)
 				return FALSE;
 			}
 
-			for (i=0; i<nSize; i+=3)
+			for (int i=0; i<nSize; i+=3)
 			{
 				if (RGB(pData[i+2], pData[i+1], pData[i+0]) == AIL_TRANSPARENT)
 				{

@@ -24,8 +24,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chcsva", "..\CSArchive\chcs
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSBackup", "..\CSArchive\CSBackup\CSBackup.vcxproj", "{D48FF8B1-14D1-4A0A-BD8C-E5B2E57B0798}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseClasses", "..\..\3rd_party\DShow_BaseClasses\baseclasses.vcproj", "{D6261C25-7FBB-4487-A654-2B8D930016E9}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSAlgo 2", "..\CSAlgo\CSAlgo2\CSAlgo2.vcxproj", "{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B467F3C-C336-4C9A-AA5F-98C7BC46E2F1}"
@@ -136,11 +134,6 @@ Global
 		{D48FF8B1-14D1-4A0A-BD8C-E5B2E57B0798}.Total Build|x86.Build.0 = Unicode Release|Win32
 		{D48FF8B1-14D1-4A0A-BD8C-E5B2E57B0798}.Unicode Debug|x86.ActiveCfg = Unicode Debug|Win32
 		{D48FF8B1-14D1-4A0A-BD8C-E5B2E57B0798}.Unicode Release|x86.ActiveCfg = Unicode Release|Win32
-		{D6261C25-7FBB-4487-A654-2B8D930016E9}.Debug|x86.ActiveCfg = Debug|Win32
-		{D6261C25-7FBB-4487-A654-2B8D930016E9}.Release|x86.ActiveCfg = Release|Win32
-		{D6261C25-7FBB-4487-A654-2B8D930016E9}.Total Build|x86.ActiveCfg = Unicode Debug|Win32
-		{D6261C25-7FBB-4487-A654-2B8D930016E9}.Unicode Debug|x86.ActiveCfg = Unicode Debug|Win32
-		{D6261C25-7FBB-4487-A654-2B8D930016E9}.Unicode Release|x86.ActiveCfg = Unicode Release|Win32
 		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Debug|x86.ActiveCfg = Unicode Debug|Win32
 		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Debug|x86.Build.0 = Unicode Debug|Win32
 		{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}.Release|x86.ActiveCfg = Unicode Release|Win32

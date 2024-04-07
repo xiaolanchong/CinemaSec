@@ -1557,12 +1557,12 @@ int COXNumericEdit::ChangeSign(BOOL bNegative)
 			_T("") : m_sFormatNegative.Mid(nPosInNegative+
 			OXNUMERICVALUE_PLACEHOLDER_LENGTH));
 
-		for(nIndex=0; nIndex<sLeftNegativeLiterals.GetLength(); nIndex++)
+		for(int nIndex=0; nIndex<sLeftNegativeLiterals.GetLength(); nIndex++)
 		{
 			m_arrLeftLiterals.InsertAt(m_arrLeftLiterals.GetSize(),
 				sLeftNegativeLiterals[nIndex]);
 		}
-		for(nIndex=0; nIndex<sRightNegativeLiterals.GetLength(); nIndex++)
+		for(int nIndex=0; nIndex<sRightNegativeLiterals.GetLength(); nIndex++)
 		{
 			m_arrRightLiterals.InsertAt(m_arrRightLiterals.GetSize(),
 				sRightNegativeLiterals[nIndex]);
@@ -1577,19 +1577,19 @@ int COXNumericEdit::ChangeSign(BOOL bNegative)
 			_T("") : m_sFormatPositive.Mid(nPosInPositive+
 			OXNUMERICVALUE_PLACEHOLDER_LENGTH));
 
-		for(nIndex=0; nIndex<sLeftPositiveLiterals.GetLength(); nIndex++)
+		for(int nIndex=0; nIndex<sLeftPositiveLiterals.GetLength(); nIndex++)
 		{
 			m_arrLeftLiterals.InsertAt(m_arrLeftLiterals.GetSize(),
 				sLeftPositiveLiterals[nIndex]);
 		}
-		for(nIndex=0; nIndex<sRightPositiveLiterals.GetLength(); nIndex++)
+		for(int nIndex=0; nIndex<sRightPositiveLiterals.GetLength(); nIndex++)
 		{
 			m_arrRightLiterals.InsertAt(m_arrRightLiterals.GetSize(),
 				sRightPositiveLiterals[nIndex]);
 		}
 	}
 
-	for(nIndex=0; nIndex<sRightLiterals.GetLength(); nIndex++)
+	for(int nIndex=0; nIndex<sRightLiterals.GetLength(); nIndex++)
 	{
 		m_arrRightLiterals.InsertAt(m_arrRightLiterals.GetSize(),
 			sRightLiterals[nIndex]);

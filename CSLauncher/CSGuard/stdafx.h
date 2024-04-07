@@ -3,26 +3,26 @@
 
 #pragma once
 
+#include <winsdkver.h>
+
 #ifndef VC_EXTRALEAN
 #define VC_EXTRALEAN		// 從 Windows 標頭排除不常使用的成員
 #endif
 
-// 如果您有必須優先選取的平台，請修改下列定義。
-// 參考 MSDN 取得不同平台對應值的最新資訊。
-#ifndef WINVER				// 允許使用 Windows 95 與 Windows NT 4 (含) 以後版本的特定功能。
-#define WINVER 0x0500		// 將它變更為針對 Windows 98 和 Windows 2000 (含) 以後版本適當的值。
+#ifndef WINVER				// Allow use of features specific to Windows 95 and Windows NT 4 or later.
+#define WINVER _WIN32_MAXVER		// Change this to the appropriate value to target Windows 98 and Windows 2000 or later.
 #endif
 
-#ifndef _WIN32_WINNT		// 允許使用 Windows NT 4 (含) 以後版本的特定功能。
-#define _WIN32_WINNT 0x0500		// 將它變更為針對 Windows 98 和 Windows 2000 (含) 以後版本適當的值。
+#ifndef _WIN32_WINNT		// Allow use of features specific to Windows NT 4 or later.
+#define _WIN32_WINNT _WIN32_WINNT_MAXVER	// Change this to the appropriate value to target Windows 2000 or later.
 #endif						
 
-#ifndef _WIN32_WINDOWS		// 允許使用 Windows 98 (含) 以後版本的特定功能。
-#define _WIN32_WINDOWS 0x0510 // 將它變更為針對 Windows Me (含) 以後版本適當的值。
+#ifndef _WIN32_WINDOWS		// Allow use of features specific to Windows 98 or later.
+#define _WIN32_WINDOWS _WIN32_WINDOWS_MAXVER // Change this to the appropriate value to target Windows Me or later.
 #endif
 
-#ifndef _WIN32_IE			// 允許使用 IE 4.0 (含) 以後版本的特定功能。
-#define _WIN32_IE 0x0500	// 將它變更為針對 IE 5.0 (含) 以後版本適當的值。
+#ifndef _WIN32_IE			// Allow use of features specific to IE 4.0 or later.
+#define _WIN32_IE _WIN32_IE_MAXVER	// Change this to the appropriate value to target IE 5.0 or later.
 #endif
 
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// 明確定義部分的 CString 建構函式

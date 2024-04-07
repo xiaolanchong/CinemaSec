@@ -623,7 +623,7 @@ void CVMCadComponentImp::Update()
 		//Resize to fit current elements num
 		while( m_ScenePresentation[i].geometry.size() < m_TempElementsArray.size() )
 		{
-			shared_ptr<CMesh> ptr( new CMesh() );
+			boost::shared_ptr<CMesh> ptr( new CMesh() );
 			m_ScenePresentation[i].geometry.push_back( make_pair( (CElement*)NULL, ptr ) );
 		}
 		while( m_ScenePresentation[i].geometry.size() > m_TempElementsArray.size() )

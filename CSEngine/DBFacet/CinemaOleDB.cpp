@@ -169,8 +169,6 @@ void	CCinemaOleDB::Open()
 	try
 	{
 		COleDBConnection::Open(strCS, m_bShowWindow);
-		std::tstring  strCS = COleDBConnection::GetConnectionString();
-//		GetCfgDB().SetConnectionString(strCS);
 	}
 	catch(DBConnectionException&)
 	{

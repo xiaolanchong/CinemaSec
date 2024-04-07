@@ -222,7 +222,8 @@ void CGraphicsDevice::ResizeSwapChain( int nWidth, int nHeight )
 
 	list<SwapChainInfo>::iterator iSwapChain = m_SwapChainList.end();
 
-	for( list<SwapChainInfo>::iterator i = m_SwapChainList.begin(); i != m_SwapChainList.end(); ++i )
+	list<SwapChainInfo>::iterator i = m_SwapChainList.begin();
+	for(; i != m_SwapChainList.end(); ++i )
 	{
 		if( (*i).hChildWnd == m_ActiveSwapChain.hChildWnd )
 		{

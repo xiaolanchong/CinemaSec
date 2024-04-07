@@ -24,7 +24,8 @@ MyChair::Chair*&	GetChairPos(MyChair::Chair& ch, CHAIR_POS pos)
 {
 	if( pos == pos_top )
 	{
-		for( DWORD i = 0; i < sizeof(ch.pBackChair)/sizeof(ch.pBackChair[0]); ++i )
+		DWORD i = 0;
+		for( ; i < sizeof(ch.pBackChair)/sizeof(ch.pBackChair[0]); ++i )
 		{
 			if( !ch.pBackChair[i] ) return ch.pBackChair[i];
 		}
@@ -33,7 +34,8 @@ MyChair::Chair*&	GetChairPos(MyChair::Chair& ch, CHAIR_POS pos)
 	}
 	else if( pos == pos_top )
 	{
-		for( DWORD i = 0; i < sizeof(ch.pFrontChair)/sizeof(ch.pFrontChair[0]); ++i )
+		DWORD i = 0;
+		for( ; i < sizeof(ch.pFrontChair)/sizeof(ch.pFrontChair[0]); ++i )
 		{
 			if(! ch.pFrontChair[i] ) return ch.pFrontChair[i];
 		}

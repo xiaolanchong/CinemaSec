@@ -22,6 +22,7 @@
 
 #include <afxmt.h>
 #include <list>
+#include <string>
 #include <mmsystem.h>
 #include "../../CSUtility/utility/debug_interface.h"
 #include "../UT/OXTreeCtrl.h"

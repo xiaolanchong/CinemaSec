@@ -15,6 +15,7 @@
     <ProjectName>CSAlgo 2</ProjectName>
     <ProjectGuid>{17989FFB-ECA8-46E1-8A5D-2CD8DE362E46}</ProjectGuid>
     <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
@@ -46,11 +47,13 @@
     <OutDir>__$(Configuration)\</OutDir>
     <IntDir>__$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>CSAlgorithm2</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
     <OutDir>__$(Configuration)\</OutDir>
     <IntDir>__$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>CSAlgorithm2</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
     <ClCompile>
@@ -72,9 +75,8 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)" ..\..\bin\debug\"$(TargetName)".dll
-</Command>
-      <Outputs>..\..\bin\debug"$(TargetName).dll;%(Outputs)</Outputs>
+      <Command>copy "$(TargetPath)" "..\..\bin\debug\$(TargetName).dll"</Command>
+      <Outputs>..\..\bin\debug\$(TargetName).dll;%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <OutputFile>$(OutDir)CSAlgorithm2.dll</OutputFile>
@@ -111,9 +113,9 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)" ..\..\bin\release\en\"$(TargetName)".dll
+      <Command>copy "$(TargetPath)" "..\..\bin\release\en\$(TargetName).dll"
 </Command>
-      <Outputs>..\..\bin\release\en"$(TargetName).dll;%(Outputs)</Outputs>
+      <Outputs>..\..\bin\release\en\$(TargetName).dll;%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <OutputFile>$(OutDir)CSAlgorithm2.dll</OutputFile>

@@ -5,7 +5,7 @@
 #include "chcs.h"
 #include "SmpGrbHlp.h"
 
-#include <qedit.h>
+#include "../../CSUtility/qedit.h"
 
 #define CheckPointer(p,ret) {if((p)==NULL) return (ret);}
 

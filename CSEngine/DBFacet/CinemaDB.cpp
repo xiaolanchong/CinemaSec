@@ -103,7 +103,10 @@ bool	CCinemaDB::UpdateLayout( const std::map< int, std::pair<int, int > >&  Layo
 		std::set<CameraRow>::iterator itCam = m_Cameras.find( CameraRow( it->first ) );
 		if( itCam != m_Cameras.end() )
 		{
-			itCam->m_Pos = it->second;
+			auto newCam(*itCam);
+			newCam.m_Pos = it->second;
+			m_Cameras.erase(itCam);
+			m_Cameras.insert(std::move(newCam));
 		}
 	}
 	return true;

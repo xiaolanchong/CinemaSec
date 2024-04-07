@@ -24,7 +24,7 @@ CCSLauncherModule _AtlModule;
 
 
 #ifndef GetAddrInfo 
-inline  GetAddrInfo( LPCTSTR , LPCTSTR , void* ,  void* )
+inline int GetAddrInfo( LPCTSTR , LPCTSTR , void* ,  void* )
 {
 	return 0;
 }

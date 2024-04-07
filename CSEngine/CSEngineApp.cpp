@@ -5,7 +5,6 @@
 #include "CSEngineApp.h"
 #include "../CSChair/interfaceEx.h"
 #include "CSEngine.h"
-#include <afxdllx.h>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -59,8 +58,6 @@ CCSEngineApp theApp;
 
 
 // CCSEngineApp initialization
-
-AFX_EXTENSION_MODULE DllState = { NULL, NULL };
 
 BOOL CCSEngineApp::InitInstance()
 {

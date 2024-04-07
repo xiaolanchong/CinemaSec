@@ -56,19 +56,15 @@
     <ClCompile>
       <AdditionalIncludeDirectories>.;../../boost_1_84_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINNT_WIN32=0x501;WINVER=0x501;_INS_EXT_CLASS=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader />
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
     </ClCompile>
     <CustomBuildStep>
       <Message>copy to ../BIN/Release</Message>
-      <Command>copy "$(TargetPath)" ..\BIN\Release\EN\"$(TargetFileName)"
+      <Command>copy "$(TargetPath)"  "..\BIN\Release\EN\$(TargetFileName)"
 </Command>
-      <Outputs>..\BIN\Release\EN"$(TargetFileName);%(Outputs)</Outputs>
+      <Outputs>..\BIN\Release\EN\$(TargetFileName);%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <AdditionalDependencies>version.lib;dbghelp.lib;gdiplus.lib;strmiids.lib;vfw32.lib;winmm.lib;shlwapi.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -92,19 +88,15 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>.;../../boost_1_84_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_WIN32_WINNT=0x0A00;_INS_EXT_CLASS=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_INS_EXT_CLASS=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader />
       <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
     </ClCompile>
     <CustomBuildStep>
       <Message>copy  ..\BIN\Debug\</Message>
-      <Command>copy "$(TargetPath)""..\BIN\Debug\$(TargetFileName)"
+      <Command>copy "$(TargetPath)" "..\BIN\Debug\$(TargetFileName)"
 </Command>
       <Outputs>..\BIN\Debug\$(TargetName).exe;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -213,6 +205,7 @@
     <ClInclude Include="Gui\HoverBitmapButton\BtnST.h" />
     <ClInclude Include="Gui\HoverBitmapButton\ThemeHelperST.h" />
     <ClInclude Include="Gui\HoverBitmapButton\XPStyleButtonST.h" />
+    <ClInclude Include="GUI\HtmlCtrl\FindWinList.h" />
     <ClInclude Include="Gui\HtmlCtrl\HtmlCtrl.h" />
     <ClInclude Include="Gui\PropertyList\Callback.h" />
     <ClInclude Include="Gui\PropertyList\CJFlatComboBox.h" />
@@ -376,6 +369,7 @@
     <ClCompile Include="Gui\HoverBitmapButton\BtnST.cpp" />
     <ClCompile Include="Gui\HoverBitmapButton\ThemeHelperST.cpp" />
     <ClCompile Include="Gui\HoverBitmapButton\XPStyleButtonST.cpp" />
+    <ClCompile Include="GUI\HtmlCtrl\FindWinList.cpp" />
     <ClCompile Include="Gui\HtmlCtrl\HtmlCtrl.cpp" />
     <ClCompile Include="Gui\PropertyList\CJFlatComboBox.cpp" />
     <ClCompile Include="Gui\PropertyList\NumEdit.cpp" />
@@ -488,7 +482,6 @@
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="Res\CommonRes\CSClient.exe.manifest" />
-    <Manifest Include="Res\CSClient.exe.manifest" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Gui\Dhtml\HtmlViewEx.inl" />

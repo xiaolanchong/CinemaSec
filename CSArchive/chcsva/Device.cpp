@@ -7,7 +7,7 @@
 
 #define NO_DSHOW_STRSAFE
 #include <dshow.h>
-#include <qedit.h>
+#include "../../CSUtility/qedit.h"
 
 //////////////////////////////////////////////////////////////////////////
 // Part of Baseclasses

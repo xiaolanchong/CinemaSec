@@ -22,8 +22,8 @@ IMPLEMENT_DYNCREATE(COXLayoutManager, CObject)
 
 /////////////////////////////////////////////////////////////////////////////
 // maps between single side parameter and array index in sc[]
-static OX_LMS_TO_INDEX[] = { -1, 0, 1, -1, 2, -1, -1, -1, 3 };
-static OX_INDEX_TO_LMS[] = { OX_LMS_TOP, OX_LMS_BOTTOM, OX_LMS_LEFT, OX_LMS_RIGHT };
+static int OX_LMS_TO_INDEX[] = { -1, 0, 1, -1, 2, -1, -1, -1, 3 };
+static int OX_INDEX_TO_LMS[] = { OX_LMS_TOP, OX_LMS_BOTTOM, OX_LMS_LEFT, OX_LMS_RIGHT };
 
 // side index
 #define OX_LMSI_TOP	   0
@@ -516,7 +516,8 @@ int	COXLayoutManager::GetChildIndex(UINT nChildWnd) const
 	// --- Returns : index of a child window in m_wcTable
 	// --- Effect  : search m_wcTable for nChildWnd
 {
-	for (int i = m_wcTable.GetSize() - 1; i >= 0 && m_wcTable[i]->nID != nChildWnd; i--);
+	int i = m_wcTable.GetSize() - 1;
+	for (; i >= 0 && m_wcTable[i]->nID != nChildWnd; i--);
 	return i;
 }
 

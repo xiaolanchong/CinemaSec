@@ -567,6 +567,9 @@
     <ClInclude Include="Log_mode\log_mode_view.h">
       <Filter>MODE_Log</Filter>
     </ClInclude>
+    <ClInclude Include="GUI\HtmlCtrl\FindWinList.h">
+      <Filter>GUI\HtmlCtrl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChildFrm.cpp">
@@ -1025,6 +1028,9 @@
     <ClCompile Include="Log_mode\log_mode_view.cpp">
       <Filter>MODE_Log</Filter>
     </ClCompile>
+    <ClCompile Include="GUI\HtmlCtrl\FindWinList.cpp">
+      <Filter>GUI\HtmlCtrl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Res\Ru\CSClient.rc">
@@ -1127,9 +1133,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="Res\CSClient.exe.manifest">
-      <Filter>Resource Files</Filter>
-    </Manifest>
     <Manifest Include="Res\CommonRes\CSClient.exe.manifest" />
   </ItemGroup>
   <ItemGroup>

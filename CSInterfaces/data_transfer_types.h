@@ -15,7 +15,7 @@
 #include "../CSChair/IChairContent.h"
 //>>>>>
 
-namespace csinterface
+namespace csalgo
 {
 
 //=================================================================================================

@@ -56,7 +56,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)External\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_84_0;$(ProjectDir)External\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL; CSBACKUP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -69,9 +69,9 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)" ..\..\bin\Debug\"$(TargetName).dll"
+      <Command>copy "$(TargetPath)" "..\..\bin\Debug\$(TargetName).dll"
 </Command>
-      <Outputs>..\..\bin\Debug"$(TargetName).dll;%(Outputs)</Outputs>
+      <Outputs>..\..\bin\Debug\$(TargetName).dll;%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <AdditionalDependencies>Ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -87,7 +87,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)External\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_84_0;$(ProjectDir)External\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CSBACKUP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader />

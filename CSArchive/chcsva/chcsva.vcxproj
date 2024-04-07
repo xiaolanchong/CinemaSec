@@ -102,7 +102,7 @@
       <Outputs>..\..\bin\DebugA\$(TargetFileName);%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
-      <AdditionalDependencies>opends60.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>chcsva.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -174,7 +174,7 @@
       <Outputs>..\..\bin\Debug\$(TargetFileName);%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
-      <AdditionalDependencies>opends60.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>chcsva.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -298,6 +298,11 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="chcsva.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ElveesTools\ElveesTools.vcxproj">
+      <Project>{bcbf187f-49bc-450a-a05d-6b81dc23bf6f}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

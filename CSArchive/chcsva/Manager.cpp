@@ -262,7 +262,8 @@ bool CManager::PrepareArchive(bool bUseDefaultOnFailed /*= false*/)
 		//  Create directory in dll directory
 		::GetModuleFileName(_Module.GetModuleInstance(), m_stBasePath, countof(m_stBasePath));
 
-		for(int i=lstrlen(m_stBasePath); m_stBasePath[i] != '\\'; i--);
+		int i = lstrlen(m_stBasePath);
+		for(; m_stBasePath[i] != '\\'; i--);
 		
 		m_stBasePath[i+1] = 0;
 		lstrcat(m_stBasePath, TEXT("Archive"));

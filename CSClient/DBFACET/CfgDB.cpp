@@ -57,8 +57,8 @@ CString	CfgDB::GetConnectionString()
 	TCHAR szCS[1024];
 	DWORD	dwData = sizeof(szCS),
 	dwType = REG_SZ;
-	SHGetValue(HKEY_LOCAL_MACHINE, DB_SUBKEY, DB_VALUE, &dwType, szCS, &dwData);
-	return CString( szCS );
+	auto status = SHGetValue(HKEY_LOCAL_MACHINE, DB_SUBKEY, DB_VALUE, &dwType, szCS, &dwData);
+	return status == ERROR_SUCCESS ? CString(szCS) : CString{};
 }
 
 void	CfgDB::SetConnectionString( CString strCS )

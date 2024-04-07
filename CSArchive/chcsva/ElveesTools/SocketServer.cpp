@@ -219,7 +219,7 @@ int CSocketServer::Run()
 		}
 
 		// Initialize shutdown
-		for(i = 0; i < workerlist.Count(); ++i)
+		for(unsigned i = 0; i < workerlist.Count(); ++i)
 			m_iocp.PostStatus(0);
 
 		while(!workerlist.Empty())

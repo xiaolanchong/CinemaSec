@@ -134,7 +134,7 @@ LPCTSTR __cdecl DumpData(LPCBYTE pData, int dataLength, int lineLength)
 		{
 			if(i == dataLength && (bytesPerLine && (i % bytesPerLine != 0)))
 			{
-				for(int pad = i % bytesPerLine; pad < bytesPerLine; pad++)
+				for(size_t pad = i % bytesPerLine; pad < bytesPerLine; pad++)
 				{
 					cbDisplayHex += wsprintf(&stDisplayHex[cbDisplayHex], TEXT("   "));
 				}

@@ -31,8 +31,6 @@
 #pragma warning(disable : 4201)
 #pragma	  warning( disable : 4995 )		//deprecated functions
 
-#define _WIN32_WINDOWS 0x0500	// for IsDebuggerPresent
-
 // if you don't use PCH comment a string below
 #include "stdafx.h"
 

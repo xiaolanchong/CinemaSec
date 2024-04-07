@@ -2897,7 +2897,8 @@ CCellRange CGridCtrl::GetVisibleNonFixedCellRange(LPRECT pRect /*=NULL*/,
 
     // calc bottom
     int bottom = GetFixedRowHeight();
-    for (int i = idTopLeft.row; i < GetRowCount(); i++)
+    int i = idTopLeft.row;
+    for (; i < GetRowCount(); i++)
     {
         bottom += GetRowHeight(i);
         if (bottom >= rect.bottom)
@@ -2940,7 +2941,8 @@ CCellRange CGridCtrl::GetUnobstructedNonFixedCellRange(BOOL bForceRecalculation 
 
     // calc bottom
     int bottom = GetFixedRowHeight();
-    for (int i = idTopLeft.row; i < GetRowCount(); i++)
+    int i = idTopLeft.row;
+    for (; i < GetRowCount(); i++)
     {
         bottom += GetRowHeight(i);
         if (bottom >= rect.bottom)
@@ -2952,7 +2954,7 @@ CCellRange CGridCtrl::GetUnobstructedNonFixedCellRange(BOOL bForceRecalculation 
 
     // calc right
     int right = GetFixedColumnWidth();
-    for (i = idTopLeft.col; i < GetColumnCount(); i++)
+    for (int i = idTopLeft.col; i < GetColumnCount(); i++)
     {
         right += GetColumnWidth(i);
         if (right >= rect.right)
@@ -3622,7 +3624,7 @@ BOOL CGridCtrl::SetColumnCount(int nCols)
             if (!GetVirtualMode())
             {
                 for (int row = 0; row < m_nRows; row++)
-                    for (col = startCol; col < nCols; col++)
+                    for (int col = startCol; col < nCols; col++)
                     {
                         GRID_ROW* pRow = m_RowData[row];
                         if (pRow)
@@ -4930,7 +4932,7 @@ void CGridCtrl::ExpandColumnsToFit(BOOL bExpandFixed /*=TRUE*/)
     int nDifference = rect.Width() -(int) virtualWidth;
     int nColumnAdjustment = nDifference / nNumColumnsAffected;
 
-    for (col = nFirstColumn; col < GetColumnCount(); col++)
+    for (int col = nFirstColumn; col < GetColumnCount(); col++)
     {
         if (m_arColWidths[col] > 0)
             m_arColWidths[col] += nColumnAdjustment;    
@@ -5028,8 +5030,8 @@ void CGridCtrl::ExpandRowsToFit(BOOL bExpandFixed /*=TRUE*/)
     long virtualHeight = GetVirtualHeight();
     int nDifference = rect.Height() -(int) virtualHeight;
     int nRowAdjustment = nDifference / nNumRowsAffected;
-    
-    for (row = nFirstRow; row < GetRowCount(); row++)
+         
+    for (int row = nFirstRow; row < GetRowCount(); row++)
     {
         if (m_arRowHeights[row] > 0)
             m_arRowHeights[row] += nRowAdjustment;    

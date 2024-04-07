@@ -169,7 +169,7 @@ int CSocketServerUDP::Run()
 				// post X accepts on the socket and then wait for either the shutdown event or the 
 				// stop accepting connections event
 
-				for(i = 0; i < m_recvsToPost; ++i)
+				for(unsigned i = 0; i < m_recvsToPost; ++i)
 				{
 					PostReadRequest();
 				}
@@ -187,7 +187,7 @@ int CSocketServerUDP::Run()
 		}
 
 		// Initialize shutdown
-		for(i = 0; i < workerlist.Count(); ++i)
+		for(unsigned i = 0; i < workerlist.Count(); ++i)
 			m_iocp.PostStatus(0);
 
 		while(!workerlist.Empty())

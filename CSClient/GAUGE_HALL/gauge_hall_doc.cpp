@@ -23,9 +23,6 @@
 #include "../Layout/RenumberDialog.h"
 #include "../Layout/LayoutIDDialog.h"
 #include "../Layout/SelectArrangementDlg.h"
-//#include <boost/bind.hpp>
-
-
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -667,6 +664,8 @@ void CGaugeHallDoc::ImageData::RecalcLayout( CView* pView, bool bUpdate )
 void CGaugeHallDoc::ImageData::DrawPixColArr( const PixColArr & source, CDC * pDC,
                                    bool bSameColor, COLORREF color )
 {
+	if (source.empty())
+		return;
   const PixCol * points = &(*(source.begin()));
 
   if (bSameColor)
@@ -695,6 +694,8 @@ void CGaugeHallDoc::ImageData::DrawPixColArr( const PixColArr & source, CDC * pD
 //-------------------------------------------------------------------------------------------------
 void CGaugeHallDoc::ImageData::InitPixColArr( const Vec2fArr & src, CDC * pDC, PixColArr & dst)
 {
+	if (src.empty())
+		return;
   dst.resize( src.size() );
 
   POINT         pt;
@@ -2643,7 +2644,7 @@ void CGaugeHallDoc::OnGrabCamera()
 	{
 		int nRoomID = GetCurrentRoom();
 		AllImageMap_t::iterator itA = m_AllImageData.find( nRoomID );
-		for( i = 0; i < CamArr.size(); ++i )
+		for(size_t i = 0; i < CamArr.size(); ++i )
 		{
 			int nCamID = CamArr[i].first;
 			ImageMap_t::iterator it = m_ImageData.find( nCamID );

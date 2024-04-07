@@ -524,7 +524,8 @@ int	COXLayoutManager::GetChildIndex(UINT nChildWnd) const
 	// --- Returns : index of a child window in m_wcTable
 	// --- Effect  : search m_wcTable for nChildWnd
 {
-	for (int i = m_wcTable.GetSize() - 1; i >= 0 && m_wcTable[i]->nID != nChildWnd; i--);
+	int i = m_wcTable.GetSize() - 1;
+	for (; i >= 0 && m_wcTable[i]->nID != nChildWnd; i--);
 	return i;
 }
 

@@ -61,7 +61,7 @@ HRESULT		FileTransferServer::Start(	IDebugOutput* pDbgInt, netadr_t NetAddr,
 
 	HANDLE hThread = (HANDLE)_beginthreadex
 		(	0, 0, 
-			ThreadProc_Handled< FileTransferServer, FileTransferServer::FileTransferProc, ~0 >, 
+			ThreadProc_Handled< FileTransferServer, &FileTransferServer::FileTransferProc, ~0 >, 
 			this, 0, NULL  
 		);
 	if( hThread )

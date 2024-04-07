@@ -18,7 +18,7 @@
 #include "Background.h"
 #include <string>
 #include <atlbase.h>
-#include <qedit.h>
+#include "../../CSUtility/qedit.h"
 #include <dshow.h>
 #include "../Common/Exception.h"
 

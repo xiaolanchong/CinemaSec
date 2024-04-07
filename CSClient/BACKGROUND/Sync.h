@@ -20,8 +20,6 @@
 // CCriticalSection don't have TryEnter
 // critical section lightweight( not kernel) sync object, so use for syncs
 
-//#include <boost/utility.hpp>
-
 //-----------------------------------------------------------------------------
 // Purpose: For sync purpose like threading shedulers
 //-----------------------------------------------------------------------------

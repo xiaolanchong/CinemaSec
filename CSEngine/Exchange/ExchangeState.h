@@ -39,7 +39,7 @@ public:
 class IncomingRequestState : public ExchangeState
 {
 	SimpleTimer				m_StatTimer;
-	static const			c_StatPeriod = 5;
+	static const int		c_StatPeriod = 5;
 public:
 	IncomingRequestState( CRequestImpl*	pImpl ) ;
 	virtual ExchangeState*		Process() ;

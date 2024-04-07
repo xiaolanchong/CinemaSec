@@ -101,16 +101,13 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <StructMemberAlignment>Default</StructMemberAlignment>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)" ..\bin\release\en\"$(TargetName)".dll
-</Command>
-      <Outputs>..\bin\release\en"$(TargetName).dll;%(Outputs)</Outputs>
+      <Command>copy "$(TargetPath)" "..\bin\release\en\$(TargetName).dll"</Command>
+      <Outputs>..\bin\release\en\$(TargetName).dll;%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>

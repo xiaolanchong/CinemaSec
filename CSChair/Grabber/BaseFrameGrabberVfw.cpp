@@ -149,7 +149,7 @@ bool BaseFrameGrabberVfW::CreateScriptFile(LPCTSTR lpFilename)
 		char stTemp[MAX_PATH*2];
 
 	#ifdef _UNICODE
-		wsprintfA(stTemp, "AviSource(\"%ls\",audio=false,pixel_type=\"YUY2\")\r\n", stFullPath);
+		wsprintfA(stTemp, "AviSource(\"%ls\",audio=false,pixel_type=\"full\",fourCC=\"YUY2\")\r\n", stFullPath);
 	#else
 		wsprintfA(stTemp, "AviSource(\"%hs\",audio=false,pixel_type=\"YUY2\")\r\n", stFullPath);
 	#endif

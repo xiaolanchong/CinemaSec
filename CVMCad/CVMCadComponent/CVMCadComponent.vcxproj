@@ -86,11 +86,9 @@
       <AdditionalIncludeDirectories>$(ProjectDir)/Sources;../../../boost_1_84_0;$(IncludePath);../../DirectXSdk2010Jun/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CVMCADCOMPONENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader />
       <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
     </ClCompile>
     <CustomBuildStep>
       <Command>copy /Y "$(TargetPath)"  "..\..\Bin\Release\$(TargetFileName)"

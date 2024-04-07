@@ -95,9 +95,9 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)"  ..\..\bin\Release\"$(TargetName).dll"
+      <Command>copy "$(TargetPath)"  "..\..\bin\Release\$(TargetName).dll"
 </Command>
-      <Outputs>..\..\bin\Release"$(TargetName).dll;%(Outputs)</Outputs>
+      <Outputs>..\..\bin\Release\en\$(TargetName).dll;%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <AdditionalDependencies>Ws2_32.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>

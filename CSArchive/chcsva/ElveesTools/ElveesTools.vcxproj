@@ -141,17 +141,13 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
       <PrecompiledHeaderOutputFile>.\..\_obj\Release\ElveesTools/ElveesTools.pch</PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>.\..\_obj\Release\ElveesTools/</AssemblerListingLocation>
       <ObjectFileName>.\..\_obj\Release\ElveesTools/</ObjectFileName>
       <ProgramDataBaseFileName>.\..\_obj\Release\ElveesTools/</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CallingConvention>StdCall</CallingConvention>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <OutputFile>.\..\_lib\Release\ElveesTools.lib</OutputFile>

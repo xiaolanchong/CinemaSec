@@ -1,0 +1,1 @@
+CinemaSec database created in MSSQL 2000 and upgraded to 2008. Restored in SQL Express 2016 and seemed working.

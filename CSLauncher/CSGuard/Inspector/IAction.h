@@ -49,6 +49,7 @@ struct IAction
 struct	IState
 {
 	static	IState*	GetStartState();
+	virtual ~IState() = default;
 	virtual IState*	Process( ProcessEnvironment& pe ) = 0;
 };
 

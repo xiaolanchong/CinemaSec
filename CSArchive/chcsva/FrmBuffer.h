@@ -62,8 +62,8 @@ private:
 	BYTE m_buffer[0]; // start of the actual buffer, must remain the last
                       // data member in the class.
 private:
-	static void *operator new(size_t bufferSize);
-	static void operator delete(void *pObj, size_t bufferSize);
+	static void *operator new(unsigned objSize, unsigned bufferSize);
+	static void operator delete(void *pObj);
       
 	CFrmBuffer(Allocator &m_allocator, unsigned size);
 

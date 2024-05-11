@@ -91,9 +91,9 @@
       <WarningLevel>Level4</WarningLevel>
     </ClCompile>
     <CustomBuildStep>
-      <Command>copy /Y "$(TargetPath)"  "..\..\Bin\Release\$(TargetFileName)"
+      <Command>copy /Y "$(TargetPath)"  "..\..\Bin\Release\en\$(TargetFileName)"
 </Command>
-      <Outputs>..\..\Bin\Release\$(TargetFileName);%(Outputs)</Outputs>
+      <Outputs>..\..\Bin\Release\en\$(TargetFileName);%(Outputs)</Outputs>
     </CustomBuildStep>
     <Link>
       <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxerr.lib;strmiids.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>

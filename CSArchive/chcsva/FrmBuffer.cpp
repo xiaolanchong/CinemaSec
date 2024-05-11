@@ -28,13 +28,13 @@ void CFrmBuffer::Empty()
 	m_uSystemTime = 0;
 }
 
-void* CFrmBuffer::operator new(size_t totalSize)
+void* CFrmBuffer::operator new(unsigned objectSize, unsigned bufferSize)
 {
 	// Round to 4kb size..
-	return malloc((totalSize + 0xFFF) & 0xFFFFF000);
+	return malloc((objectSize + bufferSize + 0xFFF) & 0xFFFFF000);
 }
 
-void CFrmBuffer::operator delete(void *pObject, unsigned)
+void CFrmBuffer::operator delete(void *pObject)
 {
 	free(pObject);
 }
@@ -267,7 +267,7 @@ CFrmBuffer *CFrmBuffer::Allocator::AllocateFrameBuffer()
 		DEBUG_ONLY(Elvees::OutputF(Elvees::TTrace, TEXT("[%X] AllocateFrameBuffer AL:%ld FL:%ld"), this,
 			m_activeList.Count(), m_freeList.Count()));
 
-		pBuffer = new CFrmBuffer(*this, sizeof(CFrmBuffer) + m_bufSize);
+		pBuffer = new(m_bufSize) CFrmBuffer(*this, m_bufSize);
 	}
 
 	if(pBuffer)

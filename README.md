@@ -16,6 +16,6 @@ CinemaPark surveillance system aiming at measuring the number of visitors in a c
 
 ## Todo
 
-1) Test video files isn't playable. Once loaded in  no xvid native codec?
+1) Test video files isn't playable. Once loaded in no xvid native codec?
 2) chcsva.dll can play files to simulated camera videos. Don't remember these settings.
 3) Convert to x64?
